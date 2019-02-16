@@ -9,3 +9,41 @@
 body {
 	font-family: '微軟正黑體',Arial;
 }
+ul {
+	margin: 0;
+}
+
+.clearfix {
+	overflow: auto;
+}
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+.WrapperContainer {
+	width: 1200px;
+	margin: 0 auto;
+}
+h6.MainTitle {
+	margin: 0;
+	line-height: 32px;
+	font-size: 18px;
+	font-weight: normal;
+	padding: 0 15px;
+	display: inline-block;
+	position: relative;
+}
+h6.MainTitle:after {
+	content: '';
+	position: absolute;
+	top: 10px;
+	right: -90px;
+	display: inline-block;
+	width: 100px;
+	height: 14px;
+	background: url(../images/line.png) bottom center;
+}
+h6.MainTitle span {
+	color: #ecc96b;
+}

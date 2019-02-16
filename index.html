@@ -7,18 +7,137 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/slick.css">
         <link rel="stylesheet" href="css/slick-theme.css">
+        <!-- FullCalendar v3.8.1 -->
+        <link rel="stylesheet" href="css/fullcalendar.min.css">
+        <link rel="stylesheet" href="css/fullcalendar.print.css">
 
         <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/index.css">
 
         <script src="js/jquery-3.3.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/angular.min.js"></script>
         <script src="js/slick.js"></script>
+        <script src="js/moment.min.js"></script>
+        <script src="js/fullcalendar.min.js"></script><!--日曆-->
+
+        <!--地圖-->
+        <link href="css/jsmaps.css" rel="stylesheet" type="text/css" />
+        <script src="js/jsmaps/jsmaps-libs.js" type="text/javascript"></script>
+        <script src="js/jsmaps/jsmaps-panzoom.js"></script>
+        <script src="js/jsmaps/jsmaps.min.js" type="text/javascript"></script>
+        <script src="js/maps/taiwan.js" type="text/javascript"></script>
 
         <script src="js/publicfunction.js"></script>
+        <script src="data.js"></script><!--假資料檔-->
+
+        <script src="js/controllers/index.js"></script>
 
     </head>
-    <body>
-
+    <body ng-app="myApp" ng-controller="IndexCtrl">
+        <header class="HeaderWrapper">
+            <div class="clearfix container">
+                <a class="Logo"><img class="img-responsive" src="./images/logo.png" alt=""></a>
+                <div class="MenuWrapper">
+                    <ul class="SubMenu">
+                        <li>
+                            <a href=""><i class="glyphicon glyphicon-envelope"></i>聯絡我們</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="glyphicon glyphicon-globe"></i>網站地圖</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="glyphicon glyphicon-link"></i>相關連結</a>
+                        </li>
+                        <li class="BorderRight">
+                            <a href=""><i class="glyphicon glyphicon-paperclip"></i>電子報</a>
+                        </li>
+                        <li>
+                            <span>累積訪客人數</span>
+                            <span class="CountNum">123</span>
+                        </li>
+                        <li>
+                            <span>今日訪客人數</span>
+                            <span class="CountNum">123</span>
+                        </li>
+                    </ul>
+                    <ul class="MainMenu">
+                        <li><a href="" class="active">首頁</a></li>
+                        <li><a href="">公告專區</a></li>
+                        <li><a href="">下載專區</a></li>
+                        <li><a href="">志願服務智庫</a></li>
+                        <li><a href="">法規專區</a></li>
+                        <li><a href="">單位查詢</a></li>
+                        <li><a href="">互動分享</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="BodyWrapper">
+            <div class="CarouselWrapper">
+                <div class="Carousel">
+                    <div ng-repeat="carousels in CarouselData" class="CarouselItems">
+                        <a ng-cloak="(carousels)" ng-href="[{carousels.Href}]">
+                            <img class="img-responsive" ng-src="./images/Carousel/[{carousels.Image}]" alt="[{carousels.Title}]">
+                        </a>
+                    </div>
+                </div>
+                <div class="LoginWrapper"></div>
+            </div>
+            <div class="MarqueeWrapper">
+                <div class="container">
+                    <div class="Marquee">
+                        <ul>
+                            <li ng-repeat="marquees in MarqueeData"><a ng-href="[{marquees.Href}]"><i class="glyphicon glyphicon-volume-up"></i>最新消息：<span class="name">[{marquees.Name}]</span>[{marquees.Content}]</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix container">
+                <div class="ActivityWrapper">
+                    <h6 class="MainTitle">活動<span>列表</span></h6>
+                    <div class="Activity">
+                        <div ng-repeat="activitys in ActivityData" class="ActivityItems">
+                            <img class="img-responsive" ng-src="images/Activity/[{activitys.Image}]" alt="">
+                            <div class="ActivityInfo">
+                                <h6 class="Title">[{activitys.Title}]</h6>
+                                <span class="Content">[{activitys.Content}]</span>
+                                <div class="City"><i class="glyphicon glyphicon-map-marker"></i>[{activitys.City}]</div>
+                                <span class="Date"><i class="glyphicon glyphicon-calendar"></i>[{activitys.Date}]</span>
+                                <a ng-if="(activitys.Open)" class="BtnSignUp" ng-href="[{activitys.Href}]">我要報名</a>
+                                <a ng-if="!(activitys.Open)" class="BtnSignUp NoSignUp">已額滿</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="VideoWrapper">
+                    <h6 class="MainTitle">影片<span>花絮</span></h6>
+                    <div class="Video">
+                        <div ng-repeat="videos in VideoData" class="VideoItems">
+                            <iframe class="img-responsive" ng-src="[{videos.VideoURL | trustThisUrl}]"></iframe>
+                            <!--<video class="img-responsive" controls>-->
+                                <!--<source src="[{videos.VideoURL}]" style="background-image: url('[{videos.PreviewIMG}]')" type="video/mp4">-->
+                            <!--</video>-->
+                            <div class="ActivityInfo">
+                                <h6 class="Title">[{videos.Title}]</h6>
+                                <span class="Content">[{(videos.Content) ? videos.Content : "暫無內容"}]</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 SearchByDate">
+                    <h6 class="MainTitle">依日期<span>搜尋</span></h6>
+                    <div class="SearchDateWrapper">
+                        <div id="Calendar" class="Calendar"></div>
+                    </div>
+                </div>
+                <div class="col-md-6 SearchByCity">
+                    <h6 class="MainTitle">依地區<span>搜尋</span></h6>
+                    <div class="SearchCityWrapper">
+                        <div class="jsmaps-wrapper" id="taiwan-map"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
