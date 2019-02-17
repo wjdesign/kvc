@@ -5,6 +5,26 @@
 */
 @charset "UTF-8";
 
+.LoadingWrapper {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+    position: absolute;
+    z-index: 999;
+    display:flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+.LoadingWrapper i {
+    content: '';
+    display: block;
+    width: 5em;
+    height: 5em;
+    background: #fff;
+}
+
 .HeaderWrapper {
     width: 100%;
 }
@@ -93,6 +113,10 @@
     top: 50%;
     margin-top: -10px;
 }
+/*BodyWrapper*/
+.BodyWrapper {
+    overflow: hidden;
+}
 /*Carousel*/
 .BodyWrapper .CarouselWrapper {
     position: relative;
@@ -104,13 +128,74 @@
     width: 100%;
 }
 .BodyWrapper .CarouselWrapper .LoginWrapper {
-    background: #000;
+    background: rgba(0, 0, 0, .5);
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     height: 100%;
     width: 20%;
+    padding: 20px;
+    display: flex;
+}
+.BodyWrapper .CarouselWrapper .LoginWrapper .Company, .BodyWrapper .CarouselWrapper .LoginWrapper .Member {
+    width: 100%;
+    line-height: 60px;
+    box-shadow: 2px 2px 0 rgba(0, 0, 0, .2);
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    transition: .3s;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.BodyWrapper .CarouselWrapper .LoginWrapper .Company {
+    background: #dc6363;
+}
+.BodyWrapper .CarouselWrapper .LoginWrapper .Company:hover {
+    background: #d85555;
+}
+.BodyWrapper .CarouselWrapper .LoginWrapper .Member {
+    background: #e0b251;
+}
+.BodyWrapper .CarouselWrapper .LoginWrapper .Member:hover {
+    background: #ecb94c;
+}
+.BodyWrapper .CarouselWrapper .LoginWrapper .BtnWrapper {
+    width: 100%;
+    margin: auto;
+    flex: 1;
+}
+.BodyWrapper .CarouselWrapper .LoginWrapper .BtnWrapper .IconWrapper {
+    background: #fff;
+    border-top-right-radius: 10em;
+    border-bottom-right-radius: 10em;
+    box-shadow: 2px 0 0 rgba(0, 0, 0, .2);
+    font-size: 20px;
+    flex: 1;
+}
+.BodyWrapper .CarouselWrapper .LoginWrapper .Company .IconWrapper {
+    color: #dc6363;
+}
+.BodyWrapper .CarouselWrapper .LoginWrapper .Member .IconWrapper {
+    color: #e0b251;
+}
+.BodyWrapper .CarouselWrapper .LoginWrapper .BtnWrapper .TextWrapper {
+    flex: 2;
+}
+.BodyWrapper .CarouselWrapper .LoginWrapper .TinyText {
+    color: rgba(255, 255, 255, .6);
+    text-align: center;
+    margin-bottom: 10px;
+    width: 100%;
+    display: block;
+    font-size: 12px;
+}
+.BodyWrapper .CarouselWrapper .LoginWrapper hr {
+    border-top: 1px solid rgba(0, 0, 0, .5);
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
 }
 /*Marquee*/
 .MarqueeWrapper {
@@ -197,7 +282,7 @@
 }
 /*DateSearch*/
 .BodyWrapper .SearchByDate {
-    padding: 0;
+    padding: 10px 0;
 }
 .BodyWrapper .SearchByDate .SearchDateWrapper .Calendar {
     width: 100%;
@@ -214,7 +299,7 @@
     width: 100%;
 }
 .BodyWrapper .SearchByCity {
-    padding: 0;
+    padding: 10px 0;
     position: relative;
 }
 .BodyWrapper .SearchByCity .jsmaps-wrapper {
@@ -222,13 +307,53 @@
 }
 .BodyWrapper .SearchByCity .jsmaps-wrapper .jsmaps {
     width: 100%;
+    overflow: hidden;
 }
 .BodyWrapper .SearchByCity .jsmaps-wrapper .jsmaps svg {
-    left: 50%;
+    left: 50%!important;
     margin-left: -175px;
     width: 350px;
     height: 400px;
 }
 .BodyWrapper .SearchByCity .jsmaps-wrapper .jsmaps-text {
     display: none!important;
+}
+/*Footer*/
+.FooterWrapper {
+    width: 100%;
+    background: #2f2f2f;
+    margin-top: 30px;
+}
+.FooterWrapper .Footer {
+    width: 100%;
+    padding: 20px 0;
+}
+.FooterWrapper .Footer table {
+    color: #fff;
+    width: 100%;
+}
+.FooterWrapper .Footer table tr td.InfoTitle {
+    width: 15%;
+}
+.FooterWrapper .Footer table tr td:not(.InfoTitle) {
+    width: 70%;
+    padding: 5px 10px 5px 30px;
+    text-align: left;
+}
+.FooterWrapper .Footer table tr td a {
+    color: #ffaf03;
+}
+/*Copyright*/
+.CopyrightWrapper {
+    width: 100%;
+    box-shadow: 0 -1px 0 #000;
+    border-top: 1px solid #444;
+    background: #222;
+    color: #fff;
+    line-height: 24px;
+    text-align: center;
+}
+.CopyrightWrapper copyright {
+    font-size: 12px;
+    letter-spacing: 1px;
 }

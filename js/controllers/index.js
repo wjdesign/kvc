@@ -27,6 +27,9 @@
 
     app.controller('IndexCtrl', function ($scope, $http) {
 
+        // Loading
+        $scope.Loading = true;
+
         // 取資料
         $scope.CarouselData = CarouselData;
         $scope.MarqueeData = MarqueeData;
@@ -50,6 +53,7 @@
             $(".Carousel").slick({
                 dots: false,
                 infinite: true,
+                autoplay: true,
                 speed: 500
             });
             // 首頁活動列表圖
@@ -58,7 +62,9 @@
                 infinite: true,
                 speed: 500,
                 slidesToShow: 5,
-                slidesToScroll: 5
+                slidesToScroll: 5,
+                nextArrow: '.ActivityWrapper .next',
+                prevArrow: '.ActivityWrapper .previous'
             });
             // 首頁影片花絮
             $(".Video").slick({
@@ -66,7 +72,9 @@
                 infinite: true,
                 speed: 500,
                 slidesToShow: 4,
-                slidesToScroll: 4
+                slidesToScroll: 4,
+                nextArrow: '.VideoWrapper .next',
+                prevArrow: '.VideoWrapper .previous'
             });
 
             // 日曆
@@ -78,6 +86,7 @@
                     // right: "month,basicWeek,basicDay" // 右邊放置月、周、天
                     right: "next" // 右邊不放
                 },
+                responsive: true,
                 dayNames: ['日','一','二','三','四','五','六'],
                 dayNamesShort: ['日','一','二','三','四','五','六'],
                 monthNames: ['一月','二月','三月','四月','五月','六月','七月','八月','九月','十月','十一月','十二月'],
@@ -108,6 +117,9 @@
             $('#taiwan-map').JSMaps({
                 map: 'taiwan'
             });
+
+            // Ready時關閉loading
+            $scope.Loading = false;
         });
 
         // 首頁跑馬燈公告
@@ -125,6 +137,9 @@
                 var marqueeTimer = setInterval(function () {
                     MarqueeScroll(".Marquee");
                 },3000);
+            } else {
+                clearInterval(marqueeTimer);
+                SetMarqueeTimer();
             }
         }
 
