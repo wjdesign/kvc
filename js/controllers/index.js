@@ -117,8 +117,10 @@
             $('#taiwan-map').JSMaps({
                 map: 'taiwan'
             });
+        });
 
-            // Ready時關閉loading
+        // Ready時關閉loading
+        angular.element(window.document).ready(function () {
             $scope.Loading = false;
         });
 
