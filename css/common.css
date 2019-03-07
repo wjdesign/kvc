@@ -7,10 +7,13 @@
 @charset "UTF-8";
 
 body {
-	font-family: '微軟正黑體',Arial;
+	font-family: 'Microsoft Jhenghei','微軟正黑體',Arial;
 }
 ul {
 	margin: 0;
+}
+label {
+	font-weight: normal;
 }
 
 .clearfix {
@@ -158,4 +161,47 @@ h6.MainTitle span {
 .CarouselCtrl a:hover {
 	background: #83d0c0;
 	color: #fff;
+}
+
+/*Modal垂直置中*/
+.modal {
+	text-align: center;
+	padding: 0!important;
+}
+.modal:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	margin-right: -4px;
+}
+.modal-dialog {
+	display: inline-block;
+	text-align: left;
+	vertical-align: middle;
+}
+
+/*Modal共用*/
+.modal .modal-header {
+	text-align: center;
+	position: relative;
+	background: #5abfce;
+	color: #fff;
+}
+.modal .close {
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	background: #fff;
+	border: 3px solid #5abfce;
+	color: #333;
+	border-radius: 50em;
+	cursor: pointer;
+	opacity: 1;
+	width: 36px;
+	height: 36px;
+	font-size: 18px;
+	line-height: 25px;
+	text-align: center;
+	margin: 0;
 }

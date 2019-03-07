@@ -1,0 +1,109 @@
+/*
+*
+* Create by Wayne(WJDesign) 2019.02.09
+*
+*/
+@charset "UTF-8";
+
+.CompanyLoginWrapper {
+    width: 100%;
+}
+.CompanyLoginWrapper .CompanyLoginImg {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.CompanyLoginWrapper .LoginWrapper {
+    width: 40%;
+    margin: 10px auto 120px;
+}
+.CompanyLoginWrapper .LoginWrapper .Login {
+    margin: 10px auto;
+    padding: 0 10px;
+    display: flex;
+}
+.CompanyLoginWrapper .LoginWrapper .Login .LoginIntranet {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.CompanyLoginWrapper .LoginWrapper .Login .LoginIntranet form {
+    width: 100%;
+}
+.CompanyLoginWrapper .LoginWrapper .Login .LoginIntranet .form-group {
+    margin-bottom: 0;
+}
+.CompanyLoginWrapper .LoginWrapper .Login .LoginIntranet .Remember {
+    vertical-align: middle;
+    font-size: 16px;
+    line-height: 32px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: normal;
+}
+.CompanyLoginWrapper .LoginWrapper .Login .LoginIntranet label .SubTitle {
+    font-size: 12px;
+    color: #aaa;
+    margin-left: -5px;
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -o-transform: scale(0.7);
+    transform: scale(0.7);
+    display: inline-block;
+}
+.CompanyLoginWrapper .LoginWrapper .Login .LoginIntranet .Remember label {
+    font-size: 12px;
+}
+.CompanyLoginWrapper .LoginWrapper .Login .LoginIntranet .Remember input {
+    border-radius: 50%;
+    border: 0;
+    box-shadow: none;
+    display: inline-block;
+    vertical-align: bottom;
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    float: left;
+    margin-right: -5px;
+}
+.CompanyLoginWrapper .LoginWrapper .Login .LoginIntranet .BtnWrapper {
+    display: flex;
+    margin: 10px 0;
+}
+.CompanyLoginWrapper .LoginWrapper .Login .LoginIntranet .BtnWrapper a {
+    flex: 1;
+}
+
+/*RegisterModal - 單位註冊*/
+#RegisterModal .modal-body {
+    max-height: 70vh;
+    overflow-y: scroll;
+}
+.RegisterWrapper {
+    display: flex;
+}
+.RegisterWrapper .IntranetRegister {
+    flex: 1;
+}
+.RegisterWrapper .IntranetRegister form:not(:last-child) {
+    margin-bottom: 40px;
+}
+.RegisterWrapper .IntranetRegister .Tips {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.BtnWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+.BtnWrapper a {
+    flex: 1;
+}
+.BtnWrapper a:first-child {
+    margin-right: 15px;
+}

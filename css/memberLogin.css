@@ -1,0 +1,138 @@
+/*
+*
+* Create by Wayne(WJDesign) 2019.02.09
+*
+*/
+@charset "UTF-8";
+
+.MemberLoginWrapper {
+    width: 100%;
+}
+.MemberLoginWrapper .MemberLoginImg {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.MemberLoginWrapper .LoginWrapper {
+    width: 60%;
+    margin: 10px auto 120px;
+}
+.MemberLoginWrapper .LoginWrapper h6 {
+    left: 30px;
+}
+.MemberLoginWrapper .LoginWrapper .Login {
+    margin: 10px auto;
+    padding: 0 10px;
+    display: flex;
+}
+.MemberLoginWrapper .LoginWrapper .Login .LoginExternal {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #eee;
+}
+.MemberLoginWrapper .LoginWrapper .Login .LoginExternal .Tips {
+    width: 80%;
+}
+.MemberLoginWrapper .LoginWrapper .Login .LoginExternal a {
+    width: 80%;
+    line-height: 30px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.MemberLoginWrapper .LoginWrapper .Login .LoginIntranet {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.MemberLoginWrapper .LoginWrapper .Login .LoginIntranet .Tips {
+    width: 85%;
+}
+.MemberLoginWrapper .LoginWrapper .Login .LoginIntranet form {
+    width: 85%;
+}
+.MemberLoginWrapper .LoginWrapper .Login .LoginIntranet .form-group {
+    margin-bottom: 0;
+}
+.MemberLoginWrapper .LoginWrapper .Login .LoginIntranet .Remember,
+.RegisterWrapper .IntranetRegister form .Agree {
+    vertical-align: middle;
+    font-size: 16px;
+    line-height: 32px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: normal;
+}
+.MemberLoginWrapper .LoginWrapper .Login .LoginIntranet label .SubTitle {
+    font-size: 12px;
+    color: #aaa;
+    margin-left: -5px;
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -o-transform: scale(0.7);
+    transform: scale(0.7);
+    display: inline-block;
+}
+.MemberLoginWrapper .LoginWrapper .Login .LoginIntranet .Remember label {
+    font-size: 12px;
+}
+.MemberLoginWrapper .LoginWrapper .Login .LoginIntranet .Remember input,
+.RegisterWrapper .IntranetRegister form .Agree input {
+    border-radius: 50%;
+    border: 0;
+    box-shadow: none;
+    display: inline-block;
+    vertical-align: bottom;
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    float: left;
+    margin-right: -5px;
+}
+.MemberLoginWrapper .LoginWrapper .Login .LoginIntranet .BtnWrapper {
+    display: flex;
+    margin: 10px 0;
+}
+.MemberLoginWrapper .LoginWrapper .Login .LoginIntranet .BtnWrapper a {
+    flex: 1;
+}
+
+/*RegisterModal - 會員註冊*/
+#RegisterModal .modal-body {
+    max-height: 70vh;
+    overflow-y: scroll;
+}
+.RegisterWrapper {
+    display: flex;
+}
+.RegisterWrapper .ExternalRegister {
+    flex: 1;
+}
+.RegisterWrapper .ExternalRegister a {
+    width: 85%;
+    line-height: 36px;
+    margin-top: 8rem;
+}
+.RegisterWrapper .IntranetRegister {
+    flex: 1;
+}
+.RegisterWrapper .IntranetRegister form .Agree {
+    font-size: 14px;
+    margin: -5px 0 0;
+}
+.BtnWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+.BtnWrapper a {
+    flex: 1;
+}
+.BtnWrapper a:first-child {
+    margin-right: 15px;
+}
