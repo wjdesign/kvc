@@ -145,27 +145,28 @@ var VideoData = [
         "Title": "【企鵝不捨‧部落傳愛】",
         "VideoURL": "https://player.vimeo.com/video/191103039",
         "Content": "企鵝娛樂志工隊-【企鵝不捨‧部落傳愛】〈105年度青年志工服務成果網路分享觀摩計畫〉"
-    },{
-        "Title": "「海綿寶寶來寶來」一日英語生活營",
-        "VideoURL": "https://player.vimeo.com/video/191102917",
-        "Content": "文藻山地服務社-「海綿寶寶來寶來」一日英語生活營-〈105年度青年志工服務成果網路分享觀摩計"
-    },{
-        "Title": "發現生命的力量",
-        "VideoURL": "https://player.vimeo.com/video/191102578",
-        "Content": "社團法人台灣信徹蓮池功德會 - 發現生命的力量〈105年度青年志工服務成果網路分享觀摩計畫〉"
-    },{
-        "Title": "飢餓12校園體驗",
-        "VideoURL": "https://player.vimeo.com/video/191102286",
-        "Content": "復華中學-飢餓12校園體驗〈105年度青年志工服務成果網路分享觀摩計畫〉"
-    },{
-        "Title": "愛狗人",
-        "VideoURL": "https://player.vimeo.com/video/191102129",
-        "Content": "台灣愛狗人協會-愛狗人〈105年度青年志工服務成果網路分享觀摩計畫〉"
-    },{
-        "Title": "我與阿公阿嬤的約會時光",
-        "VideoURL": "https://player.vimeo.com/video/191101911",
-        "Content": "高雄醫學大學醫社系社區營造組-我與阿公阿嬤的約會時光〈105年度青年志工服務成果網路分享觀"
     }
+    // ,{
+    //     "Title": "「海綿寶寶來寶來」一日英語生活營",
+    //     "VideoURL": "https://player.vimeo.com/video/191102917",
+    //     "Content": "文藻山地服務社-「海綿寶寶來寶來」一日英語生活營-〈105年度青年志工服務成果網路分享觀摩計"
+    // },{
+    //     "Title": "發現生命的力量",
+    //     "VideoURL": "https://player.vimeo.com/video/191102578",
+    //     "Content": "社團法人台灣信徹蓮池功德會 - 發現生命的力量〈105年度青年志工服務成果網路分享觀摩計畫〉"
+    // },{
+    //     "Title": "飢餓12校園體驗",
+    //     "VideoURL": "https://player.vimeo.com/video/191102286",
+    //     "Content": "復華中學-飢餓12校園體驗〈105年度青年志工服務成果網路分享觀摩計畫〉"
+    // },{
+    //     "Title": "愛狗人",
+    //     "VideoURL": "https://player.vimeo.com/video/191102129",
+    //     "Content": "台灣愛狗人協會-愛狗人〈105年度青年志工服務成果網路分享觀摩計畫〉"
+    // },{
+    //     "Title": "我與阿公阿嬤的約會時光",
+    //     "VideoURL": "https://player.vimeo.com/video/191101911",
+    //     "Content": "高雄醫學大學醫社系社區營造組-我與阿公阿嬤的約會時光〈105年度青年志工服務成果網路分享觀"
+    // }
 ];
 
 var SearchDateData = [
