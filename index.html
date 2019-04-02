@@ -91,17 +91,22 @@
                 <!--登入-->
                 <div class="LoginWrapper">
                     <div class="BtnWrapper">
-                        <a class="Company" href="companyLogin.html">
-                            <div class="IconWrapper"><i class="glyphicon glyphicon-search"></i></div>
-                            <span class="TextWrapper">我要找志工</span>
-                        </a>
-                        <span class="TinyText">透過系統尋找適合的志工夥伴</span>
-                        <hr>
                         <a class="Member" href="memberLogin.html">
-                            <div class="IconWrapper"><i class="glyphicon glyphicon-user"></i></div>
-                            <span class="TextWrapper">我要當志工</span>
+                        <div class="IconWrapper"><i class="glyphicon glyphicon-user"></i></div>
+                        <span class="TextWrapper">我要當志工</span>
                         </a>
                         <span class="TinyText">實際參與志工活動，和我們一起改變世界</span>
+                        <!--<a class="Company" href="companyLogin.html">-->
+                            <!--<div class="IconWrapper"><i class="glyphicon glyphicon-search"></i></div>-->
+                            <!--<span class="TextWrapper">我要找志工</span>-->
+                        <!--</a>-->
+                        <!--<span class="TinyText">透過系統尋找適合的志工夥伴</span>-->
+                        <hr>
+                        <a class="Company">
+                            <div class="IconWrapper"><i class="glyphicon glyphicon-user"></i></div>
+                            <span class="TextWrapper">我要參與訓練課程</span>
+                        </a>
+                        <span class="TinyText">參與訓練課程，並透過系統尋找適合的志工夥伴</span>
                     </div>
                 </div>
             </div>
@@ -115,7 +120,45 @@
                 </div>
             </div>
             <div class="clearfix container">
-                <div class="ActivityWrapper">
+                <div class="col-md-6 ImportantMsgWrapper">
+                    <ul class="nav nav-tabs ImportantMsgTab">
+                        <li class="active"><a href="#MsgCenter" data-toggle="tab">中心訊息</a></li>
+                        <li><a href="#MsgTeam" data-toggle="tab">團隊活動</a></li>
+                        <li><a href="#MsgDownload" data-toggle="tab">檔案下載</a></li>
+                        <li><a href="#MsgRule" data-toggle="tab">法規專區</a></li>
+                    </ul>
+                    <div class="tab-content ImportantMsgContent">
+                        <div id="MsgCenter" class="tab-pane fade in active">
+                            <ul>
+                                <li ng-repeat="(key,value) in ImportantMsgData.MsgCenter | limitTo: 8">
+                                    <a href="[{value.Href}]"><i class="MsgIcon [{value.Type}]"></i>[{value.Content}]</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="MsgTeam" class="tab-pane fade">
+                            <ul>
+                                <li ng-repeat="(key,value) in ImportantMsgData.MsgTeam | limitTo: 8">
+                                    <a href="[{value.Href}]"><i class="MsgIcon [{value.Type}]"></i>[{value.Content}]</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="MsgDownload" class="tab-pane fade">
+                            <ul>
+                                <li ng-repeat="(key,value) in ImportantMsgData.MsgDownload | limitTo: 8">
+                                    <a href="[{value.Href}]"><i class="MsgIcon [{value.Type}]"></i>[{value.Content}]</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="MsgRule" class="tab-pane fade">
+                            <ul>
+                                <li ng-repeat="(key,value) in ImportantMsgData.MsgRule | limitTo: 8">
+                                    <a href="[{value.Href}]"><i class="MsgIcon [{value.Type}]"></i>[{value.Content}]</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 ActivityWrapper">
                     <h6 class="MainTitle">活動<span>列表</span></h6>
                     <div class="CarouselCtrl">
                         <a class="previous"><i class="glyphicon glyphicon-chevron-left"></i></a>
@@ -135,7 +178,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="VideoWrapper">
+                <div class="clearfix VideoWrapper">
                     <h6 class="MainTitle">影片<span>花絮</span></h6>
                     <div class="CarouselCtrl">
                         <a class="previous"><i class="glyphicon glyphicon-chevron-left"></i></a>

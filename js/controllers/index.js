@@ -33,6 +33,7 @@
         // 取資料
         $scope.CarouselData = CarouselData;
         $scope.MarqueeData = MarqueeData;
+        $scope.ImportantMsgData = ImportantMsgData;
         $scope.ActivityData = ActivityData;
         $scope.VideoData = VideoData;
 
@@ -61,8 +62,8 @@
                 dots: false,
                 infinite: true,
                 speed: 500,
-                slidesToShow: 5,
-                slidesToScroll: 5,
+                slidesToShow: 3,
+                slidesToScroll: 1,
                 nextArrow: '.ActivityWrapper .next',
                 prevArrow: '.ActivityWrapper .previous'
             });

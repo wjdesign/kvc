@@ -54,6 +54,169 @@ var MarqueeData = [
     }
 ];
 
+var ImportantMsgData = {
+    "MsgCenter": [
+        {
+            "Content": "玩具愛分享 大家趣服務 徵求一日玩具新生志工",
+            "Type": "news",
+            "Href": "#"
+        }, {
+            "Content": "2018萬聖不搗蛋來抓熊×親子公益嘉年華活動",
+            "Type": "news",
+            "Href": "#"
+        }, {
+            "Content": "如何運用FB直播 增加活動曝光率-企業志工培力坊 高雄",
+            "Type": "news",
+            "Href": "#"
+        }, {
+            "Content": "幸福婚禮進行曲 婚禮迎娶面面俱到-志工培力坊",
+            "Type": "news",
+            "Href": "#"
+        }, {
+            "Content": "公民記者採訪編輯入門班 志工招募中 歡迎各界好手加入",
+            "Type": "news",
+            "Href": "#"
+        }, {
+            "Content": "婚禮氣球 改變你的想像-高雄志工場",
+            "Type": "news",
+            "Href": "#"
+        }, {
+            "Content": "造型氣球玩創意 讓你三秒變達人-高雄志工場",
+            "Type": "news",
+            "Href": "#"
+        }, {
+            "Content": "玩具愛分享 大家趣服務 徵求一日玩具新生志工",
+            "Type": "news",
+            "Href": "#"
+        }, {
+            "Content": "如何運用FB直播 增加活動曝光率-企業志工培力坊 高雄",
+            "Type": "news",
+            "Href": "#"
+        }
+    ],
+    "MsgTeam": [
+        {
+            "Content": "團隊活動A",
+            "Type": "news",
+            "Href": "#"
+        }, {
+            "Content": "團隊活動B",
+            "Type": "news",
+            "Href": "#"
+        }, {
+            "Content": "團隊活動C",
+            "Type": "news",
+            "Href": "#"
+        }, {
+            "Content": "團隊活動D",
+            "Type": "news",
+            "Href": "#"
+        }, {
+            "Content": "團隊活動E",
+            "Type": "news",
+            "Href": "#"
+        }, {
+            "Content": "團隊活動F",
+            "Type": "news",
+            "Href": "#"
+        }, {
+            "Content": "團隊活動G",
+            "Type": "news",
+            "Href": "#"
+        }, {
+            "Content": "團隊活動H",
+            "Type": "news",
+            "Href": "#"
+        }, {
+            "Content": "團隊活動I",
+            "Type": "news",
+            "Href": "#"
+        }, {
+            "Content": "團隊活動J",
+            "Type": "news",
+            "Href": "#"
+        }
+    ],
+    "MsgDownload": [
+        {
+            "Content": "檔案下載A",
+            "Type": "news",
+            "Href": "#"
+        }, {
+            "Content": "檔案下載B",
+            "Type": "news",
+            "Href": "#"
+        }, {
+            "Content": "檔案下載C",
+            "Type": "news",
+            "Href": "#"
+        }, {
+            "Content": "檔案下載D",
+            "Type": "news",
+            "Href": "#"
+        }, {
+            "Content": "檔案下載E",
+            "Type": "news",
+            "Href": "#"
+        }, {
+            "Content": "檔案下載F",
+            "Type": "news",
+            "Href": "#"
+        }, {
+            "Content": "檔案下載G",
+            "Type": "news",
+            "Href": "#"
+        }
+    ],
+    "MsgRule": [
+        {
+            "Content": "法規專區A",
+            "Type": "news",
+            "Href": "#"
+        }, {
+            "Content": "法規專區B",
+            "Type": "news",
+            "Href": "#"
+        }, {
+            "Content": "法規專區C",
+            "Type": "news",
+            "Href": "#"
+        }, {
+            "Content": "法規專區D",
+            "Type": "news",
+            "Href": "#"
+        }, {
+            "Content": "法規專區E",
+            "Type": "news",
+            "Href": "#"
+        }, {
+            "Content": "法規專區F",
+            "Type": "news",
+            "Href": "#"
+        }, {
+            "Content": "法規專區G",
+            "Type": "news",
+            "Href": "#"
+        }, {
+            "Content": "法規專區H",
+            "Type": "news",
+            "Href": "#"
+        }, {
+            "Content": "法規專區I",
+            "Type": "news",
+            "Href": "#"
+        }, {
+            "Content": "法規專區J",
+            "Type": "news",
+            "Href": "#"
+        }, {
+            "Content": "法規專區K",
+            "Type": "news",
+            "Href": "#"
+        }
+    ]
+};
+
 // 活動列表
 var ActivityData = [
     {
@@ -174,35 +337,35 @@ var SearchDateData = [
         title: "2018高雄婦女節-女人女能",
         content: "2018高雄婦女節-女人女能",
         url: "http://google.com/",
-        start: "2019-02-01",
+        start: "2019-04-01",
         end: ""
     },
     {
         title: "左營高中志工團-Produce 8",
         content: "must be 左營高中志工團-Produce 8〈105年度青年志工服務成果網路分享觀摩計畫〉",
         url: "http://google.com/",
-        start: "2019-02-10",
+        start: "2019-04-10",
         end: ""
     },
     {
         title: "搶救「3C魯蛇銀髮族」大作戰",
         content: "輔英科技大學學務處服務學習中心-搶救「3C魯蛇銀髮族」大作戰〈105年度青年志工服務成果網路",
         url: "http://google.com/",
-        start: "2019-02-07",
-        end: "2019-02-09"
+        start: "2019-04-07",
+        end: "2019-04-09"
     },
     {
         title: "仲夏之旅",
         content: "正修科大環保先鋒隊-仲夏之旅〈105年度青年志工服務成果網路分享觀摩計畫〉",
         url: "http://google.com/",
-        start: "2019-02-12",
+        start: "2019-04-12",
         end: ""
     },
     {
         title: "【企鵝不捨‧部落傳愛】",
         content: "企鵝娛樂志工隊-【企鵝不捨‧部落傳愛】〈105年度青年志工服務成果網路分享觀摩計畫〉",
         url: "http://google.com/",
-        start: "2019-03-01",
+        start: "2019-05-01",
         end: ""
     }
 ];

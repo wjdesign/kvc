@@ -216,9 +216,55 @@
     line-height: 40px;
     color: #ffaf03;
 }
+/*ImportantMessage*/
+.BodyWrapper .ImportantMsgWrapper {
+    width: 50%;
+    padding: 10px 0;
+}
+.BodyWrapper .ImportantMsgTab li a {
+    color: #ccc;
+}
+.BodyWrapper .ImportantMsgTab li.active a {
+    color: #666;
+}
+.BodyWrapper .ImportantMsgContent {
+    padding-top: 10px;
+}
+.BodyWrapper .ImportantMsgContent ul li a {
+    display: block;
+    width: 100%;
+    line-height: 36px;
+    position: relative;
+    padding-left: 65px;
+    color: #666;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.BodyWrapper .ImportantMsgContent ul li a .MsgIcon {
+    background: #d23c3c;
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    position: absolute;
+    padding: 0 5px;
+    left: 0;
+    top: 5px;
+}
+.BodyWrapper .ImportantMsgContent ul li a .MsgIcon.news:before {
+    text-align: center;
+    display: block;
+    line-height: 24px;
+    font-size: 12px;
+}
+.BodyWrapper .ImportantMsgContent ul li a .MsgIcon.news:before {
+    content: '最新消息';
+}
+
 /*Activity*/
 .BodyWrapper .ActivityWrapper {
-    width: 100%;
+    width: 50%;
     padding: 10px 0;
 }
 .BodyWrapper .ActivityWrapper .ActivityItems {
