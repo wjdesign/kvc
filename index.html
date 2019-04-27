@@ -73,8 +73,9 @@
                         <li><a href="">下載專區</a></li>
                         <li><a href="">志願服務智庫</a></li>
                         <li><a href="">法規專區</a></li>
-                        <li><a href="">單位查詢</a></li>
+                        <!--<li><a href="">單位查詢</a></li>-->
                         <li><a href="">互動分享</a></li>
+                        <li><a href="">運用單位登入</a></li>
                     </ul>
                 </div>
             </div>
@@ -112,10 +113,22 @@
             </div>
             <div class="MarqueeWrapper">
                 <div class="container">
-                    <div class="Marquee">
-                        <ul>
-                            <li ng-repeat="marquees in MarqueeData"><a ng-href="[{marquees.Href}]"><i class="glyphicon glyphicon-volume-up"></i>最新消息：<span class="name">[{marquees.Name}]</span>[{marquees.Content}]</a></li>
-                        </ul>
+                    <div class="DisplayFlex AnnounceWrapper">
+                        <div class="Marquee">
+                            <ul>
+                                <li ng-repeat="marquees in MarqueeData">
+                                    <a ng-href="[{marquees.Href}]">
+                                        <i class="glyphicon glyphicon-volume-up"></i>
+                                        最新消息：<span class="name">[{marquees.Name}]</span>
+                                        [{marquees.Content}]
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="LiveCircle">
+                            <a class="Link_Fb" href="https://www.facebook.com/khvolunteercenter/" target="_blank"></a>
+                            <a class="Link_Line" href=""></a>
+                        </div>
                     </div>
                 </div>
             </div>

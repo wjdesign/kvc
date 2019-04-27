@@ -203,6 +203,15 @@
     overflow: hidden;
     background: #2f2f2f;
 }
+.MarqueeWrapper .AnnounceWrapper {
+    width: 100%;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+.MarqueeWrapper .Marquee {
+    display: flex;
+    flex: 0 0 85%;
+}
 .MarqueeWrapper .Marquee ul li a {
     text-decoration: none;
     line-height: 40px;
@@ -215,6 +224,32 @@
     text-decoration: underline;
     line-height: 40px;
     color: #ffaf03;
+}
+.MarqueeWrapper .LiveCircle {
+    flex: 0 0 15%;
+    text-align: right;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.MarqueeWrapper .LiveCircle a {
+    width: 30px;
+    height: 40px;
+    margin-left: 5px;
+    transition: .3s;
+}
+.MarqueeWrapper .LiveCircle .Link_Fb {
+    background: url(../images/fb.svg) no-repeat center center;
+}
+.MarqueeWrapper .LiveCircle .Link_Line {
+    background: url(../images/line.svg) no-repeat center center;
+}
+.MarqueeWrapper .LiveCircle .Link_Fb:hover {
+    background: url(../images/fb_active.svg) no-repeat center center;
+}
+.MarqueeWrapper .LiveCircle .Link_Line:hover {
+    background: url(../images/line_active.svg) no-repeat center center;
 }
 /*ImportantMessage*/
 .BodyWrapper .ImportantMsgWrapper {
