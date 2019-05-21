@@ -25,7 +25,7 @@
         };
     });
 
-    app.controller('IndexCtrl', function ($scope, $http) {
+    app.controller('IndexCtrl', function ($scope, $http, $timeout) {
 
         // Loading
         $scope.Loading = true;
@@ -49,7 +49,7 @@
 		});
 
         // document ready時執行的js套件
-        angular.element(document).ready(function () {
+        angular.element(document.body).ready(function () {
             // 首頁輪播圖
             $(".Carousel").slick({
                 dots: false,
@@ -118,9 +118,6 @@
             $('#taiwan-map').JSMaps({
                 map: 'taiwan'
             });
-
-            // Ready時關閉loading
-            $scope.Loading = false;
         });
 
         // 首頁跑馬燈公告
@@ -147,6 +144,11 @@
         // Init function
         function init() {
             SetMarqueeTimer();      // 跑馬燈
+            // Ready時關閉loading
+            $timeout(function(){
+                $scope.Loading = false;
+            }, 1000);
+
         }
         init();
 

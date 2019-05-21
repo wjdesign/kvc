@@ -136,3 +136,99 @@
 .BtnWrapper a:first-child {
     margin-right: 15px;
 }
+
+/*Match查詢工作*/
+.MatchWrapper {
+    width: 100%;
+}
+.MatchWrapper .Match {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.MatchWrapper .Match .form-group {
+    align-items: center;
+}
+.MatchWrapper .Match .searchSelect {
+    display: flex;
+    flex: 0 0 50%;
+    padding: 0 10px 10px 0;
+}
+.MatchWrapper .Match .searchInput {
+    display: flex;
+    flex: 0 0 100%;
+    padding: 0 10px 10px 0;
+}
+.MatchWrapper .Match label {
+    margin-bottom: 0;
+}
+.MatchWrapper .Match select,
+.MatchWrapper .Match input {
+    flex: 1;
+}
+.MatchWrapper .MatchResultWrapper {
+    width: 100%;
+    display: flex;
+}
+.MatchWrapper .MatchResultWrapper {
+    width: 100%;
+    display: flex;
+}
+
+/*MatchResult*/
+.BodyWrapper .MatchWrapper .MatchResult {
+    display: flex;
+    flex-wrap: wrap;
+}
+.BodyWrapper .MatchWrapper .MatchResultItems {
+    padding: 10px;
+    flex: 0 0 25%;
+}
+.BodyWrapper .MatchWrapper .MatchResultItems .MatchResultInfo {
+    width: 100%;
+}
+.BodyWrapper .MatchWrapper .MatchResultItems .MatchResultInfo .Title {
+    margin: 0 auto;
+    color: #fa8888;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 10px 0 5px;
+}
+.BodyWrapper .MatchWrapper .MatchResultItems .MatchResultInfo .BtnSignUp.NoSignUp {
+    background: #aaa;
+}
+.BodyWrapper .MatchWrapper .MatchResultItems .MatchResultInfo .BtnSignUp {
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px 5px;
+    text-align: center;
+    text-decoration: none;
+    background: #83d0c0;
+    color: #fff;
+    margin-top: 10px;
+}
+.BodyWrapper .MatchWrapper .MatchResultItems .MatchResultInfo i {
+    color: #fff;
+    padding: 1px;
+    text-align: center;
+    border-radius: 50em;
+    font-size: 12px;
+    margin-right: 5px;
+}
+.BodyWrapper .MatchWrapper .MatchResultItems .MatchResultInfo .City {
+    color: #6ebfac;
+}
+.BodyWrapper .MatchWrapper .MatchResultItems .MatchResultInfo .Date {
+    color: #a797a1;
+}
+.BodyWrapper .MatchWrapper .MatchResultItems .MatchResultInfo .Content {
+    color: #67a3e2;
+    width: 100%;
+}
+.BodyWrapper .MatchWrapper .MatchResultItems .MatchResultInfo .City i {
+    background: #6ebfac;
+}
+.BodyWrapper .MatchWrapper .MatchResultItems .MatchResultInfo .Date i {
+    background: #a797a1;
+}

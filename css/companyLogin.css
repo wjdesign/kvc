@@ -12,6 +12,63 @@
     width: 100%;
     margin-bottom: 10px;
 }
+.CompanyLoginWrapper .CompanyMenuWrapper .CompanyMenu {
+    display: flex;
+    margin-bottom: 10px;
+}
+.CompanyLoginWrapper .CompanyMenuWrapper .CompanyMenu li {
+    flex: 1;
+}
+.CompanyLoginWrapper .CompanyMenuWrapper .CompanyMenu li a img {
+    padding: 5px;
+}
+.CompanyLoginWrapper .CompanyMenuWrapper .CompanyMenu li a {
+    width: 100%;
+}
+
+/*LastestNews*/
+.LastestNewsWrapper .LastestNews ul li {
+    width: 25%;
+    float: left;
+    padding: 10px;
+}
+.LastestNewsWrapper .LastestNews ul li a {
+    width: 100%;
+    height: 160px;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    transition: .3s;
+}
+.LastestNewsWrapper .LastestNews ul li a:hover {
+    filter: brightness(110%);
+}
+.LastestNewsWrapper .LastestNews ul li .FileDownload {
+    background: url(../images/CompanyLogin/icon1.jpg) no-repeat center center;
+    background-size: cover;
+}
+.LastestNewsWrapper .LastestNews ul li .RuleMsg {
+    background: url(../images/CompanyLogin/icon2.jpg) no-repeat center center;
+    background-size: cover;
+}
+.LastestNewsWrapper .LastestNews ul li .InnoceMsg {
+    background: url(../images/CompanyLogin/icon3.jpg) no-repeat center center;
+    background-size: cover;
+}
+.LastestNewsWrapper .LastestNews ul li a span {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    background: rgba(0,0,0,.5);
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+/*Login*/
 .CompanyLoginWrapper .LoginWrapper {
     width: 40%;
     margin: 10px auto 120px;

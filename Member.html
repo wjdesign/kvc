@@ -19,6 +19,7 @@
         <script src="js/moment.min.js"></script>
 
         <script src="js/publicfunction.js"></script>
+        <script src="data.js"></script>
 
         <script src="js/controllers/Member.js"></script>
 
@@ -31,7 +32,7 @@
         </div>
         <header class="HeaderWrapper">
             <div class="clearfix container">
-                <a class="Logo"><img class="img-responsive" src="./images/logo.png" alt=""></a>
+                <a class="Logo" href="index.html"><img class="img-responsive" src="./images/logo.png" alt=""></a>
                 <div class="MenuWrapper">
                     <ul class="SubMenu">
                         <li>
@@ -63,7 +64,7 @@
                         <li><a href="">法規專區</a></li>
                         <!--<li><a href="">單位查詢</a></li>-->
                         <li><a href="">互動分享</a></li>
-                        <li><a href="companyLogin.html">運用單位</a></li>
+                        <li><a href="Company.html">運用單位</a></li>
                     </ul>
                 </div>
             </div>
@@ -74,38 +75,48 @@
                 <div class="MemberLoginImg">
                     <img class="img-responsive" src="images/MemberLoginImg.jpg" alt="">
                 </div>
-                <div class="container">
-                    <div class="LoginWrapper">
-                        <h6 class="MainTitle">會員<span>登入</span></h6>
-                        <div class="Login">
-                            <div class="LoginExternal">
-                                <p class="Tips">．使用您的社群帳號登入</p>
-                                <a class="btn btn-primary">Facebook登入</a>
+                <div class="MatchWrapper">
+                    <div class="container">
+                        <h6 class="MainTitle">查詢<span>工作</span></h6>
+                        <form class="clearfix form-group col-xs-12 form-inline Match">
+                            <div class="form-group searchSelect">
+                                <label>依地區：</label>
+                                <select class="form-control" ng-model="SelectArea" ng-change="ChangeSelectArea(SelectArea)">
+                                    <option disabled>請選擇</option>
+                                    <option ng-repeat="area in KaohSiungArea" value="[{area}]">[{area}]</option>
+                                </select>
                             </div>
-                            <div class="LoginIntranet">
-                                <p class="Tips">．使用本站帳號登入</p>
-                                <form>
-                                    <div class="form-group">
-                                        <label>帳號<span class="SubTitle">ACCOUNT</span></label>
-                                        <input type="text" class="form-control" required>
+                            <div class="form-group searchSelect">
+                                <label>依類屬：</label>
+                                <select class="form-control">
+                                    <option selected disabled>請選擇</option>
+                                    <option>AAA</option>
+                                    <option>BBB</option>
+                                    <option>CCC</option>
+                                </select>
+                            </div>
+                            <div class="form-group searchInput">
+                                <label>依單位：</label>
+                                <input type="text" class="form-control" placeholder="請輸入內容關鍵字">
+                            </div>
+                            <div class="form-group col-xs-12 text-center">
+                                <button type="reset" class="btn btn-default">清除</button>
+                                <button type="submit" class="btn btn-info">查詢</button>
+                            </div>
+                        </form>
+                        <div class="MatchResultWrapper">
+                            <div class="MatchResult">
+                                <div ng-repeat="matchresults in MatchResultData" class="MatchResultItems">
+                                    <img class="img-responsive" ng-src="images/Activity/[{matchresults.Image}]" alt="">
+                                    <div class="MatchResultInfo">
+                                        <h6 class="Title">[{matchresults.Title}]</h6>
+                                        <span class="Content">[{matchresults.Content}]</span>
+                                        <div class="City"><i class="glyphicon glyphicon-map-marker"></i>[{matchresults.City}]</div>
+                                        <span class="Date"><i class="glyphicon glyphicon-calendar"></i>[{matchresults.Date}]</span>
+                                        <a ng-if="(matchresults.Open)" class="BtnSignUp" ng-href="[{matchresults.Href}]">我要報名</a>
+                                        <a ng-if="!(matchresults.Open)" class="BtnSignUp NoSignUp">已額滿</a>
                                     </div>
-                                    <div class="clearfix form-group Remember">
-                                        <label for="rememberAccount">
-                                            <input id="rememberAccount" type="checkbox" class="form-control">記住帳號
-                                        </label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label>密碼<span class="SubTitle">PASSWORD</span></label>
-                                        <input type="password" class="form-control" required>
-                                    </div>
-                                    <div class="BtnWrapper">
-                                        <a class="btn btn-warning BtnForget" ng-click="RegisterStep = 1" data-toggle="modal" data-target="#RegisterModal">會員註冊</a>
-                                        <a class="btn BtnForget">忘記密碼?</a>
-                                    </div>
-                                    <div class="form-group">
-                                        <button class="btn btn-block btn-primary BtnLogin" type="submit">登入</button>
-                                    </div>
-                                </form>
+                                </div>
                             </div>
                         </div>
                     </div>

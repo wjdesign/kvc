@@ -369,3 +369,71 @@ var SearchDateData = [
         end: ""
     }
 ];
+
+var MatchResultData = [
+    {
+        "Image":"activity01.jpg",
+        "Title": "活動名稱001",
+        "Content": "活動大綱001",
+        "City": "高雄市",
+        "Date": "2018-12-03",
+        "Href": "#",
+        "Open": true
+    },{
+        "Image":"activity02.jpg",
+        "Title": "活動名稱002",
+        "Content": "活動大綱002",
+        "City": "高雄市",
+        "Date": "2018-10-12",
+        "Href": "#",
+        "Open": true
+    },{
+        "Image":"activity03.jpg",
+        "Title": "活動名稱003",
+        "Content": "活動大綱003",
+        "City": "高雄市",
+        "Date": "2018-02-14",
+        "Href": "#",
+        "Open": true
+    },{
+        "Image":"activity04.jpg",
+        "Title": "活動名稱004",
+        "Content": "活動大綱004",
+        "City": "高雄市",
+        "Date": "2018-06-14",
+        "Href": "#",
+        "Open": false
+    },{
+        "Image":"activity05.jpg",
+        "Title": "活動名稱005",
+        "Content": "活動大綱005",
+        "City": "高雄市",
+        "Date": "2018-08-12",
+        "Href": "#",
+        "Open": true
+    },{
+        "Image":"activity06.jpg",
+        "Title": "活動名稱006",
+        "Content": "活動大綱006",
+        "City": "高雄市",
+        "Date": "2018-10-12",
+        "Href": "#",
+        "Open": true
+    },{
+        "Image":"activity07.jpg",
+        "Title": "活動名稱007",
+        "Content": "活動大綱007",
+        "City": "高雄市",
+        "Date": "2018-02-14",
+        "Href": "#",
+        "Open": false
+    },{
+        "Image":"activity08.jpg",
+        "Title": "活動名稱008",
+        "Content": "活動大綱008",
+        "City": "高雄市",
+        "Date": "2018-06-14",
+        "Href": "#",
+        "Open": true
+    }
+];

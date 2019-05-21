@@ -31,6 +31,7 @@
 .HeaderWrapper .Logo {
     width: 220px;
     margin-top: 20px;
+    margin-bottom: 10px;
     cursor: pointer;
     display: block;
     float: left;
@@ -399,11 +400,46 @@
 .BodyWrapper .SearchByCity .jsmaps-wrapper .jsmaps-text {
     display: none!important;
 }
+/*FooterLink*/
+.FooterLink {
+    width: 100%;
+    margin-top: 30px;
+    padding: 20px 0;
+    background: #444;
+}
+.FooterLink .MainTitle {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.FooterLink .MainTitle > li {
+    flex: 1;
+    text-align: center;
+    padding: 0 20px;
+}
+.FooterLink .MainTitle > li h6 {
+    border-bottom: 1px solid #696969;
+    color: #fff;
+    align-items: center;
+    flex: 1;
+    font-size: 14px;
+    height: 30px;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 10px;
+}
+.FooterLink .MainTitle > li .SubTitle li a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 12px;
+    transition: .3s;
+}
+.FooterLink .MainTitle > li .SubTitle li:hover a {
+    color: #ffaf03;
+}
 /*Footer*/
 .FooterWrapper {
     width: 100%;
     background: #2f2f2f;
-    margin-top: 30px;
 }
 .FooterWrapper .Footer {
     width: 100%;

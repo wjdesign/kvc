@@ -36,14 +36,14 @@
 
     </head>
     <body ng-app="myApp" ng-controller="IndexCtrl" ng-class="{true:'OverFlowHidden'}[(Loading)]">
-        <div ng-show="(Loading)" class="LoadingWrapper">
+        <div ng-if="(Loading)" class="LoadingWrapper">
             <div class="Loading">
                 <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
             </div>
         </div>
         <header class="HeaderWrapper">
             <div class="clearfix container">
-                <a class="Logo"><img class="img-responsive" src="./images/logo.png" alt=""></a>
+                <a class="Logo" href="index.html"><img class="img-responsive" src="./images/logo.png" alt=""></a>
                 <div class="MenuWrapper">
                     <ul class="SubMenu">
                         <li>
@@ -75,7 +75,7 @@
                         <li><a href="">法規專區</a></li>
                         <!--<li><a href="">單位查詢</a></li>-->
                         <li><a href="">互動分享</a></li>
-                        <li><a href="">運用單位登入</a></li>
+                        <li><a href="Company.html">運用單位</a></li>
                     </ul>
                 </div>
             </div>
@@ -92,11 +92,11 @@
                 <!--登入-->
                 <div class="LoginWrapper">
                     <div class="BtnWrapper">
-                        <a class="Member" href="memberLogin.html">
+                        <a class="Member" href="Member.html">
                         <div class="IconWrapper"><i class="glyphicon glyphicon-user"></i></div>
                         <span class="TextWrapper">我要當志工</span>
                         </a>
-                        <span class="TinyText">實際參與志工活動，和我們一起改變世界</span>
+                        <!--<span class="TinyText">實際參與志工活動，和我們一起改變世界</span>-->
                         <!--<a class="Company" href="companyLogin.html">-->
                             <!--<div class="IconWrapper"><i class="glyphicon glyphicon-search"></i></div>-->
                             <!--<span class="TextWrapper">我要找志工</span>-->
@@ -107,7 +107,7 @@
                             <div class="IconWrapper"><i class="glyphicon glyphicon-user"></i></div>
                             <span class="TextWrapper">我要參與訓練課程</span>
                         </a>
-                        <span class="TinyText">參與訓練課程，並透過系統尋找適合的志工夥伴</span>
+                        <!--<span class="TinyText">參與訓練課程，並透過系統尋找適合的志工夥伴</span>-->
                     </div>
                 </div>
             </div>
@@ -220,6 +220,49 @@
                     </div>
                 </div>
             </div>
+
+            <div class="FooterLink">
+                <ul class="MainTitle">
+                    <li>
+                        <h6>關於我們</h6>
+                        <ul class="SubTitle">
+                            <li><a href="">志工中心介紹</a></li>
+                            <li><a href="">指導單位</a></li>
+                            <li><a href="">承辦單位</a></li>
+                            <li><a href="">年度營運策略</a></li>
+                            <li><a href="">交通資訊</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h6>法規專區</h6>
+                        <ul class="SubTitle">
+                            <li><a href="">中央政府</a></li>
+                            <li><a href="">地方政府</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h6>互動分享</h6>
+                        <ul class="SubTitle">
+                            <li><a href="">文章分享</a></li>
+                            <li><a href="">留言討論</a></li>
+                            <li><a href="">聯絡我們</a></li>
+                            <li><a href="">電子報</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h6>會員專區</h6>
+                        <ul class="SubTitle">
+                            <li><a href="">我的履歷</a></li>
+                            <li><a href="">媒合紀錄</a></li>
+                            <li><a href="">課程紀錄</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h6>高雄市志願<br/>服務類別簡介</h6>
+                    </li>
+                </ul>
+            </div>
+
             <footer class="FooterWrapper">
                 <div class="container">
                     <div class="Footer">
@@ -235,7 +278,11 @@
                                 </tr>
                                 <tr>
                                     <td class="InfoTitle">高雄市政府社會局</td>
-                                    <td>電話：(07)725-6343　傳真：(07)727-7701　地址：802 高雄市苓雅區凱旋二路5號　Email信箱：<a href="khh.volunteer@gmail.com">khh.volunteer@gmail.com</a></td>
+                                    <td>電話：(07)725-6343　傳真：(07)727-7701　地址：802 高雄市苓雅區凱旋二路5號</td>
+                                </tr>
+                                <tr>
+                                    <td class="InfoTitle"></td>
+                                    <td>Email信箱：<a href="khh.volunteer@gmail.com">khh.volunteer@gmail.com</a></td>
                                 </tr>
                                 <tr>
                                     <td class="InfoTitle">志願服務資源中心</td>
