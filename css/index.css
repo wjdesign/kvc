@@ -377,29 +377,36 @@
     text-align: center;
 }
 /*CitySearch*/
+.BodyWrapper .SearchByCity {
+    padding: 10px;
+}
 .BodyWrapper .SearchCityWrapper {
     width: 100%;
 }
-.BodyWrapper .SearchByCity {
-    padding: 10px 0;
-    position: relative;
-}
-.BodyWrapper .SearchByCity .jsmaps-wrapper {
+.BodyWrapper .SearchCityWrapper iframe {
     width: 100%;
+    padding-top: 15px;
 }
-.BodyWrapper .SearchByCity .jsmaps-wrapper .jsmaps {
-    width: 100%;
-    overflow: hidden;
-}
-.BodyWrapper .SearchByCity .jsmaps-wrapper .jsmaps svg {
-    left: 50%!important;
-    margin-left: -175px;
-    width: 350px;
-    height: 400px;
-}
-.BodyWrapper .SearchByCity .jsmaps-wrapper .jsmaps-text {
-    display: none!important;
-}
+/*.BodyWrapper .SearchByCity {*/
+    /*padding: 10px 0;*/
+    /*position: relative;*/
+/*}*/
+/*.BodyWrapper .SearchByCity .jsmaps-wrapper {*/
+    /*width: 100%;*/
+/*}*/
+/*.BodyWrapper .SearchByCity .jsmaps-wrapper .jsmaps {*/
+    /*width: 100%;*/
+    /*overflow: hidden;*/
+/*}*/
+/*.BodyWrapper .SearchByCity .jsmaps-wrapper .jsmaps svg {*/
+    /*left: 50%!important;*/
+    /*margin-left: -175px;*/
+    /*width: 350px;*/
+    /*height: 400px;*/
+/*}*/
+/*.BodyWrapper .SearchByCity .jsmaps-wrapper .jsmaps-text {*/
+    /*display: none!important;*/
+/*}*/
 /*FooterLink*/
 .FooterLink {
     width: 100%;

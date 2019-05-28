@@ -437,3 +437,86 @@ var MatchResultData = [
         "Open": true
     }
 ];
+
+var TraningData = [
+    {
+        title: "2018高雄婦女節-女人女能",
+        content: "2018高雄婦女節-女人女能",
+        url: "http://google.com/",
+        organizer: "高雄志工局",
+        start: "2019-04-01",
+        end: "2019-04-30"
+    },
+    {
+        title: "左營高中志工團-Produce 8",
+        content: "must be 左營高中志工團-Produce 8〈105年度青年志工服務成果網路分享觀摩計畫〉",
+        url: "http://google.com/",
+        organizer: "高雄志工局",
+        start: "2019-04-10",
+        end: "2019-04-30"
+    },
+    {
+        title: "搶救「3C魯蛇銀髮族」大作戰",
+        content: "輔英科技大學學務處服務學習中心-搶救「3C魯蛇銀髮族」大作戰〈105年度青年志工服務成果網路",
+        url: "http://google.com/",
+        organizer: "高雄志工局",
+        start: "2019-04-07",
+        end: "2019-04-17"
+    },
+    {
+        title: "仲夏之旅",
+        content: "正修科大環保先鋒隊-仲夏之旅〈105年度青年志工服務成果網路分享觀摩計畫〉",
+        url: "http://google.com/",
+        organizer: "高雄志工局",
+        start: "2019-04-12",
+        end: "2019-04-30"
+    },
+    {
+        title: "【企鵝不捨‧部落傳愛】",
+        content: "企鵝娛樂志工隊-【企鵝不捨‧部落傳愛】〈105年度青年志工服務成果網路分享觀摩計畫〉",
+        url: "http://google.com/",
+        organizer: "高雄志工局",
+        start: "2019-05-01",
+        end: "2019-05-31"
+    },
+    {
+        title: "2018高雄婦女節-女人女能",
+        content: "2018高雄婦女節-女人女能",
+        url: "http://google.com/",
+        organizer: "高雄志工局",
+        start: "2019-04-01",
+        end: "2019-04-30"
+    },
+    {
+        title: "左營高中志工團-Produce 8",
+        content: "must be 左營高中志工團-Produce 8〈105年度青年志工服務成果網路分享觀摩計畫〉",
+        url: "http://google.com/",
+        organizer: "高雄志工局",
+        start: "2019-04-10",
+        end: "2019-04-30"
+    },
+    {
+        title: "搶救「3C魯蛇銀髮族」大作戰",
+        content: "輔英科技大學學務處服務學習中心-搶救「3C魯蛇銀髮族」大作戰〈105年度青年志工服務成果網路",
+        url: "http://google.com/",
+        organizer: "高雄志工局",
+        start: "2019-04-07",
+        end: "2019-04-17"
+    },
+    {
+        title: "仲夏之旅",
+        content: "正修科大環保先鋒隊-仲夏之旅〈105年度青年志工服務成果網路分享觀摩計畫〉",
+        url: "http://google.com/",
+        organizer: "高雄志工局",
+        start: "2019-04-12",
+        end: "2019-04-30"
+    },
+    {
+        title: "【企鵝不捨‧部落傳愛】",
+        content: "企鵝娛樂志工隊-【企鵝不捨‧部落傳愛】〈105年度青年志工服務成果網路分享觀摩計畫〉",
+        url: "http://google.com/",
+        organizer: "高雄志工局",
+        start: "2019-05-01",
+        end: "2019-05-31"
+    }
+];

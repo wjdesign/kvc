@@ -4,7 +4,9 @@
 *
 */
 @charset "UTF-8";
-
+.form-group {
+    margin-bottom: 0;
+}
 .MemberLoginWrapper {
     width: 100%;
 }
@@ -161,6 +163,8 @@
 }
 .MatchWrapper .Match label {
     margin-bottom: 0;
+    width: 8rem;
+    text-align: center;
 }
 .MatchWrapper .Match select,
 .MatchWrapper .Match input {
@@ -231,4 +235,13 @@
 }
 .BodyWrapper .MatchWrapper .MatchResultItems .MatchResultInfo .Date i {
     background: #a797a1;
+}
+
+/*Match Map*/
+.MatchMapWrapper {
+    width: 100%;
+    padding: 10px;
+}
+.MatchMapWrapper iframe {
+    width: 100%;
 }
