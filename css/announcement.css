@@ -1,0 +1,72 @@
+/*
+*
+* Create by Wayne(WJDesign) 2019.02.09
+*
+*/
+@charset "UTF-8";
+
+.AnnounceWrapper {
+    display: flex;
+    width: 100%;
+    padding-top: 20px;
+}
+.AnnounceWrapper .AnnounceTab {
+    display: flex;
+    flex: 0 0 150px;
+    flex-direction: column;
+    margin-right: 20px;
+}
+.AnnounceWrapper .AnnounceContent {
+}
+.AnnounceWrapper .AnnounceContent .AnnounceContentList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.AnnounceWrapper .AnnounceContent .AnnounceContentList li {
+    padding: 10px 20px;
+    line-height: 22px;
+    background: #f5f5f5;
+    border-bottom: 1px dotted #999;
+}
+.AnnounceWrapper .AnnounceContent .AnnounceContentList li:first-child {
+    border-top: 3px solid #eee;
+}
+.AnnounceWrapper .AnnounceContent .AnnounceContentList li:nth-child(odd) {
+    background: #fff;
+}
+.AnnounceWrapper .AnnounceContent .AnnounceContentList li .title {
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    display: block;
+    color: #ff9b3c;
+    position: relative;
+    text-decoration: none;
+}
+@keyframes SignFocus {
+    0% {
+        color: #fff;
+    }
+    50% {
+        color: #ea4343;
+    }
+    100% {
+        color: #fff;
+    }
+}
+.AnnounceWrapper .AnnounceContent .AnnounceContentList li .title span {
+    padding: 0 5px;
+    background: #ea4343;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 12px;
+    line-height: 20px;
+    display: inline-block;
+    margin-left: 3px;
+    animation: SignFocus infinite 1s ease-in-out;
+}
+.AnnounceWrapper .AnnounceContent .AnnounceContentList li .content {
+    font-size: 12px;
+}

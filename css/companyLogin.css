@@ -145,11 +145,58 @@
     text-align: center;
 }
 .Honorlist .HonorList {
-    width: 200px;
-    height: 60px;
-    background: #000;
-    display: inline-block;
-    margin-right: 15px;
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+}
+.Honorlist .HonorList h6 {
+    color: #fff;
+    font-size: 20px;
+    z-index: 1;
+    transition: all .3s ease-out;
+}
+.Honorlist .HonorList:hover h6 {
+    transform:scale(1.1,1.1);
+}
+.Honorlist .HonorList img {
+    position: absolute;
+    z-index: 0;
+    height: 90px;
+}
+.Honorlist .HonorCardSearch {
+    background: #deba7c;
+}
+.Honorlist .HonorCardSearch:before {
+    content: '';
+    position: absolute;
+    right: -45px;
+    top: 0;
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 45px 45px 0 0;
+    border-color: #deba7c transparent transparent transparent;
+}
+.Honorlist .RecordBookSearch {
+    background: #937cde;
+}
+.Honorlist .RecordBookSearch:before {
+    content: '';
+    position: absolute;
+    left: -45px;
+    bottom: 0;
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 45px 45px;
+    border-color: transparent transparent #937cde transparent;
 }
 
 /*RegisterModal - 單位註冊*/
