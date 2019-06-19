@@ -1,0 +1,68 @@
+/*
+*
+* Create by Wayne(WJDesign) 2019.02.09
+*
+*/
+@charset "UTF-8";
+
+.FileDownloadWrapper {
+    display: flex;
+    width: 100%;
+    padding-top: 20px;
+}
+.FileDownloadWrapper .FileDownloadContent {
+}
+.FileDownloadWrapper .FileDownloadContent .FileDownloadContentList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.FileDownloadWrapper .FileDownloadContent .FileDownloadContentList li {
+    padding: 10px 20px;
+    line-height: 22px;
+    background: #f5f5f5;
+    border-bottom: 1px dotted #999;
+}
+.FileDownloadWrapper .FileDownloadContent .FileDownloadContentList li a {
+    color: #999;
+    text-decoration: none;
+}
+.FileDownloadWrapper .FileDownloadContent .FileDownloadContentList li:first-child {
+    border-top: 3px solid #eee;
+}
+.FileDownloadWrapper .FileDownloadContent .FileDownloadContentList li:nth-child(odd) {
+    background: #fff;
+}
+.FileDownloadWrapper .FileDownloadContent .FileDownloadContentList li .title {
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    display: block;
+    color: #ff9b3c;
+    position: relative;
+    text-decoration: none;
+}
+.FileDownloadWrapper .FileDownloadContent .FileDownloadContentList li .title .time {
+    float: right;
+    font-size: 12px;
+    background: #aaa;
+    padding: 3px 5px;
+    color: #fff;
+    border-radius: 2px;
+    letter-spacing: 1px;
+}
+.FileDownloadWrapper .FileDownloadContent .FileDownloadContentList li .title span {
+    padding: 0 5px;
+    background: #ea4343;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 12px;
+    line-height: 20px;
+    display: inline-block;
+    margin-left: 3px;
+    animation: SignFocus infinite 1s ease-in-out;
+}
+.FileDownloadWrapper .FileDownloadContent .FileDownloadContentList li .content {
+    font-size: 12px;
+}

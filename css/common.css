@@ -114,6 +114,17 @@ label {
 		transform: rotate(360deg);
 	}
 }
+@keyframes SignFocus {
+	0% {
+		color: #fff;
+	}
+	50% {
+		color: #ea4343;
+	}
+	100% {
+		color: #fff;
+	}
+}
 .OverFlowHidden {
 	overflow: hidden;
 }
@@ -208,4 +219,45 @@ h6.MainTitle span {
 	line-height: 25px;
 	text-align: center;
 	margin: 0;
+}
+
+/*頁面共用*/
+/*現在位置*/
+.NowPosition {
+	color: #999;
+	padding: 5px 10px;
+	font-size: 12px;
+}
+.NowPosition a {
+	color: #999;
+}
+.NowPosition a.active {
+	color: #ff7474;
+}
+.NowPosition span {
+	margin: 0 5px;
+}
+/*Navi*/
+.NavTabs {
+	display: flex;
+	flex: 0 0 150px;
+	flex-direction: column;
+	margin-right: 20px;
+}
+.NavTabs>li>a {
+	border: 0;
+	color: #999;
+	margin-bottom: 5px;
+}
+.NavTabs>li>a>i {
+	margin-right: 5px;
+}
+.NavTabs>li.active>a,
+.NavTabs>li.active>a:focus,
+.NavTabs>li.active>a:hover,
+.NavTabs>li>a:focus,
+.NavTabs>li>a:hover {
+	border: 0;
+	background: transparent;
+	color: #ff7474;
 }

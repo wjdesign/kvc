@@ -10,12 +10,6 @@
     width: 100%;
     padding-top: 20px;
 }
-.AnnounceWrapper .AnnounceTab {
-    display: flex;
-    flex: 0 0 150px;
-    flex-direction: column;
-    margin-right: 20px;
-}
 .AnnounceWrapper .AnnounceContent {
 }
 .AnnounceWrapper .AnnounceContent .AnnounceContentList {
@@ -44,17 +38,6 @@
     color: #ff9b3c;
     position: relative;
     text-decoration: none;
-}
-@keyframes SignFocus {
-    0% {
-        color: #fff;
-    }
-    50% {
-        color: #ea4343;
-    }
-    100% {
-        color: #fff;
-    }
 }
 .AnnounceWrapper .AnnounceContent .AnnounceContentList li .title span {
     padding: 0 5px;

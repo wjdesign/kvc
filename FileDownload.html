@@ -2,13 +2,13 @@
 <html lang="zh">
     <head>
         <meta charset="UTF-8">
-        <title>公告區</title>
+        <title>下載專區</title>
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
 
         <link rel="stylesheet" href="css/common.css">
         <link rel="stylesheet" href="css/index.css">
-        <link rel="stylesheet" href="css/announcement.css">
+        <link rel="stylesheet" href="css/filedownload.css">
 
         <script src="js/jquery-3.3.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
@@ -18,10 +18,10 @@
         <script src="js/publicfunction.js"></script>
         <script src="data.js"></script><!--假資料檔-->
 
-        <script src="js/controllers/announcement.js"></script>
+        <script src="js/controllers/filedownload.js"></script>
 
     </head>
-    <body ng-app="myApp" ng-controller="AnnouncementCtrl">
+    <body ng-app="myApp" ng-controller="FileDownloadCtrl">
         <header class="HeaderWrapper">
             <div class="clearfix container">
                 <a class="Logo" href="index.html"><img class="img-responsive" src="./images/logo.png" alt=""></a>
@@ -50,10 +50,10 @@
                     </ul>
                     <ul class="MainMenu">
                         <li><a href="index.html">首頁</a></li>
-                        <li><a href="#" class="active">公告專區</a></li>
-                        <li><a href="FileDownload.html">下載專區</a></li>
+                        <li><a href="Announcement.html">公告專區</a></li>
+                        <li><a href="#" class="active">下載專區</a></li>
                         <li><a href="ThinkTank.html">志願服務智庫</a></li>
-                        <li><a href="Rule.html">法規專區</a></li>
+                        <li><a href="">法規專區</a></li>
                         <!--<li><a href="">單位查詢</a></li>-->
                         <li><a href="">互動分享</a></li>
                         <li><a href="Company.html">運用單位</a></li>
@@ -63,67 +63,32 @@
         </header>
         <div class="BodyWrapper">
             <div class="clearfix container">
-                <div class="AnnounceWrapper">
-                    <ul class="nav nav-tabs NavTabs AnnounceTab">
+                <div class="FileDownloadWrapper">
+                    <ul class="nav nav-tabs NavTabs FileDownloadTab">
                         <li class="active">
                             <a href="#MsgCenter" data-toggle="tab">
-                                <i class="glyphicon glyphicon-envelope"></i>
-                                中心訊息
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#MsgTeam" data-toggle="tab">
-                                <i class="glyphicon glyphicon-star"></i>
-                                志工團隊活動
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#CommunityInfo" data-toggle="tab">
-                                <i class="glyphicon glyphicon-flag"></i>
-                                社福資訊
+                                <i class="glyphicon glyphicon-download-alt"></i>
+                                檔案下載
                             </a>
                         </li>
                     </ul>
-                    <div class="tab-content AnnounceContent">
+                    <div class="tab-content FileDownloadContent">
                         <p class="NowPosition">
                             現在位置：
                             <a href="index.html">首頁</a>
                             <span>/</span>
-                            <a class="active" href="#">公告專區</a>
+                            <a class="active" href="#">檔案下載</a>
                         </p>
                         <div id="MsgCenter" class="tab-pane fade in active">
-                            <h6 class="MainTitle">中心<span>訊息</span></h6>
-                            <ul class="AnnounceContentList">
-                                <li ng-repeat="(key,value) in AnnouncementData.MsgCenter">
-                                    <a class="title" href="[{value.url}]" target="_blank">
-                                        [{value.title}]
-                                        <span ng-if="(value.sign)">[{value.sign}]</span>
+                            <h6 class="MainTitle">檔案<span>下載</span></h6>
+                            <ul class="FileDownloadContentList">
+                                <li ng-repeat="(key,value) in FileDownloadData">
+                                    <a href="[{value.url}]" target="_blank">
+                                        <h5 class="clearfix title">[{value.title}]
+                                            <div class="time">[{value.time}]</div>
+                                        </h5>
+                                        <p class="content">[{value.content || "暫無說明。"}]</p>
                                     </a>
-                                    <p class="content">[{value.content}]<a class="readMore" href="[{value.url}]">(閱讀更多)</a></p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div id="MsgTeam" class="tab-pane fade">
-                            <h6 class="MainTitle">志工團隊<span>活動</span></h6>
-                            <ul class="AnnounceContentList">
-                                <li ng-repeat="(key,value) in AnnouncementData.MsgCenter">
-                                    <a class="title" href="[{value.url}]" target="_blank">
-                                        [{value.title}]
-                                        <span ng-if="(value.sign)">[{value.sign}]</span>
-                                    </a>
-                                    <p class="content">[{value.content}]<a class="readMore" href="[{value.url}]">(閱讀更多)</a></p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div id="CommunityInfo" class="tab-pane fade">
-                            <h6 class="MainTitle">社福<span>資訊</span></h6>
-                            <ul class="AnnounceContentList">
-                                <li ng-repeat="(key,value) in AnnouncementData.MsgCenter">
-                                    <a class="title" href="[{value.url}]" target="_blank">
-                                        [{value.title}]
-                                        <span ng-if="(value.sign)">[{value.sign}]</span>
-                                    </a>
-                                    <p class="content">[{value.content}]<a class="readMore" href="[{value.url}]">(閱讀更多)</a></p>
                                 </li>
                             </ul>
                         </div>

@@ -1,0 +1,79 @@
+/*
+*
+* Create by Wayne(WJDesign) 2019.02.09
+*
+*/
+@charset "UTF-8";
+
+.RuleWrapper {
+    display: flex;
+    width: 100%;
+    padding-top: 20px;
+}
+.RuleWrapper .RuleContent {
+    flex: 1;
+    min-height: 500px;
+}
+.RuleWrapper .RuleContent .SearchBar {
+    float: right;
+    margin-top: 3px;
+}
+.RuleWrapper .RuleContent .SearchBar label {
+    margin-bottom: 0;
+    margin-right: 5px;
+}
+.RuleWrapper .RuleContent .SearchBar input {
+    margin-left: 5px;
+}
+.RuleWrapper .RuleContent .RuleContentList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.RuleWrapper .RuleContent .RuleContentList li {
+    padding: 10px 20px;
+    line-height: 22px;
+    background: #f5f5f5;
+    border-bottom: 1px dotted #999;
+}
+.RuleWrapper .RuleContent .RuleContentList li a {
+    color: #999;
+    text-decoration: none;
+}
+.RuleWrapper .RuleContent .RuleContentList li:first-child {
+    border-top: 3px solid #eee;
+}
+.RuleWrapper .RuleContent .RuleContentList li:nth-child(odd) {
+    background: #fff;
+}
+.RuleWrapper .RuleContent .RuleContentList li .title {
+    font-size: 16px;
+    margin: 5px 0;
+    display: block;
+    color: #ff9b3c;
+    position: relative;
+    text-decoration: none;
+}
+.RuleWrapper .RuleContent .RuleContentList li .title .time {
+    float: right;
+    font-size: 12px;
+    background: #aaa;
+    padding: 3px 5px;
+    color: #fff;
+    border-radius: 2px;
+    letter-spacing: 1px;
+}
+.RuleWrapper .RuleContent .RuleContentList li .title span {
+    padding: 0 5px;
+    background: #ea4343;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 12px;
+    line-height: 20px;
+    display: inline-block;
+    margin-left: 3px;
+    animation: SignFocus infinite 1s ease-in-out;
+}
+.RuleWrapper .RuleContent .RuleContentList li .content {
+    font-size: 12px;
+}
