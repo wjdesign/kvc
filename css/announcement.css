@@ -11,6 +11,7 @@
     padding-top: 20px;
 }
 .AnnounceWrapper .AnnounceContent {
+    flex: 1;
 }
 .AnnounceWrapper .AnnounceContent .AnnounceContentList {
     display: flex;
@@ -52,4 +53,67 @@
 }
 .AnnounceWrapper .AnnounceContent .AnnounceContentList li .content {
     font-size: 12px;
+}
+
+/*AnnouncementContent*/
+.AnnounceContentWrapper {
+    display: flex;
+    width: 100%;
+    padding-top: 20px;
+}
+.AnnounceContentWrapper .AnnounceContent {
+    flex: 1;
+}
+.AnnounceContentWrapper .AnnounceContent .AnnounceContentList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.AnnounceContentWrapper .AnnounceContent .AnnounceContentList {
+    padding: 10px 20px;
+    line-height: 22px;
+}
+.AnnounceContentWrapper .AnnounceContent .AnnounceContentList .title {
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    display: block;
+    color: #ff9b3c;
+    position: relative;
+    text-decoration: none;
+}
+.AnnounceContentWrapper .AnnounceContent .AnnounceContentList .title span {
+    padding: 0 5px;
+    background: #ea4343;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 12px;
+    line-height: 20px;
+    display: inline-block;
+    margin-left: 3px;
+    animation: SignFocus infinite 1s ease-in-out;
+}
+.AnnounceContentWrapper .AnnounceContent .AnnounceContentList .content {
+    font-size: 12px;
+}
+.AnnounceContentWrapper .AnnounceContent .AnnounceContentList .ContentWrapper .ContentList {
+    list-style: disc;
+}
+.AnnounceContentWrapper .AnnounceContent .AnnounceContentList .ContentWrapper .ContentList li {
+    margin-bottom: 15px;
+    border-bottom: 1px dashed #eee;
+}
+.AnnounceContentWrapper .AnnounceContent .AnnounceContentList .ContentWrapper .ContentList li h4 {
+    color: #888;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+.AnnounceContentWrapper .AnnounceContent .AnnounceContentList .ContentWrapper .ContentList li h4 span {
+    color: #ff7474;
+}
+.AnnounceContentWrapper .AnnounceContent .AnnounceContentList .ContentWrapper .ContentList li table tr th,
+.AnnounceContentWrapper .AnnounceContent .AnnounceContentList .ContentWrapper .ContentList li table tr td {
+    text-align: center;
+    vertical-align: middle;
 }

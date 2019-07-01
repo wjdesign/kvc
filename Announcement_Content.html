@@ -50,7 +50,7 @@
                     </ul>
                     <ul class="MainMenu">
                         <li><a href="index.html">首頁</a></li>
-                        <li><a href="#" class="active">公告專區</a></li>
+                        <li><a href="Announcement.html" class="active">公告專區</a></li>
                         <li><a href="FileDownload.html">下載專區</a></li>
                         <li><a href="ThinkTank.html">志願服務智庫</a></li>
                         <li><a href="Rule.html">法規專區</a></li>
@@ -63,22 +63,22 @@
         </header>
         <div class="BodyWrapper">
             <div class="clearfix container">
-                <div class="AnnounceWrapper">
+                <div class="AnnounceContentWrapper">
                     <ul class="nav nav-tabs NavTabs AnnounceTab">
                         <li class="active">
-                            <a href="#MsgCenter" data-toggle="tab">
+                            <a href="Announcement.html" target="_self">
                                 <i class="glyphicon glyphicon-envelope"></i>
                                 中心訊息
                             </a>
                         </li>
                         <li>
-                            <a href="#MsgTeam" data-toggle="tab">
+                            <a href="Announcement.html" target="_self">
                                 <i class="glyphicon glyphicon-star"></i>
                                 志工團隊活動
                             </a>
                         </li>
                         <li>
-                            <a href="#CommunityInfo" data-toggle="tab">
+                            <a href="Announcement.html" target="_self">
                                 <i class="glyphicon glyphicon-flag"></i>
                                 社福資訊
                             </a>
@@ -89,43 +89,115 @@
                             現在位置：
                             <a href="index.html">首頁</a>
                             <span>/</span>
-                            <a class="active" href="#">公告專區</a>
+                            <a href="Announcement.html">公告專區</a>
+                            <span>/</span>
+                            <a class="active" href="#">108年度第一次社福類志願服務運用單位聯繫會報</a>
                         </p>
-                        <div id="MsgCenter" class="tab-pane fade in active">
+                        <div>
                             <h6 class="MainTitle">中心<span>訊息</span></h6>
-                            <ul class="AnnounceContentList">
-                                <li ng-repeat="(key,value) in AnnouncementData.MsgCenter">
-                                    <a class="title" href="[{value.url}]" target="_self">
-                                        [{value.title}]
-                                        <span ng-if="(value.sign)">[{value.sign}]</span>
-                                    </a>
-                                    <p class="content">[{value.content}]<a class="readMore" href="[{value.url}]">(閱讀更多)</a></p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div id="MsgTeam" class="tab-pane fade">
-                            <h6 class="MainTitle">志工團隊<span>活動</span></h6>
-                            <ul class="AnnounceContentList">
-                                <li ng-repeat="(key,value) in AnnouncementData.MsgCenter">
-                                    <a class="title" href="[{value.url}]" target="_self">
-                                        [{value.title}]
-                                        <span ng-if="(value.sign)">[{value.sign}]</span>
-                                    </a>
-                                    <p class="content">[{value.content}]<a class="readMore" href="[{value.url}]">(閱讀更多)</a></p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div id="CommunityInfo" class="tab-pane fade">
-                            <h6 class="MainTitle">社福<span>資訊</span></h6>
-                            <ul class="AnnounceContentList">
-                                <li ng-repeat="(key,value) in AnnouncementData.MsgCenter">
-                                    <a class="title" href="[{value.url}]" target="_self">
-                                        [{value.title}]
-                                        <span ng-if="(value.sign)">[{value.sign}]</span>
-                                    </a>
-                                    <p class="content">[{value.content}]<a class="readMore" href="[{value.url}]">(閱讀更多)</a></p>
-                                </li>
-                            </ul>
+                            <div class="AnnounceContentList row">
+                                <a class="title">
+                                    108年度第一次社福類志願服務運用單位聯繫會報
+                                    <span>近期</span>
+                                </a>
+                                <p class="content">
+                                    活動時間 2019/09/11(更新 2019/07/01) 將文章分享到
+                                </p>
+                                <div class="col-sm-12 ContentWrapper">
+                                    <h3 class="text-center">108年度第一次社福類志願服務運用單位聯繫會報</h3>
+                                    <ul class="ContentList">
+                                        <li>
+                                            <h4>
+                                                <span class="center-block">目的：</span>
+                                                為落實衛生福利部頒佈志願服務教育訓練課程，循序漸近增強志工對志願服務之認知與理念，保障受服務者之權益，更透過課程強化志願服務專業性及高品質，提倡快樂當志工，發揚志願服務之美，同時鼓勵未加入志願服務人力與團隊投入志願服務工作，達成志工倍增全民志工之目標。
+                                            </h4>
+                                        </li>
+                                        <li>
+                                            <h4>
+                                                <span>指導單位：</span>
+                                                高雄市政府社會局
+                                            </h4>
+                                        </li>
+                                        <li>
+                                            <h4>
+                                                <span>主辦單位：</span>
+                                                中華社會創新暨公共參與協會、社團法人高雄市青少年關懷協會(承辦高雄市政府社會局志願服務資源中心)
+                                            </h4>
+                                        </li>
+                                        <li>
+                                            <h4>
+                                                <span>研習日期：</span>
+                                                108年9月11日(週三)
+                                            </h4>
+                                        </li>
+                                        <li>
+                                            <h4>
+                                                <span>研習場地：</span>
+                                                高雄市志願服務資源中心三樓大禮堂(苓雅區凱旋二路5號3F)
+                                            </h4>
+                                        </li>
+                                        <li>
+                                            <h4>
+                                                <span>受理對象：</span>
+                                                年滿12歲以上且有意投入志工行列之市民。
+                                            </h4>
+                                        </li>
+                                        <li>
+                                            <h4>
+                                                <span>課程費用：</span>
+                                                150元/人(不足部分由高雄市公益彩券盈餘基金補助)
+                                            </h4>
+                                        </li>
+                                        <li>
+                                            <h4>
+                                                <span class="center-block">研習內容：</span>
+                                            </h4>
+                                            <table class="table table-bordered table-striped ">
+                                                <tr>
+                                                    <th>類別</th>
+                                                    <th>日期</th>
+                                                    <th>時間</th>
+                                                    <th>課程</th>
+                                                </tr>
+                                                <tr>
+                                                    <td rowspan="5">志工基礎訓練</td>
+                                                    <td rowspan="5">2/15(五)</td>
+                                                    <td>09：40-10：00</td>
+                                                    <td>報到</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>10：00-12：00</td>
+                                                    <td>志願服務法規之認識</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>12：30-13：00</td>
+                                                    <td>休息</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>13：00-15：00</td>
+                                                    <td>志願服務經驗分享</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>15：00-17：00</td>
+                                                    <td>志願服務內涵及倫理</td>
+                                                </tr>
+                                            </table>
+                                        </li>
+                                        <li>
+                                            <h4>
+                                                <span>報名說明：</span>
+                                                簡章及報名表下載:志願服務資源中心網址-<a href="">http://www.kvc.org.tw</a>(中心訊息)。
+                                            </h4>
+                                        </li>
+                                        <li>
+                                            <h4>
+                                                <span>報名時間：</span>
+                                                即日起開放報名至107/9/2(週一)，<span class="text-danger">額滿提前結束。</span>
+                                            </h4>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
