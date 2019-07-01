@@ -125,8 +125,23 @@ label {
 		color: #fff;
 	}
 }
+@keyframes SignFocus2 {
+	0% {
+		color: #fff;
+	}
+	50% {
+		color: #83b94e;
+	}
+	100% {
+		color: #fff;
+	}
+}
 .OverFlowHidden {
 	overflow: hidden;
+}
+
+.nav-tabs {
+	border-bottom: 0;
 }
 
 .WrapperContainer {

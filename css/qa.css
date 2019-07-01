@@ -1,0 +1,131 @@
+/*
+*
+* Create by Wayne(WJDesign) 2019.06.09
+*
+*/
+@charset "UTF-8";
+
+/*QA*/
+.QAWrapper {
+    display: flex;
+    width: 100%;
+    padding-top: 20px;
+}
+.QAWrapper .QAContent {
+    flex: 1;
+    min-height: 500px;
+}
+.QAWrapper .QAContent .SearchBar {
+    float: right;
+    margin-top: 3px;
+}
+.QAWrapper .QAContent .SearchBar label {
+    margin-bottom: 0;
+    margin-right: 5px;
+}
+.QAWrapper .QAContent .SearchBar input {
+    margin-left: 5px;
+}
+.QAWrapper .QAContent .QAContentList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.QAWrapper .QAContent .QAContentList li {
+    padding: 10px 20px;
+    line-height: 22px;
+    background: #f5f5f5;
+    border-bottom: 1px dotted #999;
+}
+.QAWrapper .QAContent .QAContentList li a {
+    color: #999;
+    text-decoration: none;
+}
+.QAWrapper .QAContent .QAContentList li:first-child {
+    border-top: 3px solid #eee;
+}
+.QAWrapper .QAContent .QAContentList li:nth-child(odd) {
+    background: #fff;
+}
+.QAWrapper .QAContent .QAContentList li .questiontitle {
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    display: block;
+    color: #e01e1e;
+    position: relative;
+    text-decoration: none;
+}
+.QAWrapper .QAContent .QAContentList li .answertitle {
+    font-size: 14px;
+    line-height: 28px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    display: block;
+    color: #5ea21e;
+    position: relative;
+    text-decoration: none;
+}
+.QAWrapper .QAContent .QAContentList li .questiontitle .time {
+    float: right;
+    font-size: 12px;
+    background: #aaa;
+    padding: 3px 5px;
+    color: #fff;
+    border-radius: 2px;
+    letter-spacing: 1px;
+}
+.QAWrapper .QAContent .QAContentList li .questiontitle span {
+    padding: 0 5px;
+    background: #ea4343;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 12px;
+    line-height: 20px;
+    display: inline-block;
+    margin: 0 10px 0 3px;
+    animation: SignFocus infinite 1s ease-in-out;
+}
+.QAWrapper .QAContent .QAContentList li .answertitle span {
+    padding: 0 5px;
+    background: #83b94e;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 12px;
+    line-height: 20px;
+    display: inline-block;
+    margin: 0 10px 0 3px;
+    animation: SignFocus2 infinite 1s ease-in-out;
+}
+.QAWrapper .QAContent .QAContentList li .title {
+    font-size: 16px;
+    margin: 5px 0;
+    display: block;
+    color: #ff9b3c;
+    position: relative;
+    text-decoration: none;
+}
+.QAWrapper .QAContent .QAContentList li .title .time {
+    float: right;
+    font-size: 12px;
+    background: #aaa;
+    padding: 3px 5px;
+    color: #fff;
+    border-radius: 2px;
+    letter-spacing: 1px;
+}
+.QAWrapper .QAContent .QAContentList li .title span {
+    padding: 0 5px;
+    background: #ea4343;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 12px;
+    line-height: 20px;
+    display: inline-block;
+    margin-left: 3px;
+    animation: SignFocus infinite 1s ease-in-out;
+}
+.QAWrapper .QAContent .QAContentList li .content {
+    font-size: 12px;
+}

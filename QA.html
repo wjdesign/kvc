@@ -2,13 +2,13 @@
 <html lang="zh">
     <head>
         <meta charset="UTF-8">
-        <title>法規專區</title>
+        <title>互動分享</title>
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
 
         <link rel="stylesheet" href="css/common.css">
         <link rel="stylesheet" href="css/index.css">
-        <link rel="stylesheet" href="css/rule.css">
+        <link rel="stylesheet" href="css/qa.css">
 
         <script src="js/jquery-3.3.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
@@ -18,10 +18,10 @@
         <script src="js/publicfunction.js"></script>
         <script src="data.js"></script><!--假資料檔-->
 
-        <script src="js/controllers/rule.js"></script>
+        <script src="js/controllers/qa.js"></script>
 
     </head>
-    <body ng-app="myApp" ng-controller="RuleCtrl">
+    <body ng-app="myApp" ng-controller="QACtrl">
         <header class="HeaderWrapper">
             <div class="clearfix container">
                 <a class="Logo" href="index.html"><img class="img-responsive" src="./images/logo.png" alt=""></a>
@@ -53,9 +53,9 @@
                         <li><a href="Announcement.html">公告專區</a></li>
                         <li><a href="FileDownload.html">下載專區</a></li>
                         <li><a href="ThinkTank.html">志願服務智庫</a></li>
-                        <li><a href="#" class="active">法規專區</a></li>
+                        <li><a href="Rule.html">法規專區</a></li>
                         <!--<li><a href="">單位查詢</a></li>-->
-                        <li><a href="QA.html">互動分享</a></li>
+                        <li><a href="#" class="active">互動分享</a></li>
                         <li><a href="Company.html">運用單位</a></li>
                     </ul>
                 </div>
@@ -63,70 +63,125 @@
         </header>
         <div class="BodyWrapper">
             <div class="clearfix container">
-                <div class="RuleWrapper">
-                    <ul class="nav nav-tabs NavTabs RuleTab">
+                <div class="QAWrapper">
+                    <ul class="nav nav-tabs NavTabs QATab">
                         <li class="active">
-                            <a href="#Center" data-toggle="tab">
-                                <i class="glyphicon glyphicon-tree-deciduous"></i>
-                                中央政府
+                            <a href="#QA" data-toggle="tab">
+                                <i class="glyphicon glyphicon-question-sign"></i>
+                                相關問答
                             </a>
                         </li>
                         <li>
-                            <a href="#Place" data-toggle="tab">
-                                <i class="glyphicon glyphicon-tent"></i>
-                                地方政府
+                            <a href="#Message" data-toggle="tab">
+                                <i class="glyphicon glyphicon-comment"></i>
+                                留言討論
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Share" data-toggle="tab">
+                                <i class="glyphicon glyphicon-share-alt"></i>
+                                文章分享
                             </a>
                         </li>
                     </ul>
-                    <div class="tab-content RuleContent">
-                        <p class="NowPosition">
-                            現在位置：
-                            <a href="index.html">首頁</a>
-                            <span>/</span>
-                            <a class="active" href="#">法規專區</a>
-                        </p>
-                        <div id="Center" class="tab-pane fade in active">
-                            <h6 class="MainTitle">中央<span>政府</span></h6>
+                    <div class="tab-content QAContent">
+
+                        <!--相關問答-->
+                        <div id="QA" class="tab-pane fade in active">
+                            <p class="NowPosition">
+                                現在位置：
+                                <a href="index.html">首頁</a>
+                                <span>/</span>
+                                <a class="active" href="#">相關問答</a>
+                            </p>
+                            <h6 class="MainTitle">相關<span>問答</span></h6>
                             <form class="SearchBar">
                                 <label for="SearchCenter">
                                     搜尋：<input type="text" id="SearchCenter">
-                                    <select>
-                                        <option value="">所有資料</option>
-                                        <option value="" selected>中央政府</option>
-                                        <option value="">地方政府</option>
-                                    </select>
                                 </label>
                                 <button class="btn btn-sm btn-primary" type="submit">搜尋</button>
                             </form>
-                            <ul class="RuleContentList">
-                                <li ng-repeat="(key,value) in RuleData.Center">
-                                    <a href="[{value.url}]" target="_blank">
-                                        <h5 class="clearfix title">[{value.title}]
-                                            <div class="time">[{value.time}]</div>
-                                        </h5>
-                                    </a>
+                            <ul class="QAContentList">
+                                <li ng-repeat="(key,value) in QAData.QA">
+                                    <h5 class="clearfix questiontitle"><span>問</span>[{value.question}]
+                                        <div class="time">[{value.time}]</div>
+                                    </h5>
+                                    <h5 class="clearfix answertitle"><span>答</span>[{value.answer}]
+                                        <a href="[{value.url}]" target="_blank">(詳細閱讀)</a>
+                                    </h5>
                                 </li>
                             </ul>
                         </div>
-                        <div id="Place" class="tab-pane fade">
-                            <h6 class="MainTitle">地方<span>政府</span></h6>
+
+                        <!--留言討論-->
+                        <div id="Message" class="tab-pane fade">
+                            <p class="NowPosition">
+                                現在位置：
+                                <a href="index.html">首頁</a>
+                                <span>/</span>
+                                <a class="active" href="#">留言討論</a>
+                            </p>
+                            <h6 class="MainTitle">留言<span>討論</span></h6>
+                            <div class="alert alert-warning" role="alert">
+                                留言板僅供志願服務相關問題討論，如有社會局業務相關問題請逕自至 <a class="text-danger" href="https://socbu.kcg.gov.tw/" target="_blank">高雄市政府社會局</a> 留言
+                            </div>
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-2 control-label">姓名</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword3" class="col-sm-2 control-label">留言標題</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword3" class="col-sm-2 control-label">電子郵件信箱</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword3" class="col-sm-2 control-label">問題或建議</label>
+                                    <div class="col-sm-10">
+                                        <textarea class="form-control" rows="5"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <button type="submit" class="btn btn-primary">填好送出</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!--文章分享-->
+                        <div id="Share" class="tab-pane fade">
+                            <p class="NowPosition">
+                                現在位置：
+                                <a href="index.html">首頁</a>
+                                <span>/</span>
+                                <a class="active" href="#">文章分享</a>
+                            </p>
+                            <h6 class="MainTitle">文章<span>分享</span></h6>
                             <form class="SearchBar">
                                 <label for="SearchPlace">
                                     搜尋：<input type="text" id="SearchPlace">
-                                    <select>
-                                        <option value="">所有資料</option>
-                                        <option value="">中央政府</option>
-                                        <option value="" selected>地方政府</option>
-                                    </select>
                                 </label>
                                 <button class="btn btn-sm btn-primary" type="submit">搜尋</button>
                             </form>
-                            <ul class="RuleContentList">
-                                <li ng-repeat="(key,value) in RuleData.Place">
+                            <ul class="QAContentList">
+                                <li ng-repeat="(key,value) in QAData.Share">
                                     <a href="[{value.url}]" target="_blank">
                                         <h5 class="clearfix title">[{value.title}]
                                             <div class="time">[{value.time}]</div>
                                         </h5>
+                                        <p class="content">
+                                            [{value.content}]
+                                        </p>
                                     </a>
                                 </li>
                             </ul>
