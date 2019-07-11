@@ -2,13 +2,13 @@
 <html lang="zh">
     <head>
         <meta charset="UTF-8">
-        <title>下載專區</title>
+        <title>聯絡我們</title>
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
 
         <link rel="stylesheet" href="css/common.css">
         <link rel="stylesheet" href="css/index.css">
-        <link rel="stylesheet" href="css/filedownload.css">
+        <link rel="stylesheet" href="css/contactus.css">
 
         <script src="js/jquery-3.3.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
@@ -18,17 +18,17 @@
         <script src="js/publicfunction.js"></script>
         <script src="data.js"></script><!--假資料檔-->
 
-        <script src="js/controllers/filedownload.js"></script>
+        <script src="js/controllers/contactus.js"></script>
 
     </head>
-    <body ng-app="myApp" ng-controller="FileDownloadCtrl">
+    <body ng-app="myApp" ng-controller="ContactUsCtrl">
         <header class="HeaderWrapper">
             <div class="clearfix container">
                 <a class="Logo" href="index.html"><img class="img-responsive" src="./images/logo.png" alt=""></a>
                 <div class="MenuWrapper">
                     <ul class="SubMenu">
                         <li>
-                            <a href="ContactUs.html"><i class="glyphicon glyphicon-envelope"></i>聯絡我們</a>
+                            <a href=""><i class="glyphicon glyphicon-envelope"></i>聯絡我們</a>
                         </li>
                         <li>
                             <a href="WebMap.html"><i class="glyphicon glyphicon-globe"></i>網站地圖</a>
@@ -51,7 +51,7 @@
                     <ul class="MainMenu">
                         <li><a href="index.html">首頁</a></li>
                         <li><a href="Announcement.html">公告專區</a></li>
-                        <li><a href="#" class="active">下載專區</a></li>
+                        <li><a href="FileDownload.html">下載專區</a></li>
                         <li><a href="ThinkTank.html">志願服務智庫</a></li>
                         <li><a href="Rule.html">法規專區</a></li>
                         <!--<li><a href="">單位查詢</a></li>-->
@@ -63,34 +63,68 @@
         </header>
         <div class="BodyWrapper">
             <div class="clearfix container">
-                <div class="FileDownloadWrapper">
-                    <ul class="nav nav-tabs NavTabs FileDownloadTab">
+                <div class="ContactUsWrapper">
+                    <ul class="nav nav-tabs NavTabs ContactUsTab">
                         <li class="active">
-                            <a href="#MsgCenter" data-toggle="tab">
-                                <i class="glyphicon glyphicon-download-alt"></i>
-                                檔案下載
+                            <a href="#ContactUs" data-toggle="tab">
+                                <i class="glyphicon glyphicon-bell"></i>
+                                聯絡我們
                             </a>
                         </li>
                     </ul>
-                    <div class="tab-content FileDownloadContent">
+                    <div class="tab-content ContactUsContent">
                         <p class="NowPosition">
                             現在位置：
                             <a href="index.html">首頁</a>
                             <span>/</span>
-                            <a class="active" href="#">檔案下載</a>
+                            <a class="active" href="#">聯絡我們</a>
                         </p>
-                        <div id="MsgCenter" class="tab-pane fade in active">
-                            <h6 class="MainTitle">檔案<span>下載</span></h6>
-                            <ul class="FileDownloadContentList">
-                                <li ng-repeat="(key,value) in FileDownloadData">
-                                    <a href="[{value.url}]" target="_blank">
-                                        <h5 class="clearfix title">[{value.title}]
-                                            <div class="time">[{value.time}]</div>
-                                        </h5>
-                                        <p class="content">[{value.content || "暫無說明。"}]</p>
-                                    </a>
-                                </li>
-                            </ul>
+                        <div id="ContactUs" class="tab-pane fade in active">
+                            <h6 class="MainTitle">聯絡<span>我們</span></h6>
+                            <div class="Description">
+                                <p>如果您對高雄市政府社會局志願服務資源中心有任何問題與建議，歡迎利用以下表單與我們聯繫，我們會盡快回覆您的來信。<br/>(您所填寫的資料不會轉作其他用途，敬請安心填寫)</p>
+                                <form class="form-horizontal">
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2" for="name">您的姓名</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="name" placeholder="請輸入您的姓名。">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2">性別</label>
+                                        <div class="col-sm-10">
+                                            <select name="sex" id="sex" class="form-control">
+                                                <option value="1">先生</option>
+                                                <option value="2">小姐</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2" for="email">電子信箱</label>
+                                        <div class="col-sm-10">
+                                            <input type="email" class="form-control" id="email" placeholder="請輸入您的電子信箱，example@example.com。">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2" for="phone">聯絡電話</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="phone" placeholder="請輸入您的聯絡電話。" maxlength="10">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2" for="message">問題或建議</label>
+                                        <div class="col-sm-10">
+                                            <textarea type="text" class="form-control" id="message" placeholder="請輸入您的問題與建議。" rows="10"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-1 col-sm-11 text-center">
+                                            <button type="reset" class="btn btn-default">清空欄位</button>
+                                            <button type="submit" class="btn btn-primary">填好送出</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -111,8 +145,8 @@
                     <li>
                         <h6>法規專區</h6>
                         <ul class="SubTitle">
-                            <li><a href="">中央政府</a></li>
-                            <li><a href="">地方政府</a></li>
+                            <li><a href="Rule.html?Center">中央政府</a></li>
+                            <li><a href="Rule.html?Place">地方政府</a></li>
                         </ul>
                     </li>
                     <li>
@@ -120,8 +154,8 @@
                         <ul class="SubTitle">
                             <li><a href="">文章分享</a></li>
                             <li><a href="">留言討論</a></li>
-                            <li><a href="ContactUs.html">聯絡我們</a></li>
-                            <li><a href="EPapper.html">電子報</a></li>
+                            <li><a href="">聯絡我們</a></li>
+                            <li><a href="">電子報</a></li>
                         </ul>
                     </li>
                     <li>

@@ -1,0 +1,50 @@
+/*
+*
+* Create by Wayne(WJDesign) 2019.02.09
+*
+*/
+@charset "UTF-8";
+
+.ContactUsWrapper {
+    display: flex;
+    width: 100%;
+    padding-top: 20px;
+}
+.ContactUsWrapper .ContactUsContent {
+    flex: 1;
+}
+.ContactUsWrapper .ContactUsContent .ContactUsContentList {
+    display: flex;
+    flex-wrap: wrap;
+}
+.ContactUsWrapper .ContactUsContent .ContactUsContentList > li {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 24%;
+    padding: 10px 20px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    background: #f5f5f5;
+}
+.ContactUsWrapper .ContactUsContent .ContactUsContentList > li .title {
+    font-size: 18px;
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #999;
+    color: #2877d2;
+}
+.ContactUsWrapper .ContactUsContent .ContactUsContentList > li .title i {
+    font-size: 14px;
+}
+.ContactUsWrapper .ContactUsContent .ContactUsContentList .ContentList li {
+    list-style: disc;
+    list-style-position: inside;
+    color: #666;
+}
+.ContactUsWrapper .ContactUsContent .ContactUsContentList .ContentList li a {
+    color: #666;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 22px;
+    font-size: 14px;
+}

@@ -860,3 +860,50 @@ var QAData = {
         }
     ]
 };
+
+// 電子報
+var EPapperData = {
+    "EPapper":[
+        {
+            title: "申請志願服務榮譽卡作業指引",
+            url: "http://google.com/",
+            time: "2019/06/13"
+        }, {
+            title: "衛生福利部新修正「志工基礎訓練課程」及「社會福利..",
+            url: "http://google.com/",
+            time: "2019/06/18"
+        }, {
+            title: "105年度志工團體意外事故保險聯繫窗口",
+            url: "http://google.com/",
+            time: "2019/06/13"
+        }, {
+            title: "志願服務法第十五條修正條文",
+            url: "http://google.com/",
+            time: "2019/06/13"
+        }, {
+            title: "志願服務獎勵辦法第三條修正條文",
+            url: "http://google.com/",
+            time: "2019/06/13"
+        }, {
+            title: "衛生福利志願服務獎勵辦法1030425",
+            url: "http://google.com/",
+            time: "2019/06/13"
+        }, {
+            title: "內政業務志願服務獎勵辦法修正通知",
+            url: "http://google.com/",
+            time: "2019/06/13"
+        }, {
+            title: "增訂並修正志願服務法條文",
+            url: "http://google.com/",
+            time: "2019/06/13"
+        }, {
+            title: "志願服務資訊整合系統已修正，志工服務時數可登打為..",
+            url: "http://google.com/",
+            time: "2019/06/13"
+        }, {
+            title: "志願服務基礎訓練課程可至臺北市政府「臺北e大學習..",
+            url: "http://google.com/",
+            time: "2019/06/13"
+        }
+    ]
+};

@@ -170,6 +170,13 @@ h6.MainTitle:after {
 h6.MainTitle span {
 	color: #ff7474;
 }
+.Description p {
+	margin-bottom: 20px;
+	text-align: center;
+}
+.Description p i {
+	margin-right: 5px;
+}
 .CarouselCtrl {
 	display: inline-block;
 	float: right;

@@ -2,13 +2,13 @@
 <html lang="zh">
     <head>
         <meta charset="UTF-8">
-        <title>下載專區</title>
+        <title>電子報</title>
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
 
         <link rel="stylesheet" href="css/common.css">
         <link rel="stylesheet" href="css/index.css">
-        <link rel="stylesheet" href="css/filedownload.css">
+        <link rel="stylesheet" href="css/epapper.css">
 
         <script src="js/jquery-3.3.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
@@ -18,10 +18,10 @@
         <script src="js/publicfunction.js"></script>
         <script src="data.js"></script><!--假資料檔-->
 
-        <script src="js/controllers/filedownload.js"></script>
+        <script src="js/controllers/epapper.js"></script>
 
     </head>
-    <body ng-app="myApp" ng-controller="FileDownloadCtrl">
+    <body ng-app="myApp" ng-controller="EPapperCtrl">
         <header class="HeaderWrapper">
             <div class="clearfix container">
                 <a class="Logo" href="index.html"><img class="img-responsive" src="./images/logo.png" alt=""></a>
@@ -31,13 +31,13 @@
                             <a href="ContactUs.html"><i class="glyphicon glyphicon-envelope"></i>聯絡我們</a>
                         </li>
                         <li>
-                            <a href="WebMap.html"><i class="glyphicon glyphicon-globe"></i>網站地圖</a>
+                            <a href=""><i class="glyphicon glyphicon-globe"></i>網站地圖</a>
                         </li>
                         <li>
                             <a href=""><i class="glyphicon glyphicon-link"></i>相關連結</a>
                         </li>
                         <li class="BorderRight">
-                            <a href="EPapper.html"><i class="glyphicon glyphicon-paperclip"></i>電子報</a>
+                            <a href=""><i class="glyphicon glyphicon-paperclip"></i>電子報</a>
                         </li>
                         <li>
                             <span>累積訪客人數</span>
@@ -51,7 +51,7 @@
                     <ul class="MainMenu">
                         <li><a href="index.html">首頁</a></li>
                         <li><a href="Announcement.html">公告專區</a></li>
-                        <li><a href="#" class="active">下載專區</a></li>
+                        <li><a href="FileDownload.html">下載專區</a></li>
                         <li><a href="ThinkTank.html">志願服務智庫</a></li>
                         <li><a href="Rule.html">法規專區</a></li>
                         <!--<li><a href="">單位查詢</a></li>-->
@@ -63,34 +63,75 @@
         </header>
         <div class="BodyWrapper">
             <div class="clearfix container">
-                <div class="FileDownloadWrapper">
-                    <ul class="nav nav-tabs NavTabs FileDownloadTab">
+                <div class="EPapperWrapper">
+                    <ul class="nav nav-tabs NavTabs EPapperTab">
                         <li class="active">
-                            <a href="#MsgCenter" data-toggle="tab">
-                                <i class="glyphicon glyphicon-download-alt"></i>
-                                檔案下載
+                            <a href="#EPapper" data-toggle="tab">
+                                <i class="glyphicon glyphicon-bell"></i>
+                                電子報
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Subscribe" data-toggle="tab">
+                                <i class="glyphicon glyphicon-copy"></i>
+                                訂閱電子報
                             </a>
                         </li>
                     </ul>
-                    <div class="tab-content FileDownloadContent">
+                    <div class="tab-content EPapperContent">
                         <p class="NowPosition">
                             現在位置：
                             <a href="index.html">首頁</a>
                             <span>/</span>
-                            <a class="active" href="#">檔案下載</a>
+                            <a class="active" href="#">志工電子報</a>
                         </p>
-                        <div id="MsgCenter" class="tab-pane fade in active">
-                            <h6 class="MainTitle">檔案<span>下載</span></h6>
-                            <ul class="FileDownloadContentList">
-                                <li ng-repeat="(key,value) in FileDownloadData">
+                        <div id="EPapper" class="tab-pane fade in active">
+                            <h6 class="MainTitle">志工<span>電子報</span></h6>
+                            <form class="SearchBar">
+                                <label for="SearchCenter">
+                                    搜尋：<input type="text" id="SearchCenter">
+                                </label>
+                                <button class="btn btn-sm btn-primary" type="submit">搜尋</button>
+                            </form>
+                            <ul class="EPapperContentList">
+                                <li ng-repeat="(key,value) in EPapperData.EPapper">
                                     <a href="[{value.url}]" target="_blank">
                                         <h5 class="clearfix title">[{value.title}]
                                             <div class="time">[{value.time}]</div>
                                         </h5>
-                                        <p class="content">[{value.content || "暫無說明。"}]</p>
                                     </a>
                                 </li>
                             </ul>
+
+                            <!--Page-->
+                            <nav class="text-center" aria-label="Page navigation">
+                                <ul class="pagination">
+                                    <li>
+                                        <a href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li>
+                                        <a href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div id="Subscribe" class="tab-pane fade">
+                            <h6 class="MainTitle">訂閱/取消<span>訂閱電子報</span></h6>
+                            <div class="Description">
+                                <p><i class="glyphicon glyphicon-pencil"></i>請輸入您要訂閱／取消的e-mail帳號</p>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="example@example.com">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-primary" type="button">填好送出</button>
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -121,7 +162,7 @@
                             <li><a href="">文章分享</a></li>
                             <li><a href="">留言討論</a></li>
                             <li><a href="ContactUs.html">聯絡我們</a></li>
-                            <li><a href="EPapper.html">電子報</a></li>
+                            <li><a href="">電子報</a></li>
                         </ul>
                     </li>
                     <li>
