@@ -1,0 +1,54 @@
+/*
+*
+* Create by Wayne(WJDesign) 2019.06.09
+*
+*/
+@charset "UTF-8";
+
+.CenterIntroWrapper {
+    display: flex;
+    width: 100%;
+    padding-top: 20px;
+}
+.CenterIntroWrapper .CenterIntroContent {
+    flex: 1;
+    min-height: 500px;
+}
+.CenterIntroWrapper .CenterIntroContent .SearchBar {
+    float: right;
+    margin-top: 3px;
+}
+.CenterIntroWrapper .CenterIntroContent .SearchBar label {
+    margin-bottom: 0;
+    margin-right: 5px;
+}
+.CenterIntroWrapper .CenterIntroContent .SearchBar input {
+    margin-left: 5px;
+}
+.CenterIntroWrapper .CenterIntroContent .TypeIntro {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.CenterIntroWrapper .CenterIntroContent .IntroList {
+    flex: 0 0 33.333%;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+.CenterIntroWrapper .CenterIntroContent .IntroList a {
+    width: 100%;
+    text-align: center;
+    background: #32b180;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    font-size: 14px;
+    line-height: 14px;
+    transition: .3s;
+}
+.CenterIntroWrapper .CenterIntroContent .IntroList a:hover {
+    font-size: 16px;
+    background: #1a885d;
+}

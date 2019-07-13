@@ -2,26 +2,21 @@
 <html lang="zh">
     <head>
         <meta charset="UTF-8">
-        <title>公告區</title>
+        <title>志願服務類別簡介</title>
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
 
         <link rel="stylesheet" href="css/common.css">
         <link rel="stylesheet" href="css/index.css">
-        <link rel="stylesheet" href="css/announcement.css">
+        <link rel="stylesheet" href="css/centerintro.css">
 
         <script src="js/jquery-3.3.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/angular.min.js"></script>
         <script src="js/moment.min.js"></script>
 
-        <script src="js/publicfunction.js"></script>
-        <script src="data.js"></script><!--假資料檔-->
-
-        <script src="js/controllers/announcement.js"></script>
-
     </head>
-    <body ng-app="myApp" ng-controller="AnnouncementCtrl">
+    <body>
         <header class="HeaderWrapper">
             <div class="clearfix container">
                 <a class="Logo" href="index.html"><img class="img-responsive" src="./images/logo.png" alt=""></a>
@@ -50,7 +45,7 @@
                     </ul>
                     <ul class="MainMenu">
                         <li><a href="index.html">首頁</a></li>
-                        <li><a href="#" class="active">公告專區</a></li>
+                        <li><a href="Announcement.html">公告專區</a></li>
                         <li><a href="FileDownload.html">下載專區</a></li>
                         <li><a href="ThinkTank.html">志願服務智庫</a></li>
                         <li><a href="Rule.html">法規專區</a></li>
@@ -63,69 +58,117 @@
         </header>
         <div class="BodyWrapper">
             <div class="clearfix container">
-                <div class="AnnounceWrapper">
-                    <ul class="nav nav-tabs NavTabs AnnounceTab">
+                <div class="CenterIntroWrapper">
+                    <ul class="nav nav-tabs NavTabs CenterIntroTab">
                         <li class="active">
-                            <a href="#MsgCenter" data-toggle="tab">
-                                <i class="glyphicon glyphicon-envelope"></i>
-                                中心訊息
+                            <a href="#CenterIntro" data-toggle="tab">
+                                <i class="glyphicon glyphicon-home"></i>
+                                志工中心介紹
                             </a>
                         </li>
                         <li>
-                            <a href="#MsgTeam" data-toggle="tab">
-                                <i class="glyphicon glyphicon-star"></i>
-                                志工團隊活動
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#CommunityInfo" data-toggle="tab">
-                                <i class="glyphicon glyphicon-flag"></i>
-                                社福資訊
+                            <a href="#TypeIntro" data-toggle="tab">
+                                <i class="glyphicon glyphicon-th"></i>
+                                志願類別簡介
                             </a>
                         </li>
                     </ul>
-                    <div class="tab-content AnnounceContent">
-                        <p class="NowPosition">
-                            現在位置：
-                            <a href="index.html">首頁</a>
-                            <span>/</span>
-                            <a class="active" href="#">公告專區</a>
-                        </p>
-                        <div id="MsgCenter" class="tab-pane fade in active">
-                            <h6 class="MainTitle">中心<span>訊息</span></h6>
-                            <ul class="AnnounceContentList">
-                                <li ng-repeat="(key,value) in AnnouncementData.MsgCenter">
-                                    <a class="title" href="[{value.url}]" target="_self">
-                                        [{value.title}]
-                                        <span ng-if="(value.sign)">[{value.sign}]</span>
-                                    </a>
-                                    <p class="content">[{value.content}]<a class="readMore" href="[{value.url}]">(閱讀更多)</a></p>
-                                </li>
-                            </ul>
+                    <div class="tab-content CenterIntroContent">
+                        <div id="CenterIntro" class="tab-pane fade in active">
+                            <p class="NowPosition">
+                                現在位置：
+                                <a href="index.html">首頁</a>
+                                <span>/</span>
+                                <a class="active" href="#">志工中心介紹</a>
+                            </p>
+                            <h6 class="MainTitle">志工中心<span>介紹</span></h6>
+                            <div>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.8941683114726!2d120.30982621561745!3d22.620426885158135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e049b9f81e71f%3A0x19f0bc7213536bcd!2zODAy6auY6ZuE5biC6IuT6ZuF5Y2A5Zub57at5LiJ6LevMuiZnzEw!5e0!3m2!1szh-TW!2stw!4v1558971075666!5m2!1szh-TW!2stw" height="450" frameborder="0" style="border:0;width: 100%;" allowfullscreen></iframe>
+                                <!--<div class="jsmaps-wrapper" id="taiwan-map"></div>-->
+                            </div>
                         </div>
-                        <div id="MsgTeam" class="tab-pane fade">
-                            <h6 class="MainTitle">志工團隊<span>活動</span></h6>
-                            <ul class="AnnounceContentList">
-                                <li ng-repeat="(key,value) in AnnouncementData.MsgCenter">
-                                    <a class="title" href="[{value.url}]" target="_self">
-                                        [{value.title}]
-                                        <span ng-if="(value.sign)">[{value.sign}]</span>
-                                    </a>
-                                    <p class="content">[{value.content}]<a class="readMore" href="[{value.url}]">(閱讀更多)</a></p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div id="CommunityInfo" class="tab-pane fade">
-                            <h6 class="MainTitle">社福<span>資訊</span></h6>
-                            <ul class="AnnounceContentList">
-                                <li ng-repeat="(key,value) in AnnouncementData.MsgCenter">
-                                    <a class="title" href="[{value.url}]" target="_self">
-                                        [{value.title}]
-                                        <span ng-if="(value.sign)">[{value.sign}]</span>
-                                    </a>
-                                    <p class="content">[{value.content}]<a class="readMore" href="[{value.url}]">(閱讀更多)</a></p>
-                                </li>
-                            </ul>
+                        <div id="TypeIntro" class="tab-pane fade">
+                            <p class="NowPosition">
+                                現在位置：
+                                <a href="index.html">首頁</a>
+                                <span>/</span>
+                                <a class="active" href="#">志願類別簡介</a>
+                            </p>
+                            <h6 class="MainTitle">志願類別<span>簡介</span></h6>
+                            <div class="TypeIntro">
+                                <div class="IntroList">
+                                    <a href="">高雄市政府行政暨國際處</a>
+                                </div>
+                                <div class="IntroList">
+                                    <a href="">高雄市政府民政局</a>
+                                </div>
+                                <div class="IntroList">
+                                    <a href="">高雄市政府財政局</a>
+                                </div>
+                                <div class="IntroList">
+                                    <a href="">高雄市政府教育局</a>
+                                </div>
+                                <div class="IntroList">
+                                    <a href="">高雄市經濟發展局</a>
+                                </div>
+                                <div class="IntroList">
+                                    <a href="">高雄市政府農業局</a>
+                                </div>
+                                <div class="IntroList">
+                                    <a href="">高雄市政府觀光局</a>
+                                </div>
+                                <div class="IntroList">
+                                    <a href="">高雄市政府工務局</a>
+                                </div>
+                                <div class="IntroList">
+                                    <a href="">高雄市政府水利局</a>
+                                </div>
+                                <div class="IntroList">
+                                    <a href="">高雄市政府社會局</a>
+                                </div>
+                                <div class="IntroList">
+                                    <a href="">高雄市政府勞工局</a>
+                                </div>
+                                <div class="IntroList">
+                                    <a href="">高雄市政府警察局</a>
+                                </div>
+                                <div class="IntroList">
+                                    <a href="">高雄市政府消防局</a>
+                                </div>
+                                <div class="IntroList">
+                                    <a href="">高雄市政府衛生局</a>
+                                </div>
+                                <div class="IntroList">
+                                    <a href="">高雄市政府環境保護局</a>
+                                </div>
+                                <div class="IntroList">
+                                    <a href="">高雄市政府捷運工程局</a>
+                                </div>
+                                <div class="IntroList">
+                                    <a href="">高雄市政府文化局</a>
+                                </div>
+                                <div class="IntroList">
+                                    <a href="">高雄市政府交通局</a>
+                                </div>
+                                <div class="IntroList">
+                                    <a href="">高雄市政府地政局</a>
+                                </div>
+                                <div class="IntroList">
+                                    <a href="">高雄市政府新聞局</a>
+                                </div>
+                                <div class="IntroList">
+                                    <a href="">高雄市政府原住民事務委員會</a>
+                                </div>
+                                <div class="IntroList">
+                                    <a href="">高雄市政府客家事務委員會</a>
+                                </div>
+                                <div class="IntroList">
+                                    <a href="">高雄市政府人事處</a>
+                                </div>
+                                <div class="IntroList">
+                                    <a href="">高雄市政府政風處</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -2,26 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="847d0dd8-d07a-45ef-8a72-fd2049404737" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/EPapper.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/epapper.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/webmap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/controllers/contactus.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Announcement.html" beforeDir="false" afterPath="$PROJECT_DIR$/Announcement.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Announcement_Content.html" beforeDir="false" afterPath="$PROJECT_DIR$/Announcement_Content.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Company.html" beforeDir="false" afterPath="$PROJECT_DIR$/Company.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContactUs.html" beforeDir="false" afterPath="$PROJECT_DIR$/ContactUs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EPapper.html" beforeDir="false" afterPath="$PROJECT_DIR$/EPapper.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FileDownload.html" beforeDir="false" afterPath="$PROJECT_DIR$/FileDownload.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Member.html" beforeDir="false" afterPath="$PROJECT_DIR$/Member.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QA.html" beforeDir="false" afterPath="$PROJECT_DIR$/QA.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rule.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rule.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ThinkTank.html" beforeDir="false" afterPath="$PROJECT_DIR$/ThinkTank.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Traning.html" beforeDir="false" afterPath="$PROJECT_DIR$/Traning.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/common.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebMap.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebMap.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/data.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/controllers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/controllers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/publicfunction.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/publicfunction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memberLogin.html" beforeDir="false" afterPath="$PROJECT_DIR$/memberLogin.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,46 +53,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/announcement.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="955">
-              <caret line="113" column="1" selection-start-line="113" selection-start-column="1" selection-end-line="113" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="43" column="46" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ContactUs.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="27" column="41" lean-forward="true" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/contactus.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="252">
-              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Rule.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2179">
-              <caret line="135" column="18" lean-forward="true" selection-start-line="135" selection-start-column="18" selection-end-line="153" selection-end-column="18" />
+              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -105,8 +64,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="875" column="41" lean-forward="true" selection-start-line="875" selection-start-column="41" selection-end-line="875" selection-end-column="41" />
+            <state relative-caret-position="145">
+              <caret line="867" column="33" selection-start-line="867" selection-start-column="20" selection-end-line="867" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="298">
+              <caret line="210" column="65" lean-forward="true" selection-start-line="210" selection-start-column="65" selection-end-line="214" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CenterIntro.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="295">
+              <caret line="85" column="416" selection-start-line="85" selection-start-column="416" selection-end-line="85" selection-end-column="416" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/centerintro.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="936">
+              <caret line="52" column="24" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -140,15 +126,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>RegisterModal</find>
-      <find>rememberAccount</find>
-      <find>.SubTitle</find>
-      <find>form</find>
-      <find>SubTitle</find>
-      <find>Honorlist</find>
-      <find>ImportantMsgData</find>
-      <find>Announce</find>
-      <find>FileDownloadWrapper</find>
       <find>FileDownloadTab</find>
       <find>AnnouncementData</find>
       <find>SearchBar</find>
@@ -165,11 +142,20 @@
       <find>FileDownload</find>
       <find>WebMapContentList</find>
       <find>網站地圖</find>
-      <find>Rule</find>
       <find>電子報</find>
       <find>WebMap</find>
       <find>EPapper</find>
       <find>聯絡我們</find>
+      <find>中央政府</find>
+      <find>&lt;li&gt;&lt;a href=&quot;&quot;&gt;中央政府&lt;/a&gt;&lt;/li&gt;</find>
+      <find>&lt;li&gt;&lt;a href=&quot;&quot;&gt;地方政府&lt;/a&gt;&lt;/li&gt;</find>
+      <find>usemap=&quot;#Map3&quot;</find>
+      <find>Center</find>
+      <find>Rule</find>
+      <find>MainTitle</find>
+      <find>CenterIntroContentList</find>
+      <find>CenterIntroContent</find>
+      <find>&lt;li&gt;&lt;a href=&quot;&quot;&gt;志工中心介紹&lt;/a&gt;&lt;/li&gt;</find>
     </findStrings>
     <replaceStrings>
       <replace>53a594</replace>
@@ -181,7 +167,11 @@
       <replace>QA</replace>
       <replace>WebMap</replace>
       <replace>EPapper</replace>
+      <replace>&lt;li&gt;&lt;a href=&quot;Rule.html?Center&quot;&gt;中央政府&lt;/a&gt;&lt;/li&gt;</replace>
+      <replace>&lt;li&gt;&lt;a href=&quot;Rule.html?Place&quot;&gt;地方政府&lt;/a&gt;&lt;/li&gt;</replace>
       <replace>ContactUs</replace>
+      <replace>CenterIntro</replace>
+      <replace>&lt;li&gt;&lt;a href=&quot;CenterIntro.html&quot;&gt;志工中心介紹&lt;/a&gt;&lt;/li&gt;</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -193,11 +183,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js/controllers/memberLogin.js" />
-        <option value="$PROJECT_DIR$/images/fb.svg" />
-        <option value="$PROJECT_DIR$/images/line.svg" />
-        <option value="$PROJECT_DIR$/images/fb_active.svg" />
-        <option value="$PROJECT_DIR$/images/line_active.svg" />
         <option value="$PROJECT_DIR$/login.html" />
         <option value="$PROJECT_DIR$/memberLogin.html" />
         <option value="$PROJECT_DIR$/companyLogin.html" />
@@ -225,14 +210,11 @@
         <option value="$PROJECT_DIR$/css/webmap.css" />
         <option value="$PROJECT_DIR$/js/publicfunction.js" />
         <option value="$PROJECT_DIR$/js/controllers/epapper.js" />
-        <option value="$PROJECT_DIR$/data.js" />
         <option value="$PROJECT_DIR$/css/contactus.css" />
         <option value="$PROJECT_DIR$/js/controllers/contactus.js" />
         <option value="$PROJECT_DIR$/css/epapper.css" />
         <option value="$PROJECT_DIR$/css/common.css" />
         <option value="$PROJECT_DIR$/ContactUs.html" />
-        <option value="$PROJECT_DIR$/Announcement.html" />
-        <option value="$PROJECT_DIR$/Traning.html" />
         <option value="$PROJECT_DIR$/ThinkTank.html" />
         <option value="$PROJECT_DIR$/Company.html" />
         <option value="$PROJECT_DIR$/MemberLogin.html" />
@@ -240,10 +222,18 @@
         <option value="$PROJECT_DIR$/Rule.html" />
         <option value="$PROJECT_DIR$/Member.html" />
         <option value="$PROJECT_DIR$/QA.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/Announcement_Content.html" />
         <option value="$PROJECT_DIR$/WebMap.html" />
         <option value="$PROJECT_DIR$/EPapper.html" />
+        <option value="$PROJECT_DIR$/data.js" />
+        <option value="$PROJECT_DIR$/EPapperContent_A.html" />
+        <option value="$PROJECT_DIR$/css/epappercontent.css" />
+        <option value="$PROJECT_DIR$/EPapperContent_B.html" />
+        <option value="$PROJECT_DIR$/Announcement.html" />
+        <option value="$PROJECT_DIR$/Traning.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/centerintro.css" />
+        <option value="$PROJECT_DIR$/CenterIntro.html" />
       </list>
     </option>
   </component>
@@ -275,6 +265,11 @@
             <path>
               <item name="KVC" type="b2602c69:ProjectViewProjectNode" />
               <item name="KVC" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KVC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KVC" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -298,14 +293,14 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/js/controllers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/css" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/js/controllers" />
       <recent name="$PROJECT_DIR$/css" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/js/controllers" />
       <recent name="$PROJECT_DIR$/images" />
       <recent name="$PROJECT_DIR$/js" />
     </key>
@@ -395,12 +390,12 @@
       <workItem from="1562767476777" duration="4000" />
       <workItem from="1562768835875" duration="14000" />
       <workItem from="1562778403087" duration="6000" />
-      <workItem from="1562778629239" duration="9071000" />
+      <workItem from="1562778629239" duration="14816000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136364000" />
+    <option name="totallyTimeSpent" value="142109000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -450,23 +445,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/images/fb_active.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/line_active.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login.html" />
-    <entry file="file://$PROJECT_DIR$/companyLogin.html" />
-    <entry file="file://$PROJECT_DIR$/js/controllers/memberLogin.js" />
     <entry file="file://$PROJECT_DIR$/js/controllers/Member.js" />
     <entry file="file:///private/var/folders/lg/yq7blps15l15f1tqlrrxmd7w0000gn/T/mem_mobile_tpl_899u9_html_main_Before_c5f5fe5ed36b572b81b192ef3a6553f15d727349.html" />
     <entry file="file://$PROJECT_DIR$/Footer.html" />
@@ -604,9 +582,9 @@
         <state relative-caret-position="329">
           <caret line="118" column="49" lean-forward="true" selection-start-line="118" selection-start-column="49" selection-end-line="118" selection-end-column="49" />
           <folding>
-            <marker date="1562867816492" expanded="true" signature="4488:10541" ph="..." />
-            <marker date="1562867816492" expanded="true" signature="4489:10510" ph="..." />
-            <marker date="1562867816492" expanded="true" signature="4538:4686" ph="..." />
+            <marker date="1563051594344" expanded="true" signature="4488:10541" ph="..." />
+            <marker date="1563051594344" expanded="true" signature="4489:10510" ph="..." />
+            <marker date="1563051594344" expanded="true" signature="4538:4686" ph="..." />
           </folding>
         </state>
       </provider>
@@ -684,31 +662,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EPapper.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2178">
-          <caret line="121" column="34" selection-start-line="121" selection-start-column="34" selection-end-line="121" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rule.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2179">
-          <caret line="135" column="18" lean-forward="true" selection-start-line="135" selection-start-column="18" selection-end-line="153" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="43" column="46" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/contactus.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
-          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -723,13 +680,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-251">
           <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="875" column="41" lean-forward="true" selection-start-line="875" selection-start-column="41" selection-end-line="875" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -758,6 +708,69 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
           <caret line="27" column="41" lean-forward="true" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EPapper.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-430">
+          <caret line="33" column="48" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rule.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2179">
+          <caret line="135" column="18" lean-forward="true" selection-start-line="135" selection-start-column="18" selection-end-line="153" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/epappercontent.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="865">
+          <caret line="109" column="23" selection-start-line="109" selection-start-column="23" selection-end-line="109" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EPapperContent_B.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="42" lean-forward="true" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EPapperContent_A.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="26" column="60" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="867" column="33" selection-start-line="867" selection-start-column="20" selection-end-line="867" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/centerintro.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="936">
+          <caret line="52" column="24" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="210" column="65" lean-forward="true" selection-start-line="210" selection-start-column="65" selection-end-line="214" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CenterIntro.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="85" column="416" selection-start-line="85" selection-start-column="416" selection-end-line="85" selection-end-column="416" />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,111 @@
+/*
+*
+* Create by Wayne(WJDesign) 2019.07.08
+*
+*/
+@charset "UTF-8";
+.EpapperWrapper {
+    font-family: 'Microsoft Jhenghei', '微軟正黑體', Arial;
+    width: 100%;
+}
+.EpapperWrapper .EpapperContent {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 5px;
+    border: 1px solid #999;
+}
+.EpapperWrapper .EpapperContent .MainTitle .title {
+    background: #27658c;
+    width: 100%;
+    margin: 0;
+    font-size: 16px;
+    padding: 10px;
+    color: #fff;
+}
+.EpapperWrapper .EpapperContent .MainTitle .title i {
+    font-size: 14px;
+}
+.EpapperWrapper .EpapperContent .MainTitle .title .NoRemind {
+    float: right;
+    font-size: 12px;
+    padding: 0 5px;
+}
+.EpapperWrapper .EpapperContent .MainTitle .title .NoRemind i {
+    margin-right: 3px;
+    top: 2px;
+}
+.EpapperWrapper .EpapperContent .MainTitle .MainInfo {
+    margin: 0;
+    width: 100%;
+    padding: 5px;
+    background: #d2f0fe;
+    color: #144869;
+}
+.EpapperWrapper .EpapperContent .ContentInfo {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.EpapperWrapper .EpapperContent .ContentInfo .ContentTitle {
+    display: flex;
+    flex: 0 0 20%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 18px;
+    background: #eee;
+    border-bottom: 1px solid #fff;;
+}
+.EpapperWrapper .EpapperContent .ContentInfo .ContentTitle i {
+    font-size: 14px;
+    margin-right: 5px;
+    top: 0;
+}
+.EpapperWrapper .EpapperContent .ContentInfo .ContentLine {
+    display: flex;
+    flex: 0 0 80%;
+    padding: 10px;
+}
+.EpapperWrapper .EpapperContent .ContentInfo .ContentLine ul li {
+    letter-spacing: 1px;
+    border-bottom: 1px dashed #999;
+    padding: 3px;
+}
+.EpapperWrapper .EpapperContent .ContentInfo .ContentLine ul li:hover {
+    background: #fffbd2;
+}
+.EpapperWrapper .EpapperContent .ContentInfo .ContentLine ul li i {
+    content: '';
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: url(../images/list.gif) no-repeat center center;
+}
+.EpapperWrapper .EpapperContent .ContentInfo .ContentLine ul li a {
+    margin-left: 10px;
+    text-decoration: none;
+}
+.EpapperWrapper .EpapperContent .footer {
+    margin-top: 20px;
+    padding: 5px 0;
+    line-height: 20px;
+    background: #27658c;
+    color: #fff;
+    text-align: center;
+}
+.EpapperWrapper .EpapperContent .footer p {
+    margin-bottom: 0;
+}
+
+/*B款*/
+.EpapperWrapper .EpapperContent_B .MainTitle .title {
+    background: #0a6b58;
+}
+.EpapperWrapper .EpapperContent_B .MainTitle .MainInfo {
+    background: #c2e4dd;
+    color: #0c6a58;
+}
+.EpapperWrapper .EpapperContent_B .footer {
+    background: #0c6a58;
+}
