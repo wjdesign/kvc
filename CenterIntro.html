@@ -13,10 +13,15 @@
         <script src="js/jquery-3.3.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/angular.min.js"></script>
+        <script src="js/angular-sanitize.js"></script>
         <script src="js/moment.min.js"></script>
 
+        <script src="js/publicfunction.js"></script>
+        <script src="data.js"></script><!--假資料檔-->
+
+        <script src="js/controllers/centerintro.js"></script>
     </head>
-    <body>
+    <body ng-app="myApp" ng-controller="CenterIntroCtrl">
         <header class="HeaderWrapper">
             <div class="clearfix container">
                 <a class="Logo" href="index.html"><img class="img-responsive" src="./images/logo.png" alt=""></a>
@@ -61,13 +66,13 @@
                 <div class="CenterIntroWrapper">
                     <ul class="nav nav-tabs NavTabs CenterIntroTab">
                         <li class="active">
-                            <a href="#CenterIntro" data-toggle="tab">
+                            <a href="#CenterIntro" data-toggle="tab" ng-click="ShowTypeIntro('')">
                                 <i class="glyphicon glyphicon-home"></i>
                                 志工中心介紹
                             </a>
                         </li>
                         <li>
-                            <a href="#TypeIntro" data-toggle="tab">
+                            <a href="#TypeIntro" data-toggle="tab" ng-click="ShowTypeIntro('')">
                                 <i class="glyphicon glyphicon-th"></i>
                                 志願類別簡介
                             </a>
@@ -92,81 +97,116 @@
                                 現在位置：
                                 <a href="index.html">首頁</a>
                                 <span>/</span>
-                                <a class="active" href="#">志願類別簡介</a>
+                                <a ng-class="{true:'active'}[!(SelectTypeIntro)]" ng-click="ShowTypeIntro('')" href="javascript:void(0);">志願類別簡介</a>
+                                <span ng-if="(SelectTypeIntro)">/</span>
+                                <a ng-if="(SelectTypeIntro)" class="active" href="#">[{TypeIntroData[SelectTypeIntro]["Title"]}]</a>
                             </p>
                             <h6 class="MainTitle">志願類別<span>簡介</span></h6>
-                            <div class="TypeIntro">
+                            <div class="TypeIntro" ng-if="!(SelectTypeIntro)">
                                 <div class="IntroList">
-                                    <a href="">高雄市政府行政暨國際處</a>
+                                    <a ng-click="ShowTypeIntro('KCA')">高雄市政府行政暨國際處</a>
                                 </div>
                                 <div class="IntroList">
-                                    <a href="">高雄市政府民政局</a>
+                                    <a ng-click="ShowTypeIntro('KCG')">高雄市政府民政局</a>
                                 </div>
                                 <div class="IntroList">
-                                    <a href="">高雄市政府財政局</a>
+                                    <a ng-click="ShowTypeIntro('KCGF')">高雄市政府財政局</a>
                                 </div>
                                 <div class="IntroList">
-                                    <a href="">高雄市政府教育局</a>
+                                    <a ng-click="ShowTypeIntro('KCGE')">高雄市政府教育局</a>
                                 </div>
                                 <div class="IntroList">
-                                    <a href="">高雄市經濟發展局</a>
+                                    <a ng-click="ShowTypeIntro('KED')">高雄市經濟發展局</a>
                                 </div>
                                 <div class="IntroList">
-                                    <a href="">高雄市政府農業局</a>
+                                    <a ng-click="ShowTypeIntro('KCGA')">高雄市政府農業局</a>
                                 </div>
                                 <div class="IntroList">
-                                    <a href="">高雄市政府觀光局</a>
+                                    <a ng-click="ShowTypeIntro('KCGT')">高雄市政府觀光局</a>
                                 </div>
                                 <div class="IntroList">
-                                    <a href="">高雄市政府工務局</a>
+                                    <a ng-click="ShowTypeIntro('KCGW')">高雄市政府工務局</a>
                                 </div>
                                 <div class="IntroList">
-                                    <a href="">高雄市政府水利局</a>
+                                    <a ng-click="ShowTypeIntro('KCWR')">高雄市政府水利局</a>
                                 </div>
                                 <div class="IntroList">
-                                    <a href="">高雄市政府社會局</a>
+                                    <a ng-click="ShowTypeIntro('KCGS')">高雄市政府社會局</a>
                                 </div>
                                 <div class="IntroList">
-                                    <a href="">高雄市政府勞工局</a>
+                                    <a ng-click="ShowTypeIntro('KCGO')">高雄市政府勞工局</a>
                                 </div>
                                 <div class="IntroList">
-                                    <a href="">高雄市政府警察局</a>
+                                    <a ng-click="ShowTypeIntro('KCGP')">高雄市政府警察局</a>
                                 </div>
                                 <div class="IntroList">
-                                    <a href="">高雄市政府消防局</a>
+                                    <a ng-click="ShowTypeIntro('FDKC')">高雄市政府消防局</a>
                                 </div>
                                 <div class="IntroList">
-                                    <a href="">高雄市政府衛生局</a>
+                                    <a ng-click="ShowTypeIntro('KHD')">高雄市政府衛生局</a>
                                 </div>
                                 <div class="IntroList">
-                                    <a href="">高雄市政府環境保護局</a>
+                                    <a ng-click="ShowTypeIntro('KSEPB')">高雄市政府環境保護局</a>
                                 </div>
                                 <div class="IntroList">
-                                    <a href="">高雄市政府捷運工程局</a>
+                                    <a ng-click="ShowTypeIntro('KRTCO')">高雄市政府捷運工程局</a>
                                 </div>
                                 <div class="IntroList">
-                                    <a href="">高雄市政府文化局</a>
+                                    <a ng-click="ShowTypeIntro('KHCC')">高雄市政府文化局</a>
                                 </div>
                                 <div class="IntroList">
-                                    <a href="">高雄市政府交通局</a>
+                                    <a ng-click="ShowTypeIntro('TBKC')">高雄市政府交通局</a>
                                 </div>
                                 <div class="IntroList">
-                                    <a href="">高雄市政府地政局</a>
+                                    <a ng-click="ShowTypeIntro('LANDP')">高雄市政府地政局</a>
                                 </div>
                                 <div class="IntroList">
-                                    <a href="">高雄市政府新聞局</a>
+                                    <a ng-click="ShowTypeIntro('NEWS')">高雄市政府新聞局</a>
                                 </div>
                                 <div class="IntroList">
-                                    <a href="">高雄市政府原住民事務委員會</a>
+                                    <a ng-click="ShowTypeIntro('COIA')">高雄市政府原住民事務委員會</a>
                                 </div>
                                 <div class="IntroList">
-                                    <a href="">高雄市政府客家事務委員會</a>
+                                    <a ng-click="ShowTypeIntro('HAKKA')">高雄市政府客家事務委員會</a>
                                 </div>
                                 <div class="IntroList">
-                                    <a href="">高雄市政府人事處</a>
+                                    <a ng-click="ShowTypeIntro('KPD')">高雄市政府人事處</a>
                                 </div>
                                 <div class="IntroList">
-                                    <a href="">高雄市政府政風處</a>
+                                    <a ng-click="ShowTypeIntro('DISDP')">高雄市政府政風處</a>
+                                </div>
+                            </div>
+                            <div class="TypeIntroContent" ng-if="(SelectTypeIntro)">
+                                <h3 class="title">
+                                    <a class="btn btn-xs btn-default BackToUp" ng-click="ShowTypeIntro('')">
+                                        <i class="glyphicon glyphicon-share-alt"></i>
+                                        回上一頁
+                                    </a>
+                                    [{TypeIntroData[SelectTypeIntro]["Title"]}]
+                                    <span class="time"><i></i>最後更新時間：[{TypeIntroData[SelectTypeIntro]["UpDate"]}]</span>
+                                </h3>
+                                <hr>
+                                <ul class="InfoData">
+                                    <li class="place"><i></i>服務地點：[{TypeIntroData[SelectTypeIntro]["Place"]}]</li>
+                                    <li class="name"><i></i>聯絡窗口：[{TypeIntroData[SelectTypeIntro]["ContactName"]}]</li>
+                                    <li class="phone"><i></i>聯絡電話：[{TypeIntroData[SelectTypeIntro]["ContactPhone"]}]</li>
+                                    <li class="url"><i></i>單位/志願服務資訊網址：<a ng-href="[{TypeIntroData[SelectTypeIntro]['ContactURL']}]" target="_blank">[{TypeIntroData[SelectTypeIntro]["ContactURLName"]}]</a></li>
+                                </ul>
+                                <div ng-if="(TypeIntroData[SelectTypeIntro]['ServiceHTML'])" class="InfoContent">
+                                    <h5>服務項目及內容</h5>
+                                    <div ng-bind-html="TypeIntroData[SelectTypeIntro]['ServiceHTML']"></div>
+                                </div>
+                                <div ng-if="(TypeIntroData[SelectTypeIntro]['ServiceInfoURL'])" class="InfoContent">
+                                    <h5>單位/志願服務資訊網址</h5>
+                                    <div ng-bind-html="TypeIntroData[SelectTypeIntro]['ServiceInfoURL']"></div>
+                                </div>
+                                <div ng-if="(TypeIntroData[SelectTypeIntro]['ContactInfo'])" class="InfoContent">
+                                    <h5>聯絡窗口與電話</h5>
+                                    <div ng-bind-html="TypeIntroData[SelectTypeIntro]['ContactInfo']"></div>
+                                </div>
+                                <div ng-if="(TypeIntroData[SelectTypeIntro]['PlaceInfo'])" class="InfoContent">
+                                    <h5>服務地點</h5>
+                                    <div ng-bind-html="TypeIntroData[SelectTypeIntro]['PlaceInfo']"></div>
                                 </div>
                             </div>
                         </div>
@@ -180,10 +220,10 @@
                         <h6>關於我們</h6>
                         <ul class="SubTitle">
                             <li><a href="CenterIntro.html">志工中心介紹</a></li>
-                            <li><a href="">指導單位</a></li>
-                            <li><a href="">承辦單位</a></li>
-                            <li><a href="">年度營運策略</a></li>
-                            <li><a href="">交通資訊</a></li>
+                            <li><a href="AboutUs.html?Guide">指導單位</a></li>
+                            <li><a href="AboutUs.html?Match">志工媒合說明</a></li>
+                            <li><a href="AboutUs.html?About">關於我們</a></li>
+                            <li><a href="AboutUs.html?Traffic">交通資訊</a></li>
                         </ul>
                     </li>
                     <li>

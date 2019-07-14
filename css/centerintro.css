@@ -47,8 +47,94 @@
     font-size: 14px;
     line-height: 14px;
     transition: .3s;
+    cursor: pointer;
 }
 .CenterIntroWrapper .CenterIntroContent .IntroList a:hover {
     font-size: 16px;
     background: #1a885d;
+}
+
+/*志願類別簡介*/
+.CenterIntroWrapper .CenterIntroContent .TypeIntroContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.CenterIntroWrapper .CenterIntroContent .TypeIntroContent hr {
+    width: 100%;
+}
+.CenterIntroWrapper .CenterIntroContent .TypeIntroContent .title {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+.CenterIntroWrapper .CenterIntroContent .TypeIntroContent .BackToUp {
+    float: left;
+    font-size: 12px;
+    line-height: 24px;
+}
+.CenterIntroWrapper .CenterIntroContent .TypeIntroContent .BackToUp i {
+    margin-right: 3px;
+}
+.CenterIntroWrapper .CenterIntroContent .TypeIntroContent .time {
+    float: right;
+    font-size: 14px;
+    line-height: 24px;
+}
+.CenterIntroWrapper .CenterIntroContent .TypeIntroContent .time i {
+    content: '';
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: url(../images/date.gif) no-repeat center center;
+    margin-right: 5px;
+}
+.CenterIntroWrapper .CenterIntroContent .TypeIntroContent .InfoData li {
+    padding: 5px;
+}
+.CenterIntroWrapper .CenterIntroContent .TypeIntroContent .InfoData li i {
+    content: '';
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin-right: 5px;
+}
+.CenterIntroWrapper .CenterIntroContent .TypeIntroContent .InfoData .place i {
+    background: url("../images/house.png") no-repeat center center;
+}
+.CenterIntroWrapper .CenterIntroContent .TypeIntroContent .InfoData .name i {
+    background: url("../images/user.png") no-repeat center center;
+}
+.CenterIntroWrapper .CenterIntroContent .TypeIntroContent .InfoData .phone i {
+    background: url("../images/telephone.png") no-repeat center center;
+}
+.CenterIntroWrapper .CenterIntroContent .TypeIntroContent .InfoData .url i {
+    background: url("../images/world_link.png") no-repeat center center;
+}
+.CenterIntroWrapper .CenterIntroContent .TypeIntroContent h5 {
+    background: #999;
+    padding: 10px;
+    margin: 0 auto;
+    color: #fff;
+}
+.CenterIntroWrapper .CenterIntroContent .TypeIntroContent .InfoContent {
+    margin-top: 10px;
+}
+.CenterIntroWrapper .CenterIntroContent .TypeIntroContent .ServiceList {
+    padding: 10px;
+    background: #f6f7ed;
+}
+.CenterIntroWrapper .CenterIntroContent .TypeIntroContent .ServiceList li {
+    padding: 5px;
+    line-height: 24px;
+    list-style: cjk-ideographic;
+    list-style-position: inside;
+}
+.CenterIntroWrapper .CenterIntroContent .TypeIntroContent .ServiceList li:hover {
+    background: #fffac7;
+}
+.CenterIntroWrapper .CenterIntroContent .TypeIntroContent .ServiceList > li > ul > li {
+    padding-left: 2rem;
+    list-style: decimal;
+    list-style-position: inside;
 }

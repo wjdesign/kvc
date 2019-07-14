@@ -1,0 +1,59 @@
+/*
+*
+* Create by Wayne(WJDesign) 2019.06.09
+*
+*/
+@charset "UTF-8";
+
+.AboutUsWrapper {
+    display: flex;
+    width: 100%;
+    padding-top: 20px;
+}
+.AboutUsWrapper .AboutUsContent {
+    flex: 1;
+    min-height: 500px;
+}
+.AboutUsWrapper .AboutUsContent .title {
+    margin: 0 auto 10px;
+    text-align: center;
+}
+.AboutUsWrapper .AboutUsContent h4 {
+    text-align: center;
+    color: #999;
+}
+.AboutUsWrapper .AboutUsContent .AboutList > li {
+    font-size: 18px;
+    list-style: square;
+    list-style-position: inside;
+    line-height: 36px;
+}
+.AboutUsWrapper .AboutUsContent .AboutList > li > ul > li {
+    font-size: 18px;
+    list-style: simp-chinese-informal;
+    list-style-position: inside;
+    padding-left: 2rem;
+}
+.AboutUsWrapper .AboutUsContent .AboutList > li > ul > li:hover {
+    background: #ffffe1;
+}
+.AboutUsWrapper .AboutUsContent .AboutList > li > ul > li > ul > li {
+    font-size: 16px;
+    list-style: disc;
+    list-style-position: inside;
+    padding-left: 2rem;
+}
+.AboutUsWrapper .AboutUsContent .TrafficInfo img {
+    margin: 0 auto;
+}
+.AboutUsWrapper .AboutUsContent .TrafficInfo h6 {
+    font-size: 16px;
+    font-weight: bold;
+}
+.AboutUsWrapper .AboutUsContent .TrafficInfo ul li {
+    list-style: decimal;
+    list-style-position: inside;
+}
+.AboutUsWrapper .AboutUsContent .TrafficInfo .text-danger {
+    color: #ff7474;
+}
