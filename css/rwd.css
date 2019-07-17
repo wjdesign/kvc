@@ -282,6 +282,17 @@
 	.TraningWrapper .SearchTraning label {
 		margin-right: 5px;
 	}
+
+	/*志工登入*/
+	.MatchWrapper .Match .searchSelect {
+		flex: 0 0 100%;
+	}
+	.BodyWrapper .MatchWrapper .MatchResultItems {
+		flex: 0 0 50%;
+	}
+	.MatchMapWrapper iframe {
+		height: 350px;
+	}
 }
 
 @media (max-width: 1024px) {

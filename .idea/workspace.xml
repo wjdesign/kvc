@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="847d0dd8-d07a-45ef-8a72-fd2049404737" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AboutUs.html" beforeDir="false" afterPath="$PROJECT_DIR$/AboutUs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Announcement.html" beforeDir="false" afterPath="$PROJECT_DIR$/Announcement.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Announcement_Content.html" beforeDir="false" afterPath="$PROJECT_DIR$/Announcement_Content.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CenterIntro.html" beforeDir="false" afterPath="$PROJECT_DIR$/CenterIntro.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Company.html" beforeDir="false" afterPath="$PROJECT_DIR$/Company.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ContactUs.html" beforeDir="false" afterPath="$PROJECT_DIR$/ContactUs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EPapper.html" beforeDir="false" afterPath="$PROJECT_DIR$/EPapper.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileDownload.html" beforeDir="false" afterPath="$PROJECT_DIR$/FileDownload.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Member.html" beforeDir="false" afterPath="$PROJECT_DIR$/Member.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QA.html" beforeDir="false" afterPath="$PROJECT_DIR$/QA.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rule.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rule.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ThinkTank.html" beforeDir="false" afterPath="$PROJECT_DIR$/ThinkTank.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Traning.html" beforeDir="false" afterPath="$PROJECT_DIR$/Traning.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebMap.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebMap.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/common.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/publicfunction.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/publicfunction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/rwd.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/rwd.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -99,20 +82,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/rwd.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3339">
-              <caret line="236" column="42" selection-start-line="236" selection-start-column="42" selection-end-line="236" selection-end-column="42" />
+            <state relative-caret-position="941">
+              <caret line="293" column="21" selection-start-line="293" selection-start-column="21" selection-end-line="293" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebMap.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-573">
               <caret line="133" column="88" selection-start-line="133" selection-start-column="88" selection-end-line="133" selection-end-column="88" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Member.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="14" column="50" lean-forward="true" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#header#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -146,7 +141,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>usemap=&quot;#Map3&quot;</find>
       <find>Center</find>
       <find>MainTitle</find>
       <find>CenterIntroContentList</find>
@@ -176,6 +170,7 @@
       <find>&lt;div class=&quot;MenuWrapper collapse&quot; id=&quot;MobileMenu&quot; aria-expanded=&quot;false&quot; style=&quot;height: 0;&quot;&gt;</find>
       <find>MemberModal</find>
       <find>108年中心營運策略</find>
+      <find>Match</find>
     </findStrings>
     <replaceStrings>
       <replace>53a594</replace>
@@ -240,7 +235,6 @@
         <option value="$PROJECT_DIR$/js/controllers/index.js" />
         <option value="$PROJECT_DIR$/EPapperContent_A.html" />
         <option value="$PROJECT_DIR$/EPapperContent_B.html" />
-        <option value="$PROJECT_DIR$/css/rwd.css" />
         <option value="$PROJECT_DIR$/css/common.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/AboutUs.html" />
@@ -259,6 +253,7 @@
         <option value="$PROJECT_DIR$/Traning.html" />
         <option value="$PROJECT_DIR$/Company.html" />
         <option value="$PROJECT_DIR$/WebMap.html" />
+        <option value="$PROJECT_DIR$/css/rwd.css" />
       </list>
     </option>
   </component>
@@ -422,12 +417,12 @@
       <workItem from="1562778403087" duration="6000" />
       <workItem from="1562778629239" duration="28958000" />
       <workItem from="1563285293913" duration="11694000" />
-      <workItem from="1563385469974" duration="2388000" />
+      <workItem from="1563385469974" duration="2657000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="170333000" />
+    <option name="totallyTimeSpent" value="170602000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -682,13 +677,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/rwd.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3339">
-          <caret line="236" column="42" selection-start-line="236" selection-start-column="42" selection-end-line="236" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/common.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="353">
@@ -743,16 +731,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="941">
           <caret line="335" column="12" selection-start-line="335" selection-start-column="12" selection-end-line="335" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Member.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="941">
-          <caret line="471" column="12" selection-start-line="471" selection-start-column="12" selection-end-line="471" selection-end-column="12" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#header#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -839,6 +817,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-573">
           <caret line="133" column="88" selection-start-line="133" selection-start-column="88" selection-end-line="133" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Member.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="50" lean-forward="true" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#header#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/rwd.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="941">
+          <caret line="293" column="21" selection-start-line="293" selection-start-column="21" selection-end-line="293" selection-end-column="21" />
         </state>
       </provider>
     </entry>
