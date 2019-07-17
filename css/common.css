@@ -214,6 +214,12 @@ label {
 	background: transparent;
 	border: 0;
 }
+.MobileHeaderWrapper .MenuWrapper .MainMenu li .Login {
+	background: #e0b251;
+}
+.MobileHeaderWrapper .MenuWrapper .MainMenu li .Training {
+	background: #dc6363;
+}
 .MobileHeaderWrapper .MenuWrapper .MainMenu li .Link_Fb {
 	background: #4267b2;
 }

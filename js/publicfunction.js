@@ -20,7 +20,7 @@ $(function () {
             }
         }
 
-        var tabContent_array = document.querySelectorAll(".tab-content > div");
+        var tabContent_array = document.querySelectorAll(".tab-content > div:not(#Login)");
         for (var i=0;i<tabContent_array.length;i++) {
             if (tabContent_array[i].id == router) {
                 if (tabContent_array[i].classList.value.indexOf("active") < 0) {
