@@ -18,8 +18,271 @@
 
 }
 
-@media (max-width: 1024px) {
-	.HeaderWrapper .MenuWrapper .SubMenu {
-
+@media (max-width: 991px) {
+	/*Model*/
+	.modal .modal-dialog {
+		width: 90%;
 	}
+	.modal .modal-dialog .nav-tabs {
+		display: flex;
+		width: 100%;
+	}
+	.modal .modal-dialog .nav-tabs>li {
+		float: none;
+		flex: 1;
+		text-align: center;
+	}
+	.modal .modal-dialog .nav-tabs>li.active>a, .modal .modal-dialog .nav-tabs>li.active>a:focus, .modal .modal-dialog .nav-tabs>li.active>a:hover {
+		background: #54afc3;
+		border-radius: 4px;
+		color: #fff;
+		font-size: 16px;
+	}
+	.LoginWrapper .Login .LoginIntranet .Remember input {
+		margin-right: 5px;
+	}
+
+	/*首頁*/
+	.HeaderWrapper {
+		visibility: hidden;
+	}
+	.HeaderWrapper .MenuWrapper .MainMenu {
+		display: none;
+	}
+	.MobileHeaderWrapper {
+		display: block;
+		background: #fff;
+	}
+	.MobileHeaderWrapper .MenuWrapper {
+		display: none;
+		width: 100%;
+		flex-direction: column;
+	}
+	.MobileHeaderWrapper .MenuWrapper {
+		display: block;
+		width: 100%;
+		flex-direction: column;
+		overflow: hidden;
+	}
+	.MobileHeaderWrapper .MenuWrapper .MainMenu {
+		width: 100%;
+		max-height: calc(100vh - 87px);
+		overflow-y: scroll;
+		display: flex;
+		flex-direction: column;
+		background: #54afc3;
+	}
+	.MobileHeaderWrapper .MenuWrapper .MainMenu li a {
+		border-top: 1px solid rgba(255, 255, 255, .3);
+		border-bottom: 1px solid rgba(0, 0, 0, .1);
+		color: #fff;
+		display: block;
+		text-align: center;
+		text-decoration: none;
+		padding: 10px;
+	}
+	.MobileHeaderWrapper .MenuWrapper .MainMenu .SubMenu a {
+		border-right: 1px solid rgba(255, 255, 255, .3);
+		border-left: 1px solid rgba(0, 0, 0, .1);
+	}
+	.MobileHeaderWrapper .MenuWrapper .MainMenu .SubMenu a i {
+		display: block;
+		margin-bottom: 10px;
+		font-size: 18px;
+	}
+	.MobileHeaderWrapper .MenuWrapper .MainMenu li a.active {
+		background: #378da0;
+	}
+	.BodyWrapper .CarouselWrapper .LoginWrapper {
+		display: none;
+	}
+	.MarqueeWrapper .LiveCircle {
+		display: none;
+	}
+	.BodyWrapper .ImportantMsgWrapper,
+	.BodyWrapper .ActivityWrapper {
+		width: 100%;
+	}
+	.BodyWrapper .ImportantMsgWrapper .ImportantMsgTab {
+		display: flex;
+		flex-direction: row;
+		overflow-x: scroll;
+		overflow-y: hidden;
+	}
+	.BodyWrapper .ImportantMsgWrapper .ImportantMsgTab li {
+		flex: 0 0 auto;
+	}
+	.BodyWrapper .ImportantMsgWrapper .ImportantMsgTab li.active a {
+		background: #d25050;
+		border-radius: 4px;
+		color: #fff;
+	}
+	.BodyWrapper .SearchCityWrapper iframe {
+		height: 350px;
+	}
+	.fc tbody .fc-row .fc-content-skeleton tbody tr:last-child td {
+		padding-bottom: 0;
+	}
+	.FooterLink {
+		padding: 10px 0;
+	}
+	.FooterLink .MainTitle {
+		flex-direction: column;
+	}
+	.FooterLink .MainTitle .SubTitle {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.FooterLink .MainTitle .SubTitle li {
+		flex: 1;
+		min-width: 33.333%;
+	}
+	.FooterLink .MainTitle .SubTitle li a {
+		display: block;
+		width: 100%;
+		padding: 10px 0;
+	}
+	.FooterLink .MainTitle > li h6 {
+		background: #696969;
+		height: auto;
+		padding: 10px;
+		line-height: 22px;
+	}
+	.FooterWrapper .Footer table tr td.InfoTitle {
+		width: 40%;
+	}
+	.FooterWrapper .Footer table tr td:not(.InfoTitle) {
+		width: 60%;
+		padding: 5px 10px 10px 10px;
+	}
+	.FooterWrapper .Footer table tr:nth-child(even) {
+		border-bottom: 1px solid #696969;
+	}
+
+	/*其他頁面共用*/
+	.NavTabs {
+		width: 100%;
+		flex: 1;
+		flex-direction: row;
+		margin: 0;
+	}
+	.NavTabs li {
+		width: 100%;
+	}
+	.NavTabs li a {
+		display: block;
+		text-align: center;
+		padding: 10px 0;
+	}
+	.NavTabs li a i {
+		display: block;
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+	.NavTabs>li.active>a, .NavTabs>li.active>a:focus, .NavTabs>li.active>a:hover, .NavTabs>li>a:focus, .NavTabs>li>a:hover {
+		background: #ff7474;
+		border-radius: 4px;
+		color: #fff;
+	}
+	.tab-content .NowPosition {
+		padding-top: 10px;
+	}
+
+	/*其他頁面*/
+	.AnnounceWrapper,
+	.FileDownloadWrapper,
+	.ThinkTankWrapper,
+	.RuleWrapper,
+	.QAWrapper,
+	.ContactUsWrapper,
+	.WebMapWrapper,
+	.EPapperWrapper,
+	.AboutUsWrapper {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.FileDownloadWrapper .FileDownloadContent .FileDownloadContentList li .title .time,
+	.ThinkTankWrapper .ThinkTankContent .ThinkTankContentList li .title .time,
+	.QAWrapper .QAContent .QAContentList li .questiontitle .time,
+	.QAWrapper .QAContent .QAContentList li .title .time,
+	.EPapperWrapper .EPapperContent .EPapperContentList li .title .time {
+		margin: 10px 0 5px;
+		float: none;
+		text-align: center;
+	}
+	.ThinkTankWrapper .ThinkTankContent,
+	.RuleWrapper .RuleContent,
+	.ThinkTankWrapper .ThinkTankContent .ThinkTankContentList,
+	.RuleWrapper .RuleContent .RuleContentList,
+	.QAWrapper .QAContent .QAContentList,
+	.WebMapWrapper .WebMapContent,
+	.EPapperWrapper .EPapperContent,
+	.EPapperWrapper .EPapperContent .EPapperContentList {
+		width: 100%;
+	}
+	.ThinkTankWrapper .ThinkTankContent .SearchBar,
+	.QAWrapper .QAContent .SearchBar,
+	.EPapperWrapper .EPapperContent .SearchBar {
+		float: none;
+		width: 100%;
+		margin-bottom: 10px;
+		text-align: right;
+	}
+	.ThinkTankWrapper .ThinkTankContent .SearchBar input,
+	.RuleWrapper .RuleContent .SearchBar input,
+	.RuleWrapper .RuleContent .SearchBar select,
+	.QAWrapper .QAContent .SearchBar input,
+	.EPapperWrapper .EPapperContent .SearchBar input,
+	.TraningWrapper .SearchTraning select {
+		border: 1px solid #ccc;
+	}
+
+	.WebMapWrapper .WebMapContent .WebMapContentList > li {
+		flex: 0 0 100%;
+	}
+
+	/*電子報*/
+	.EpapperWrapper {
+		padding: 15px 0;
+	}
+	.EpapperWrapper .EpapperContent .ContentInfo .ContentTitle {
+		flex: 0 0 40%;
+	}
+	.EpapperWrapper .EpapperContent .ContentInfo .ContentLine {
+		flex: 0 0 60%;
+	}
+
+	/*關於我們*/
+	.AboutUsWrapper .AboutUsContent .title {
+		border-bottom: 1px solid #eee;
+		padding-bottom: 10px;
+	}
+	.AboutUsWrapper .AboutUsContent h4 {
+		border-bottom: 1px solid #eee;
+		padding-bottom: 10px;
+	}
+
+	/*運用單位*/
+	.CompanyLoginWrapper .CompanyMenuWrapper .CompanyMenu {
+		flex-wrap: wrap;
+	}
+	.CompanyLoginWrapper .CompanyMenuWrapper .CompanyMenu li {
+		flex: 1;
+		min-width: 50%;
+	}
+	.LastestNewsWrapper .LastestNews ul li {
+		width: 50%;
+	}
+
+	/*訓練*/
+	.TraningWrapper .SearchTraning > div {
+		flex: 0 0 100%;
+	}
+	.TraningWrapper .SearchTraning label {
+		margin-right: 5px;
+	}
+}
+
+@media (max-width: 1024px) {
 }

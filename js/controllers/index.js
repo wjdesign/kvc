@@ -63,9 +63,17 @@
                 infinite: true,
                 speed: 500,
                 slidesToShow: 3,
-                slidesToScroll: 1,
+                slidesToScroll: 3,
                 nextArrow: '.ActivityWrapper .next',
-                prevArrow: '.ActivityWrapper .previous'
+                prevArrow: '.ActivityWrapper .previous',
+                responsive: [{
+                    breakpoint: 991,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        arrows:false
+                    }
+                }]
             });
             // 首頁影片花絮
             $(".Video").slick({
@@ -75,7 +83,15 @@
                 slidesToShow: 4,
                 slidesToScroll: 4,
                 nextArrow: '.VideoWrapper .next',
-                prevArrow: '.VideoWrapper .previous'
+                prevArrow: '.VideoWrapper .previous',
+                responsive: [{
+                    breakpoint: 991,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        arrows:false
+                    }
+                }]
             });
 
             // 日曆

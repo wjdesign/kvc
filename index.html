@@ -2,7 +2,9 @@
 <html lang="zh">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
         <title>高雄市政府社會局志願服務資源中心</title>
+
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/slick.css">
@@ -15,6 +17,7 @@
 
         <link rel="stylesheet" href="css/common.css">
         <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/rwd.css">
 
         <script src="js/jquery-3.3.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
@@ -74,6 +77,39 @@
                 </div>
             </div>
         </header>
+        <header class="MobileHeaderWrapper">
+            <a class="Logo" href="index.html"><img class="img-responsive" src="./images/logo.png" alt=""></a>
+            <button class="navbar-toggler ShowMenu" type="button" data-toggle="collapse" data-target="#MobileMenu">
+                <div class="animated-icon"><span></span><span></span><span></span></div>
+            </button>
+            <div class="MenuWrapper collapse" id="MobileMenu" aria-expanded="false" style="height: 0;">
+                <ul class="MainMenu">
+                    <li><a href="#" class="active">首頁</a></li>
+                    <li><a href="Announcement.html">公告專區</a></li>
+                    <li><a href="FileDownload.html">下載專區</a></li>
+                    <li><a href="ThinkTank.html">志願服務智庫</a></li>
+                    <li><a href="Rule.html">法規專區</a></li>
+                    <!--<li><a href="">單位查詢</a></li>-->
+                    <li><a href="QA.html">互動分享</a></li>
+                    <li><a href="Company.html">運用單位</a></li>
+                    <li>
+                        <a class="col-xs-6 Link_Fb" href="https://www.facebook.com/khvolunteercenter/" target="_blank">FB粉絲團</a>
+                        <a class="col-xs-6 Link_Line" href="" target="_blank">LINE</a>
+                    </li>
+                    <li class="SubMenu">
+                        <a class="col-xs-3" href="ContactUs.html"><i class="glyphicon glyphicon-envelope"></i>聯絡我們</a>
+                        <a class="col-xs-3" href="WebMap.html"><i class="glyphicon glyphicon-globe"></i>網站地圖</a>
+                        <a class="col-xs-3" href=""><i class="glyphicon glyphicon-link"></i>相關連結</a>
+                        <a class="col-xs-3" href="EPapper.html"><i class="glyphicon glyphicon-paperclip"></i>電子報</a>
+                    </li>
+                </ul>
+            </div>
+            <script>
+                $(".ShowMenu").on("click", function () {
+                    $('.animated-icon').stop().toggleClass('open');
+                });
+            </script>
+        </header>
         <div class="BodyWrapper">
             <div class="CarouselWrapper">
                 <div class="Carousel">
@@ -90,18 +126,11 @@
                             <div class="IconWrapper"><i class="glyphicon glyphicon-user"></i></div>
                             <span class="TextWrapper">我要當志工</span>
                         </a>
-                        <!--<span class="TinyText">實際參與志工活動，和我們一起改變世界</span>-->
-                        <!--<a class="Company" href="companyLogin.html">-->
-                            <!--<div class="IconWrapper"><i class="glyphicon glyphicon-search"></i></div>-->
-                            <!--<span class="TextWrapper">我要找志工</span>-->
-                        <!--</a>-->
-                        <!--<span class="TinyText">透過系統尋找適合的志工夥伴</span>-->
                         <hr>
                         <a class="Company" href="Traning.html">
                             <div class="IconWrapper"><i class="glyphicon glyphicon-user"></i></div>
                             <span class="TextWrapper">我要參與訓練課程</span>
                         </a>
-                        <!--<span class="TinyText">參與訓練課程，並透過系統尋找適合的志工夥伴</span>-->
                     </div>
                 </div>
             </div>
