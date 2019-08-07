@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
-        <title>聯絡我們</title>
+        <title>會員中心</title>
         <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 
         <link rel="stylesheet" href="css/reset.css">
@@ -11,7 +11,7 @@
 
         <link rel="stylesheet" href="css/common.css">
         <link rel="stylesheet" href="css/index.css">
-        <link rel="stylesheet" href="css/contactus.css">
+        <link rel="stylesheet" href="css/membercenter.css">
         <link rel="stylesheet" href="css/rwd.css">
 
         <script src="js/jquery-3.3.1.min.js"></script>
@@ -22,17 +22,17 @@
         <script src="js/publicfunction.js"></script>
         <script src="data.js"></script><!--假資料檔-->
 
-        <script src="js/controllers/contactus.js"></script>
+        <script src="js/controllers/membercenter.js"></script>
 
     </head>
-    <body ng-app="myApp" ng-controller="ContactUsCtrl">
+    <body ng-app="myApp" ng-controller="MemberCenterCtrl">
         <header class="HeaderWrapper">
             <div class="clearfix container">
                 <a class="Logo" href="index.html"><img class="img-responsive" src="./images/logo.png" alt=""></a>
                 <div class="MenuWrapper">
                     <ul class="SubMenu">
                         <li>
-                            <a href=""><i class="glyphicon glyphicon-envelope"></i>聯絡我們</a>
+                            <a href="ContactUs.html"><i class="glyphicon glyphicon-envelope"></i>聯絡我們</a>
                         </li>
                         <li>
                             <a href="WebMap.html"><i class="glyphicon glyphicon-globe"></i>網站地圖</a>
@@ -55,7 +55,7 @@
                     <ul class="MainMenu">
                         <li><a href="index.html">首頁</a></li>
                         <li><a href="Announcement.html">公告專區</a></li>
-                        <li><a href="FileDownload.html">下載專區</a></li>
+                        <li><a href="#" class="active">下載專區</a></li>
                         <li><a href="ThinkTank.html">志願服務智庫</a></li>
                         <li><a href="Rule.html">法規專區</a></li>
                         <!--<li><a href="">單位查詢</a></li>-->
@@ -78,7 +78,7 @@
                     </li>
                     <li><a href="index.html">首頁</a></li>
                     <li><a href="Announcement.html">公告專區</a></li>
-                    <li><a href="FileDownload.html">下載專區</a></li>
+                    <li><a href="#" class="active">下載專區</a></li>
                     <li><a href="ThinkTank.html">志願服務智庫</a></li>
                     <li><a href="Rule.html">法規專區</a></li>
                     <!--<li><a href="">單位查詢</a></li>-->
@@ -104,68 +104,50 @@
         </header>
         <div class="BodyWrapper">
             <div class="clearfix container">
-                <div class="ContactUsWrapper">
-                    <ul class="nav nav-tabs NavTabs ContactUsTab">
+                <div class="MemberCenterWrapper">
+                    <ul class="nav nav-tabs NavTabs MemberCenterTab">
                         <li class="active">
-                            <a href="#ContactUs" data-toggle="tab">
-                                <i class="glyphicon glyphicon-bell"></i>
-                                聯絡我們
+                            <a href="#MsgCenter" data-toggle="tab">
+                                <i class="glyphicon glyphicon-user"></i>
+                                會員中心
                             </a>
                         </li>
                     </ul>
-                    <div class="tab-content ContactUsContent">
+                    <div class="tab-content MemberCenterContent">
                         <p class="NowPosition">
                             現在位置：
                             <a href="index.html">首頁</a>
                             <span>/</span>
-                            <a class="active" href="#">聯絡我們</a>
+                            <a class="active" href="#">會員中心</a>
                         </p>
-                        <div id="ContactUs" class="tab-pane fade in active">
-                            <h6 class="MainTitle">聯絡<span>我們</span></h6>
-                            <div class="Description">
-                                <p>如果您對高雄市政府社會局志願服務資源中心有任何問題與建議，歡迎利用以下表單與我們聯繫，我們會盡快回覆您的來信。<br/>(您所填寫的資料不會轉作其他用途，敬請安心填寫)</p>
-                                <form class="form-horizontal">
-                                    <div class="form-group">
-                                        <label class="control-label col-sm-2" for="name">您的姓名</label>
-                                        <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="name" placeholder="請輸入您的姓名。">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-sm-2">性別</label>
-                                        <div class="col-sm-10">
-                                            <select name="sex" id="sex" class="form-control">
-                                                <option value="1">先生</option>
-                                                <option value="2">小姐</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-sm-2" for="email">電子信箱</label>
-                                        <div class="col-sm-10">
-                                            <input type="email" class="form-control" id="email" placeholder="請輸入您的電子信箱，example@example.com。">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-sm-2" for="phone">聯絡電話</label>
-                                        <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="phone" placeholder="請輸入您的聯絡電話。" maxlength="10">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-sm-2" for="message">問題或建議</label>
-                                        <div class="col-sm-10">
-                                            <textarea type="text" class="form-control" id="message" placeholder="請輸入您的問題與建議。" rows="10"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="col-sm-offset-1 col-sm-11 text-center">
-                                            <button type="reset" class="btn btn-default">清空欄位</button>
-                                            <button type="submit" class="btn btn-primary">填好送出</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
+                        <div id="MsgCenter" class="tab-pane fade in active">
+                            <h6 class="MainTitle">會員<span>中心</span></h6>
+                            <ul class="MemberCenterContentList">
+                                <li>
+                                    <a class="FixData" href="">
+                                        <i class="glyphicon glyphicon-saved"></i>
+                                        <h5 class="title">基本資料維護</h5>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="ServiceTime" href="">
+                                        <i class="glyphicon glyphicon-time"></i>
+                                        <h5 class="title">專長與服務時段</h5>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="HistorySearch" href="Member.html">
+                                        <i class="glyphicon glyphicon-search"></i>
+                                        <h5 class="title">媒合紀錄查詢</h5>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="Logout" href="">
+                                        <i class="glyphicon glyphicon-log-out"></i>
+                                        <h5 class="title">登出會員身份</h5>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -195,14 +177,14 @@
                         <ul class="SubTitle">
                             <li><a href="">文章分享</a></li>
                             <li><a href="">留言討論</a></li>
-                            <li><a href="#">聯絡我們</a></li>
+                            <li><a href="ContactUs.html">聯絡我們</a></li>
                             <li><a href="EPapper.html">電子報</a></li>
                         </ul>
                     </li>
                     <li>
                         <h6>會員專區</h6>
                         <ul class="SubTitle">
-                            <li><a href="MemberCenter.html">會員中心</a></li>
+                            <li><a href="#">會員中心</a></li>
                             <li><a href="">我的履歷</a></li>
                             <li><a href="">媒合紀錄</a></li>
                             <li><a href="">課程紀錄</a></li>

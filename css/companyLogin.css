@@ -71,12 +71,15 @@
 /*Honorlist*/
 .Honorlist {
     width: 100%;
+    margin: 40px auto;
+}
+.Honorlist .HonorlistWrapper {
+    width: 100%;
     display: flex;
     height: 90px;
-    background: #dbe4e4;
-    margin: 40px auto;
     align-items: center;
     text-align: center;
+    position: relative;
 }
 .Honorlist .HonorList {
     flex: 1;
@@ -101,40 +104,48 @@
     margin-right: 5px;
     font-size: 16px;
 }
+.Honorlist .HonorList h6 .subText {
+    display: block;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding-left: 16px;
+    margin-top: 2px;
+    color: rgba(255, 255, 255, .8);
+}
 .Honorlist .HonorList img {
     position: absolute;
     z-index: 0;
     height: 90px;
 }
 .Honorlist .HonorCardSearch {
-    background: #deba7c;
+    background: #fe9645; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffd53a 0%, #fe9645 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #ffd53a 0%,#fe9645 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ffd53a 0%,#fe9645 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd53a', endColorstr='#fe9645',GradientType=0 ); /* IE6-9 */
+    border-top-left-radius: 50em;
+    border-bottom-left-radius: 50em;
 }
-.Honorlist .HonorCardSearch:before {
-    content: '';
+.Honorlist .RecordBookIcon {
     position: absolute;
-    right: -45px;
-    top: 0;
-    z-index: 1;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 45px 45px 0 0;
-    border-color: #deba7c transparent transparent transparent;
+    width: 100px;
+    left: 40px;
+    top: -18px;
 }
 .Honorlist .RecordBookSearch {
-    background: #937cde;
+    background: #229a72; /* Old browsers */
+    background: -moz-linear-gradient(top,  #2fe2a8 0%, #229a72 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #2fe2a8 0%,#229a72 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #2fe2a8 0%,#229a72 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2fe2a8', endColorstr='#229a72',GradientType=0 ); /* IE6-9 */
+    border-top-right-radius: 50em;
+    border-bottom-right-radius: 50em;
 }
-.Honorlist .RecordBookSearch:before {
-    content: '';
+.Honorlist .HonorCardIcon {
     position: absolute;
-    left: -45px;
-    bottom: 0;
-    z-index: 1;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 0 45px 45px;
-    border-color: transparent transparent #937cde transparent;
+    width: 100px;
+    right: 45px;
+    top: -22px;
 }
 .PracticeWrapper {
     width: 100%;
@@ -178,4 +189,49 @@
 }
 .BtnWrapper a:first-child {
     margin-right: 15px;
+}
+
+/*AddActiveModal - 新增活動訊息*/
+#AddActiveModal .BtnAddActive,
+#RecruitModal .BtnAddActive {
+    margin-bottom: 15px;
+}
+#AddActiveModal .ActiveTable {
+    margin-bottom: 0;
+}
+#AddActiveModal .ActiveTable tr:hover td {
+    background: #fffdda;
+}
+#AddActiveModal .ActiveTable tr td {
+    vertical-align: middle;
+}
+#AddActiveModal .Type_A {
+    color: #f72828;
+}
+#AddActiveModal .Type_B {
+    color: #10c100;
+}
+#AddActiveModal .AddActiveForm,
+#RecruitModal .AddActiveForm {
+    max-height: 50vh;
+    margin-bottom: 15px;
+    overflow-y: auto;
+}
+
+/*榮譽卡/記錄冊查詢Modal*/
+#RegisterBookSearch .modal-body,
+#HonorCardSearch .modal-body {
+    overflow-y: scroll;
+    padding: 20px 30px;
+}
+.SearchModal .SearchIntranet label .SubTitle {
+    font-size: 12px;
+    color: #aaa;
+    margin-left: -5px;
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -o-transform: scale(0.7);
+    transform: scale(0.7);
+    display: inline-block;
 }

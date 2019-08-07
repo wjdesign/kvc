@@ -197,7 +197,8 @@
 	.ContactUsWrapper,
 	.WebMapWrapper,
 	.EPapperWrapper,
-	.AboutUsWrapper {
+	.AboutUsWrapper,
+	.MemberCenterWrapper {
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
@@ -218,6 +219,7 @@
 	.QAWrapper .QAContent .QAContentList,
 	.WebMapWrapper .WebMapContent,
 	.EPapperWrapper .EPapperContent,
+	.MemberCenterWrapper .MemberCenterContent,
 	.EPapperWrapper .EPapperContent .EPapperContentList {
 		width: 100%;
 	}
@@ -274,6 +276,9 @@
 	.LastestNewsWrapper .LastestNews ul li {
 		width: 50%;
 	}
+	.Honorlist .HonorList img {
+		display: none;
+	}
 
 	/*訓練*/
 	.TraningWrapper .SearchTraning > div {
@@ -292,6 +297,14 @@
 	}
 	.MatchMapWrapper iframe {
 		height: 350px;
+	}
+
+	/*會員中心*/
+	.MemberCenterWrapper .MemberCenterContent .MemberCenterContentList {
+		flex-wrap: wrap;
+	}
+	.MemberCenterWrapper .MemberCenterContent .MemberCenterContentList li {
+		flex: 0 0 50%;
 	}
 }
 

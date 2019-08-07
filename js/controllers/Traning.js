@@ -88,7 +88,6 @@
         // 依地區
         $scope.ChangeSelectArea = function (_area) {
             $scope.SelectArea = _area;
-            console.log(_area);
         };
 
         // document ready時執行的js套件

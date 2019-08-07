@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
         <title>高雄市政府社會局志願服務資源中心</title>
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/slick.css">
@@ -21,6 +23,7 @@
         <script src="js/moment.min.js"></script>
 
         <script src="js/publicfunction.js"></script>
+        <script src="data.js"></script><!--假資料檔-->
 
         <script src="js/controllers/Company.js"></script>
 
@@ -126,12 +129,12 @@
                                 </a>
                             </li>
                             <li>
-                                <a data-toggle="tab" href="#AddActivity">
+                                <a href="#AddActiveModal" data-toggle="modal" data-target="#AddActiveModal" ng-click="ChangeActiveModalStep('1')">
                                     <img class="img-responsive" src="images/CompanyLogin/icon_03.jpg" alt="">
                                 </a>
                             </li>
                             <li>
-                                <a data-toggle="tab" href="#FindVolun">
+                                <a href="#RecruitModal" data-toggle="modal" data-target="#RecruitModal">
                                     <img class="img-responsive" src="images/CompanyLogin/icon_04.jpg" alt="">
                                 </a>
                             </li>
@@ -152,24 +155,28 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="tab-content">
-                        <!--運用單位資料維護-->
-                        <div id="Data" class="tab-pane DataWrapper">資料維護</div>
-                        <!--新增活動訊息-->
-                        <div id="AddActivity" class="tab-pane DataWrapper">新增活動訊息</div>
-                        <!--找志工-->
-                        <div id="FindVolun" class="tab-pane DataWrapper">找志工</div>
-                    </div>
                 </div>
             </div>
             <!--榮譽卡記錄冊查詢-->
             <div class="Honorlist">
-                <a class="HonorList HonorCardSearch">
-                    <h6><i class="glyphicon glyphicon-search"></i>榮譽卡查詢</h6>
-                </a>
-                <a class="HonorList RecordBookSearch">
-                    <h6><i class="glyphicon glyphicon-search"></i>記錄冊查詢</h6>
-                </a>
+                <div class="container">
+                    <div class="HonorlistWrapper">
+                        <a class="HonorList HonorCardSearch" href="#HonorCardSearch" data-toggle="modal" >
+                            <img class="img-responsive RecordBookIcon" src="images/honorIcon02.png" alt="">
+                            <h6>
+                                <i class="glyphicon glyphicon-search"></i>榮譽卡查詢
+                                <span class="subText">Honor Card</span>
+                            </h6>
+                        </a>
+                        <a class="HonorList RecordBookSearch" href="#RegisterBookSearch" data-toggle="modal" >
+                            <img class="img-responsive HonorCardIcon" src="images/honorIcon01.png" alt="">
+                            <h6>
+                                <i class="glyphicon glyphicon-search"></i>記錄冊查詢
+                                <span class="subText">Register Book</span>
+                            </h6>
+                        </a>
+                    </div>
+                </div>
             </div>
 
             <!--實務工作手冊區-->
@@ -214,6 +221,7 @@
                     <li>
                         <h6>會員專區</h6>
                         <ul class="SubTitle">
+                            <li><a href="MemberCenter.html">會員中心</a></li>
                             <li><a href="">我的履歷</a></li>
                             <li><a href="">媒合紀錄</a></li>
                             <li><a href="">課程紀錄</a></li>
@@ -393,15 +401,15 @@
                         <div class="modal-body">
                             <ul class="nav nav-tabs">
                                 <li class="active">
-                                    <a href="#Login" data-toggle="tab">登入</a>
+                                    <a href="#LoginBar" data-toggle="tab">登入</a>
                                 </li>
                                 <li>
-                                    <a href="#Register" data-toggle="tab">註冊</a>
+                                    <a href="#RegisterBar" data-toggle="tab">註冊</a>
                                 </li>
                             </ul>
                             <div class="tab-content">
                                 <!--運用單位登入/註冊-->
-                                <div id="Login" class="tab-pane fade in active LoginWrapper">
+                                <div id="LoginBar" class="tab-pane fade in active LoginWrapper">
                                     <h6 class="MainTitle">運用單位<span>登入</span></h6>
                                     <div class="Login">
                                         <div class="LoginIntranet">
@@ -429,7 +437,7 @@
                                     </div>
                                 </div>
                                 <!--註冊-->
-                                <div id="Register" class="tab-pane fade RegisterWrapper">
+                                <div id="RegisterBar" class="tab-pane fade RegisterWrapper">
                                     <div class="IntranetRegister">
                                         <h6 class="MainTitle">運用單位<span>註冊</span></h6>
                                         <p class="Tips">．基本資料</p>
@@ -495,6 +503,300 @@
                                         <a class="btn btn-default BtnLogin"><i class="glyphicon glyphicon-remove"></i> 清除重填</a>
                                         <a class="btn btn-primary BtnLogin"><i class="glyphicon glyphicon-ok"></i> 填好送出</a>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Modal-->
+            <!--新增活動訊息-->
+            <div id="AddActiveModal" class="modal fade" role="dialog">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">[{((ActiveModalStep == '2') ? '新增活動訊息' : '活動清單')}]</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div ng-if="(ActiveModalStep == '1')">
+                                <a class="btn btn-warning BtnAddActive" ng-click="ChangeActiveModalStep('2')">新增活動</a>
+                                <table class="table table-bordered table-striped ActiveTable">
+                                    <tr>
+                                        <th>活動名稱</th>
+                                        <th>狀態</th>
+                                        <th>功能</th>
+                                    </tr>
+                                    <tr ng-repeat="(key,value) in ActiveData">
+                                        <td>[{value.Name}]</td>
+                                        <td class="Type_[{value.Type}]" style="white-space: nowrap;">[{value.TypeName}]</td>
+                                        <td style="white-space: nowrap;">
+                                            <a class="btn btn-xs btn-primary" href="">修改</a>
+                                            <a class="btn btn-xs btn-danger" href="">刪除</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div ng-if="(ActiveModalStep == '2')">
+                                <a class="btn btn-default" ng-click="ChangeActiveModalStep('1')" style="float: right;">回上一頁</a>
+                                <div class="AddActiveData">
+                                    <h6 class="MainTitle">新增<span>活動訊息</span></h6>
+                                    <p class="Tips">．活動設定</p>
+                                    <form class="AddActiveForm">
+                                        <div class="form-group">
+                                            <label>標題：</label>
+                                            <input type="text" class="form-control" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>內容：</label>
+                                            <textarea class="form-control" name="" id="" cols="30" rows="10" style="max-width: 100%;"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>活動日期1：</label>
+                                            <input type="text" class="form-control" minlength="8">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>活動日期2：</label>
+                                            <input type="text" class="form-control" minlength="8">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>活動日期3：</label>
+                                            <input type="text" class="form-control" minlength="8">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>活動地點：</label>
+                                            <input type="text" class="form-control" minlength="8">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>連結網址：</label>
+                                            <input type="text" class="form-control" minlength="8">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>附加檔案1：</label>
+                                            <input type="file" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>附加檔案2：</label>
+                                            <input type="file" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>附加檔案3：</label>
+                                            <input type="file" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>發文圖片：</label>
+                                            <input type="file" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>首頁小圖：</label>
+                                            <input type="file" class="form-control">
+                                        </div>
+                                    </form>
+                                    <div class="form-group text-center" style="margin-bottom: 0;">
+                                        <a class="btn btn-success" href="">暫存</a>
+                                        <a class="btn btn-primary" href="">送出申請</a>
+                                        <a class="btn btn-default" href="">清空</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Modal-->
+            <!--我要尋找志工-->
+            <div id="RecruitModal" class="modal fade" role="dialog">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">[{((RecruitModalStep == '2') ? '新增招募訊息' : '招募清單')}]</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div ng-if="(RecruitModalStep == '1')">
+                                <a class="btn btn-warning BtnAddActive" ng-click="ChangeRecruitModalStep('2')">新增招募資訊</a>
+                                <table class="table table-bordered table-striped ActiveTable">
+                                    <tr>
+                                        <th>標題</th>
+                                        <!--<th>內容</th>-->
+                                        <!--<th>時間</th>-->
+                                        <th>志工團隊</th>
+                                        <th>功能</th>
+                                    </tr>
+                                    <tr ng-repeat="(key,value) in RecruitData">
+                                        <td>[{value.Title}]</td>
+                                        <!--<td>[{value.Content}]</td>-->
+                                        <!--<td>[{value.Time}]</td>-->
+                                        <td>[{value.TeamName}]</td>
+                                        <td style="white-space: nowrap;">
+                                            <a class="btn btn-xs btn-primary" href="">修改</a>
+                                            <a class="btn btn-xs btn-danger" href="">刪除</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div ng-if="(RecruitModalStep == '2')">
+                                <a class="btn btn-default" ng-click="ChangeRecruitModalStep('1')" style="float: right;">回上一頁</a>
+                                <div class="AddActiveData">
+                                    <h6 class="MainTitle">新增<span>招募資訊</span></h6>
+                                    <p class="Tips">．招募內容設定</p>
+                                    <form class="AddActiveForm">
+                                        <div class="form-group">
+                                            <label>招募單位：</label>
+                                            <input type="text" class="form-control" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>參與形式：</label>
+                                            <div>
+                                                <label for="Long" style="margin-right: 10px;">
+                                                    <input id="Long" type="radio" name="Times" checked style="margin-right: 5px;">長期服務
+                                                </label>
+                                                <label for="Short" style="margin-right: 10px;">
+                                                    <input id="Short" type="radio" name="Times" style="margin-right: 5px;">短期服務
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>截止日期：</label>
+                                            <input type="date" minlength="8"> 止
+                                        </div>
+                                        <div class="form-group">
+                                            <label>需求人數：</label>
+                                            <input type="number"> 人
+                                        </div>
+                                        <div class="form-group">
+                                            <label>工作地址：</label>
+                                            <div>
+                                                高雄市
+                                                <select>
+                                                    <option ng-repeat="place in KaohSiungArea" value="[{place}]">[{place}]</option>
+                                                </select>
+                                                區
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>服務前是否提供講習或職前訓練：</label>
+                                            <div>
+                                                <label for="Yes" style="margin-right: 10px;">
+                                                    <input id="Yes" type="radio" name="Training" checked style="margin-right: 5px;">是
+                                                </label>
+                                                <label for="Not" style="margin-right: 10px;">
+                                                    <input id="Not" type="radio" name="Training" style="margin-right: 5px;">否
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>服務證明：</label>
+                                            <div>
+                                                <label for="ThanksPaper" style="margin-right: 10px;">
+                                                    <input id="ThanksPaper" type="radio" name="Prove" checked style="margin-right: 5px;">感謝狀
+                                                </label>
+                                                <label for="ProvePaper" style="margin-right: 10px;">
+                                                    <input id="ProvePaper" type="radio" name="Prove" style="margin-right: 5px;">服務證明書
+                                                </label>
+                                                <label for="NotYet" style="margin-right: 10px;">
+                                                    <input id="NotYet" type="radio" name="Prove" style="margin-right: 5px;">尚無規劃
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>聯絡人：</label>
+                                            <input type="text" class="form-control" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>聯絡電話：</label>
+                                            <input type="text" class="form-control" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>傳真：</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>相關網址：</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>其他說明：</label>
+                                            <textarea cols="30" rows="10" class="form-control"></textarea>
+                                        </div>
+                                    </form>
+                                    <div class="form-group text-center" style="margin-bottom: 0;">
+                                        <a class="btn btn-primary" href="">送出申請</a>
+                                        <a class="btn btn-default" href="">清空</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Modal-->
+            <!--榮譽卡查詢-->
+            <div id="HonorCardSearch" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">榮譽卡查詢</h4>
+                        </div>
+                        <div class="modal-body">
+                            <h6 class="MainTitle">請輸入<span>身份證字號</span>與<span>姓名</span>以進行查詢</h6>
+                            <div class="SearchModal">
+                                <div class="SearchIntranet">
+                                    <form>
+                                        <div class="form-group">
+                                            <label>姓名<span class="SubTitle">NAME</span></label>
+                                            <input type="text" class="form-control" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>身分證號碼<span class="SubTitle">ID NUMBER</span></label>
+                                            <input type="text" class="form-control" required>
+                                        </div>
+                                        <hr>
+                                        <div class="BtnWrapper">
+                                            <a class="btn btn-default">清除</a>
+                                            <a class="btn btn-primary">送出</a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Modal-->
+            <!--記錄冊查詢-->
+            <div id="RegisterBookSearch" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">記錄冊查詢</h4>
+                        </div>
+                        <div class="modal-body">
+                            <h6 class="MainTitle">請輸入<span>身份證字號</span>與<span>姓名</span>以進行查詢</h6>
+                            <div class="SearchModal">
+                                <div class="SearchIntranet">
+                                    <form>
+                                        <div class="form-group">
+                                            <label>姓名<span class="SubTitle">NAME</span></label>
+                                            <input type="text" class="form-control" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>身分證號碼<span class="SubTitle">ID NUMBER</span></label>
+                                            <input type="text" class="form-control" required>
+                                        </div>
+                                        <hr>
+                                        <div class="BtnWrapper">
+                                            <a class="btn btn-default">清除</a>
+                                            <a class="btn btn-primary">送出</a>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>

@@ -1,0 +1,78 @@
+/*
+*
+* Create by Wayne(WJDesign) 2019.02.09
+*
+*/
+@charset "UTF-8";
+
+.MemberCenterWrapper {
+    display: flex;
+    width: 100%;
+    padding-top: 20px;
+}
+.MemberCenterWrapper .MemberCenterContent {
+    flex: 1;
+    min-height: 500px;
+}
+.MemberCenterWrapper .MemberCenterContent .MemberCenterContentList {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.MemberCenterWrapper .MemberCenterContent .MemberCenterContentList li {
+    padding: 10px;
+    line-height: 22px;
+    display: flex;
+    flex: 0 0 25%;
+}
+.MemberCenterWrapper .MemberCenterContent .MemberCenterContentList li a {
+    border-radius: 5px;
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    transition: .3s;
+}
+.MemberCenterWrapper .MemberCenterContent .MemberCenterContentList li a.FixData {
+    background: #ffd65e; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffd65e 0%, #febf04 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #ffd65e 0%,#febf04 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #ffd65e 0%,#febf04 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd65e', endColorstr='#febf04',GradientType=0 ); /* IE6-9 */
+}
+.MemberCenterWrapper .MemberCenterContent .MemberCenterContentList li a.ServiceTime {
+    background: #0ba7e8; /* Old browsers */
+    background: -moz-linear-gradient(top,  #3dead2 0%, #0ba7e8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #3dead2 0%,#0ba7e8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #3dead2 0%,#0ba7e8 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3dead2', endColorstr='#0ba7e8',GradientType=0 ); /* IE6-9 */
+}
+.MemberCenterWrapper .MemberCenterContent .MemberCenterContentList li a.HistorySearch {
+    background: #de2323; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ff5e8b 0%, #de2323 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #ff5e8b 0%,#de2323 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ff5e8b 0%,#de2323 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5e8b', endColorstr='#de2323',GradientType=0 ); /* IE6-9 */
+}
+.MemberCenterWrapper .MemberCenterContent .MemberCenterContentList li a.Logout {
+    background: #757575; /* Old browsers */
+    background: -moz-linear-gradient(top,  #cacaca 0%, #757575 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #cacaca 0%,#757575 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #cacaca 0%,#757575 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cacaca', endColorstr='#757575',GradientType=0 ); /* IE6-9 */
+}
+.MemberCenterWrapper .MemberCenterContent .MemberCenterContentList li a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+}
+.MemberCenterWrapper .MemberCenterContent .MemberCenterContentList li a i {
+    font-size: 36px;
+}
+.MemberCenterWrapper .MemberCenterContent .MemberCenterContentList li a .title {
+    width: 100%;
+    text-align: center;
+}
