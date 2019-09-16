@@ -13,6 +13,7 @@
 .AboutUsWrapper .AboutUsContent {
     flex: 1;
     min-height: 500px;
+    width: 100%;
 }
 .AboutUsWrapper .AboutUsContent .title {
     margin: 0 auto 10px;
@@ -56,4 +57,52 @@
 }
 .AboutUsWrapper .AboutUsContent .TrafficInfo .text-danger {
     color: #ff7474;
+}
+
+/*HowDow*/
+.AboutUsWrapper .AboutUsContent .HowDoWrapper .panel {
+    background: transparent;
+}
+.AboutUsWrapper .AboutUsContent .HowDoWrapper .panel-default {
+    border: 0;
+}
+.AboutUsWrapper .AboutUsContent .HowDoWrapper .panel-default.active {
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .2);
+}
+.AboutUsWrapper .AboutUsContent .HowDoWrapper .panel-default .panel-heading {
+    background-color: transparent;
+}
+.AboutUsWrapper .AboutUsContent .HowDoWrapper .panel-default .panel-heading h4 a {
+    text-decoration: none;
+    transition: .3s;
+    display: block;
+    text-align: left;
+    font-size: 24px;
+    padding: 15px 0 0;
+}
+.AboutUsWrapper .AboutUsContent .HowDoWrapper .panel-default:hover .panel-heading h4 a {
+    color: #eababa;
+}
+.AboutUsWrapper .AboutUsContent .HowDoWrapper .panel-default.active .panel-heading h4 a {
+    color: #ff7474;
+}
+.AboutUsWrapper .AboutUsContent .HowDoWrapper .panel-default .panel-heading h4 a i {
+    margin-right: 5px;
+    font-size: 16px;
+    top: -1px;
+}
+.AboutUsWrapper .AboutUsContent .HowDoWrapper .panel-default .panel-heading h4 a .subTitle {
+    display: block;
+    font-size: 12px;
+    line-height: 24px;
+    padding-left: 1rem;
+}
+.AboutUsWrapper .AboutUsContent .HowDoWrapper .panel-body {
+    color: #999;
+    border: 0;
+    padding-top: 0;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+.AboutUsWrapper .AboutUsContent .HowDoWrapper .panel-body p:hover {
 }

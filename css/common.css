@@ -29,6 +29,10 @@ label {
 	display: flex;
 }
 
+.text-danger {
+	color: #ff7474;
+}
+
 /*Loading Icon*/
 .lds-roller {
 	display: inline-block;

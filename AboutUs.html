@@ -136,6 +136,12 @@
                                 志工媒合說明
                             </a>
                         </li>
+                        <li>
+                            <a href="#HowDo" data-toggle="tab">
+                                <i class="glyphicon glyphicon-question-sign"></i>
+                                如何做志工
+                            </a>
+                        </li>
                     </ul>
                     <div class="tab-content AboutUsContent">
                         <p class="NowPosition">
@@ -271,6 +277,76 @@
                             <h6 class="MainTitle">志工媒合<span>說明</span></h6>
                             <div>
                                 <img class="img-responsive" src="images/Match.gif" alt="">
+                            </div>
+                        </div>
+                        <div id="HowDo" class="tab-pane fade">
+                            <h6 class="MainTitle">如何做<span>志工</span></h6>
+                            <div class="HowDoWrapper">
+                                <div class="panel-group" id="accordion">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"><i class="glyphicon glyphicon-question-sign"></i>什麼是志工？<span class="subTitle">我想了解什麼是志工。</span></a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse1" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <p><span class="text-danger">志願服務</span>提供不同的需求給不同的人們。有些人參與志願服務是<span class="text-danger">為了回饋社區並且幫助它</span>；也有人想<span class="text-danger">藉由服務的過程學到新技能，幫助自己成長。</span></p>
+                                                <p>如果你對志願服務感興趣，在這裡，我們會讓你了解到<span class="text-danger">志願服務到底是什麼</span>，<span class="text-danger">並教導你如何去參與它，以及可以從志願服務的過程中得到什麼收穫。</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"><i class="glyphicon glyphicon-question-sign"></i>為什麼要做志願服務呢？<span class="subTitle">我想了解做志工服務的原因。</span></a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse2" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <p>每個人參與志願服務的理由並不一定相同。有些人可能<span class="text-danger">想參與救濟性質的活動</span>，有些人則希望<span class="text-danger">藉此學習新技能或其它原因等。</span></p>
+                                                <p class="text-danger">參與志願服務可以提供給志工的收穫除了從幫助社區所得到的成就感外，其實它還有數不盡的原因值得你去參與：</p>
+                                                <ul>
+                                                    <li>＊認識、結交新朋友</li>
+                                                    <li>＊回饋並參與社區活動</li>
+                                                    <li>＊接受新的人生挑戰</li>
+                                                    <li>＊體驗不同的文化</li>
+                                                    <li>＊幫助需要幫忙的人、協助改變社會狀況</li>
+                                                    <li>＊建立專業脈絡</li>
+                                                    <li>＊鋪設未來工作的職前訓練</li>
+                                                    <li>＊從各種角色定位學習新技能</li>
+                                                </ul>
+                                                <p class="text-danger">研究指出，參與志願服務的人憂鬱機率較低且比較長壽，身心運作效能也較佳。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3"><i class="glyphicon glyphicon-question-sign"></i>如何做志工？<span class="subTitle">我想知道做志工的方式。</span></a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse3" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <p>在參與志願服務時，與其問<span class="text-danger">「我可以做些什麼？」</span>，不如問<span class="text-danger">「我想要做些什麼？」</span>會更接近志願服務的理念。建議可從興趣專長、服務地點或服務內容來思考更可瞭解適合參與什麼樣的志願服務。</p>
+                                                <h6>參與方法</h6>
+                                                <p>參與志願服務的方法數之不盡，這裡提供一個<span class="text-danger">媒合平台</span>可供您使用，如果您還不知道要做什麼可以至我們<span class="text-danger">媒合資訊區（連結回媒合畫面）</span>瀏覽看看，若您想<span class="text-danger">藉由系統功能幫忙找到適合您的服務</span>，<span class="text-danger">可註冊（由系統依照你的興趣專長作媒合）成為我們的會員喔！</span></p>
+                                                <p>每一位志工確認服務方向後，都必須完成<span class="text-danger">志工基礎</span>及<span class="text-danger">特殊訓練</span>，如何參與訓練，請詳閱<span class="text-danger">志工訓練（連結教育訓練）</span>。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <script>
+                                    $(document).ready(function() {
+                                        $('.panel-collapse').on('show.bs.collapse', function () {
+                                            $(this).siblings('.panel-heading').parents('.panel').addClass('active');
+                                        });
+
+                                        $('.panel-collapse').on('hide.bs.collapse', function () {
+                                            $(this).siblings('.panel-heading').parents('.panel').removeClass('active');
+                                        });
+                                    });
+                                </script>
                             </div>
                         </div>
                     </div>
