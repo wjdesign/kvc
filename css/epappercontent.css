@@ -7,13 +7,16 @@
 .EpapperWrapper {
     font-family: 'Microsoft Jhenghei', '微軟正黑體', Arial;
     width: 100%;
+    background: #eee;
 }
 .EpapperWrapper .EpapperContent {
+    background: #fff;
+    box-shadow: 0 10px 10px rgba(0,0,0,.3);
+    border: 1px solid #eee;
     width: 100%;
     max-width: 760px;
-    margin: 0 auto;
+    margin: 30px auto;
     padding: 5px;
-    border: 1px solid #999;
 }
 .EpapperWrapper .EpapperContent .MainTitle .title {
     background: #27658c;
@@ -47,24 +50,134 @@
     width: 100%;
     flex-wrap: wrap;
 }
+.EpapperWrapper .EpapperContent .ContentInfo .ContentItem {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px dashed #999;
+    padding: 20px;
+}
+.EpapperWrapper .EpapperContent .ContentInfo .ContentItem:nth-child(even) {
+    flex-direction: row-reverse;
+}
 .EpapperWrapper .EpapperContent .ContentInfo .ContentTitle {
     display: flex;
-    flex: 0 0 20%;
+    flex: 0 0 30%;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 10px;
     font-size: 18px;
-    background: #eee;
-    border-bottom: 1px solid #fff;;
 }
-.EpapperWrapper .EpapperContent .ContentInfo .ContentTitle i {
-    font-size: 14px;
-    margin-right: 5px;
-    top: 0;
+.EpapperWrapper .EpapperContent .ContentInfo .ContentItem .EpapperType {
+    content: '';
+    display: block;
+    width: 112px;
+    height: 77px;
 }
+.EpapperWrapper .EpapperContent .ContentInfo .ContentItem span {
+    margin-top: 10px;
+    padding: 5px 15px;
+    color: #fff;
+    border-radius: 50em;
+    letter-spacing: 5px;
+}
+
+/*EpapperType*/
+.EpapperWrapper .EpapperContent .ContentInfo .Announce span {
+    background: #b74e4e;
+    background: -moz-linear-gradient(left, #d2612b 0%, #b74e4e 100%);
+    background: -webkit-linear-gradient(left, #d2612b 0%,#b74e4e 100%);
+    background: linear-gradient(to right, #d2612b 0%,#b74e4e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2612b', endColorstr='#b74e4e',GradientType=1 );
+}
+.EpapperWrapper .EpapperContent .ContentInfo .Announce .EpapperType {
+    background: url(../images/EpapperType/announce.png) no-repeat center center;
+}
+.EpapperWrapper .EpapperContent .ContentInfo .ActiveTrick span {
+    background: #0071ba;
+    background: -moz-linear-gradient(left, #28a0ab 0%, #0071ba 100%);
+    background: -webkit-linear-gradient(left, #28a0ab 0%,#0071ba 100%);
+    background: linear-gradient(to right, #28a0ab 0%,#0071ba 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#28a0ab', endColorstr='#0071ba',GradientType=1 );
+}
+.EpapperWrapper .EpapperContent .ContentInfo .ActiveTrick .EpapperType {
+    background: url(../images/EpapperType/tricks.png) no-repeat center center;
+}
+.EpapperWrapper .EpapperContent .ContentInfo .Video span {
+    background: #f58d2c;
+    background: -moz-linear-gradient(left, #d8aa2a 0%, #f58d2c 100%);
+    background: -webkit-linear-gradient(left, #d8aa2a 0%,#f58d2c 100%);
+    background: linear-gradient(to right, #d8aa2a 0%,#f58d2c 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8aa2a', endColorstr='#f58d2c',GradientType=1 );
+}
+.EpapperWrapper .EpapperContent .ContentInfo .Video .EpapperType {
+    background: url(../images/EpapperType/video.png) no-repeat center center;
+}
+.EpapperWrapper .EpapperContent .ContentInfo .TeamInfo span {
+    background: #67dfaa;
+    background: -moz-linear-gradient(left, #57a0bb 0%, #67dfaa 100%);
+    background: -webkit-linear-gradient(left, #57a0bb 0%,#67dfaa 100%);
+    background: linear-gradient(to right, #57a0bb 0%,#67dfaa 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#57a0bb', endColorstr='#67dfaa',GradientType=1 );
+}
+.EpapperWrapper .EpapperContent .ContentInfo .TeamInfo .EpapperType {
+    background: url(../images/EpapperType/teamInfo.png) no-repeat center center;
+}
+.EpapperWrapper .EpapperContent .ContentInfo .TeamWork span {
+    background: #ec5192;
+    background: -moz-linear-gradient(left, #e64b4b 0%, #ec5192 100%);
+    background: -webkit-linear-gradient(left, #e64b4b 0%,#ec5192 100%);
+    background: linear-gradient(to right, #e64b4b 0%,#ec5192 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e64b4b', endColorstr='#ec5192',GradientType=1 );
+}
+.EpapperWrapper .EpapperContent .ContentInfo .TeamWork .EpapperType {
+    background: url(../images/EpapperType/teamWork.png) no-repeat center center;
+}
+.EpapperWrapper .EpapperContent .ContentInfo .Download span {
+    background: #489926;
+    background: -moz-linear-gradient(left, #6ec659 0%, #489926 100%);
+    background: -webkit-linear-gradient(left, #6ec659 0%,#489926 100%);
+    background: linear-gradient(to right, #6ec659 0%,#489926 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6ec659', endColorstr='#489926',GradientType=1 );
+}
+.EpapperWrapper .EpapperContent .ContentInfo .Download .EpapperType {
+    background: url(../images/EpapperType/download.png) no-repeat center center;
+}
+.EpapperWrapper .EpapperContent .ContentInfo .News span {
+    background: #994226;
+    background: -moz-linear-gradient(left, #916747 0%, #994226 100%);
+    background: -webkit-linear-gradient(left, #916747 0%,#994226 100%);
+    background: linear-gradient(to right, #916747 0%,#994226 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#916747', endColorstr='#994226',GradientType=1 );
+}
+.EpapperWrapper .EpapperContent .ContentInfo .News .EpapperType {
+    background: url(../images/EpapperType/news.png) no-repeat center center;
+}
+.EpapperWrapper .EpapperContent .ContentInfo .Recruit span {
+    background: #2e2699;
+    background: -moz-linear-gradient(left, #5ac7e6 0%, #2e2699 100%);
+    background: -webkit-linear-gradient(left, #5ac7e6 0%,#2e2699 100%);
+    background: linear-gradient(to right, #5ac7e6 0%,#2e2699 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5ac7e6', endColorstr='#2e2699',GradientType=1 );
+}
+.EpapperWrapper .EpapperContent .ContentInfo .Recruit .EpapperType {
+    background: url(../images/EpapperType/recruit.png) no-repeat center center;
+}
+.EpapperWrapper .EpapperContent .ContentInfo .Training span {
+    background: #992626;
+    background: -moz-linear-gradient(left, #e6aa5a 0%, #992626 100%);
+    background: -webkit-linear-gradient(left, #e6aa5a 0%,#992626 100%);
+    background: linear-gradient(to right, #e6aa5a 0%,#992626 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6aa5a', endColorstr='#992626',GradientType=1 );
+}
+.EpapperWrapper .EpapperContent .ContentInfo .Training .EpapperType {
+    background: url(../images/EpapperType/training.png) no-repeat center center;
+}
+
 .EpapperWrapper .EpapperContent .ContentInfo .ContentLine {
     display: flex;
-    flex: 0 0 80%;
+    flex: 0 0 70%;
+    align-items: center;
     padding: 10px;
 }
 .EpapperWrapper .EpapperContent .ContentInfo .ContentLine ul li {

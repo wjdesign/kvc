@@ -248,6 +248,12 @@
 	.EpapperWrapper {
 		padding: 15px 0;
 	}
+	.EpapperWrapper .EpapperContent {
+		margin: 0 auto;
+	}
+	.EpapperWrapper .EpapperContent .ContentInfo .ContentItem {
+		display: block;
+	}
 	.EpapperWrapper .EpapperContent .ContentInfo .ContentTitle {
 		flex: 0 0 40%;
 	}
